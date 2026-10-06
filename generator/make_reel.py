@@ -23,7 +23,10 @@ FONT_BOLD = "C:/Windows/Fonts/malgunbd.ttf"
 FONT_REG = "C:/Windows/Fonts/malgun.ttf"
 BRAND = "@todayzip.info"
 ACCENTS = {"life": "#4FA3FF", "money": "#3DDC84", "health": "#FFB547", "trend": "#C084FC",
-           "weekend": "#FF6B6B", "mind": "#2DD4BF", "law": "#FACC15"}
+           "weekend": "#FF6B6B", "mind": "#2DD4BF", "law": "#FACC15",
+           # 살림 분야 (STYLE.md 요일표)
+           "kitchen": "#FF9F43", "bath": "#38BDF8", "laundry": "#A5B4FC", "storage": "#FACC15",
+           "season": "#FF6B6B", "picks": "#F472B6"}
 DUR_COVER, DUR_SCENE, DUR_OUTRO, XFADE = 3.5, 4.5, 4.0, 0.5
 
 
@@ -159,7 +162,9 @@ def overlay_outro(o, accent):
 
 MUSIC_DIR = Path(__file__).parent / "music"
 THEME_MUSIC = {"life": "bright", "money": "upbeat", "health": "calm", "trend": "upbeat",
-               "weekend": "bright", "mind": "calm", "law": "warm"}
+               "weekend": "bright", "mind": "calm", "law": "warm",
+               "kitchen": "warm", "bath": "bright", "laundry": "calm", "storage": "bright",
+               "season": "upbeat", "picks": "upbeat"}
 
 
 def pick_music(data):
