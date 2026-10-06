@@ -1,0 +1,9 @@
+{
+  "followers_last": 0,
+  "followers_checked": "2026-10-06",
+  "coupang_partners_1000": {
+    "threshold": 1000,
+    "notified": false,
+    "message": "🎉 팔로워 1,000명 달성! 이제 쿠팡 파트너스 가입할 때예요. partners.coupang.com 가입 후 Claude에게 '쿠팡 파트너스 가입했어'라고 알려주세요."
+  }
+}
