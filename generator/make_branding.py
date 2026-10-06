@@ -33,8 +33,9 @@ def profile():
     img.save(OUT / "profile.png")
 
 
-def title(bg_path):
-    w, h = 966, 300
+def title(bg_path, h=300):
+    """h 가 300보다 크면 글자 위치는 그대로 두고 사진만 아래로 늘린다 (스킨이 아래를 덮는 경우)."""
+    w = 966
     bg = Image.open(bg_path).convert("RGB")
     scale = max(w / bg.width, h / bg.height)
     bg = bg.resize((round(bg.width * scale), round(bg.height * scale)), Image.LANCZOS)
@@ -49,11 +50,12 @@ def title(bg_path):
     d.rounded_rectangle((160, 210, 160 + 330, 256), radius=23, fill=ORANGE)
     d.text((180, 214), "매주 월 · 수 · 금 업데이트", font=font(FONT_BOLD, 26), fill=INK)
     d.text((w - 250, 258), "@todayzip.info", font=font(FONT_BOLD, 24), fill="white")
-    bg.convert("RGB").save(OUT / "title_966x300.jpg", quality=92)
+    bg.convert("RGB").save(OUT / f"title_966x{h}.jpg", quality=92)
 
 
 if __name__ == "__main__":
     OUT.mkdir(exist_ok=True)
     profile()
     title(sys.argv[1])
+    title(sys.argv[1], 340)  # 네이버 스킨에서 본문 카드가 배너 아래를 덮을 때
     print("->", OUT)
