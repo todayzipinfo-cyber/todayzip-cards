@@ -103,7 +103,11 @@ def body_html(data, photo_no):
     if data.get("products"):
         parts.append("<h3>이런 제품을 고르세요</h3><ul>")
         for i, p in enumerate(data["products"], 1):
-            link = f' <span class="ph">[쿠팡 링크 {i}]</span>' if aff else ""
+            link = ""
+            if aff and p.get("link"):  # 이미 만든 파트너스 링크
+                link = f' <a href="{html.escape(p["link"])}">👉 쿠팡에서 보기</a>'
+            elif aff:
+                link = f' <span class="ph">[쿠팡 링크 {i}]</span>'
             parts.append(f"<li><b>{esc(p['name'])}</b>: {esc(p['point'])}{link}</li>")
         parts.append("</ul>")
     if data.get("caution"):
@@ -193,7 +197,7 @@ def build(path, skip_images=False):
     body = body_html(data, photo_no)
     chars = len(re.sub(r"<[^>]+>|\[사진[^\]]*\]", "", body))
     coupang = ""
-    if affiliate_enabled() and data.get("products"):
+    if affiliate_enabled() and data.get("products") and not all(p.get("link") for p in data["products"]):
         rows = "".join(
             f'<li><b>[쿠팡 링크 {i}] {html.escape(p["name"])}</b> · '
             f'<a href="{coupang_search(p.get("search") or p["name"])}" target="_blank" rel="noopener">쿠팡에서 찾기 ↗</a></li>'
