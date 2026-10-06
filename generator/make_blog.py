@@ -146,7 +146,9 @@ button.done{{background:#555}}
 #body .disc{{font-size:13px;color:var(--sub)}}
 #body table{{border-collapse:collapse;width:100%;font-size:14px}}
 #body th,#body td{{border:1px solid var(--line);padding:6px 8px;text-align:left}}
-.tags{{font-size:14px;word-break:break-all}}
+.chips{{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}}
+.chip{{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}}
+.chip.done{{background:var(--acc);color:#fff}}
 </style></head><body><div class="wrap">
 <p class="meta">📝 {date} · 핵심 키워드 <b>{keyword}</b> · 본문 약 {chars:,}자</p>
 
@@ -161,13 +163,17 @@ button.done{{background:#555}}
 <div class="step"><h2>3. 사진 ({n_photos}장, 이 폴더에 있어요)</h2>
 <p class="meta">{folder}</p><div class="photos">{photos}</div></div>
 
-<div class="step"><h2>4. 태그 복사</h2><div class="tags" id="tags">{tags}</div>
-<button onclick="copyText('tags',this)">태그 복사</button></div>
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">{tags}</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips">{chips}</div></div>
 
 <div class="step"><h2>본문 미리보기</h2><div id="body">{body}</div></div>
 </div>
 <script>
-function flash(b){{b.classList.add('done');b.textContent='복사됨 ✓';}}
+function flash(b){{b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}}
+function copyTag(b){{navigator.clipboard.writeText(b.dataset.tag).then(()=>flash(b),()=>{{const t=document.createElement('textarea');t.value=b.dataset.tag;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();flash(b);}});}}
 function copyText(id,b){{navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>flash(b),()=>copyHtml(id,b));}}
 function copyHtml(id,b){{const r=document.createRange();r.selectNodeContents(document.getElementById(id));
  const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}}
@@ -209,7 +215,9 @@ def build(path, skip_images=False):
                    f'<ul>{rows}</ul></div>')
     page = PAGE.format(date=data["date"], coupang=coupang, keyword=html.escape(data["keyword"]), title=html.escape(data["title"]),
                        chars=chars, body=body, photos="".join(cards), n_photos=n, folder=html.escape(str(out)),
-                       tags=html.escape(" ".join("#" + t for t in data["tags"])))
+                       tags=html.escape(",".join(data["tags"])),
+                       chips="".join(f'<button class="chip" data-tag="{html.escape(t)}" onclick="copyTag(this)">'
+                                     f'{html.escape(t)}</button>' for t in data["tags"]))
     (out / "index.html").write_text(page, encoding="utf-8")
     print(f"draft -> {out / 'index.html'} ({chars}자, 사진 {n}장)")
 
