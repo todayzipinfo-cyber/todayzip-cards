@@ -140,8 +140,7 @@ button.done{{background:#555}}
 .photos{{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}}
 .photos figure{{margin:0;font-size:12px;color:var(--sub);text-align:center}}
 .photos img{{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}}
-#body{{line-height:1.8;font-size:16px;background:transparent}}
-#body *{{background:transparent}}
+#body{{line-height:1.8;font-size:16px}}
 #body h3{{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}}
 #body .ph{{color:#d33;font-weight:700}}
 #body .disc{{font-size:13px;color:var(--sub)}}
@@ -176,17 +175,8 @@ button.done{{background:#555}}
 function flash(b){{b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}}
 function copyTag(b){{navigator.clipboard.writeText(b.dataset.tag).then(()=>flash(b),()=>{{const t=document.createElement('textarea');t.value=b.dataset.tag;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();flash(b);}});}}
 function copyText(id,b){{navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>flash(b),()=>copyHtml(id,b));}}
-function copyHtml(id,b){{
- // 붙여넣을 때 글자색·배경색이 따라가지 않도록 스타일 없는 HTML 로 복사
- const el=document.getElementById(id), clone=el.cloneNode(true);
- clone.querySelectorAll('*').forEach(n=>{{n.removeAttribute('style');n.removeAttribute('class');}});
- const html=clone.innerHTML, text=el.innerText;
- const done=()=>flash(b);
- if(navigator.clipboard&&window.ClipboardItem){{
-  navigator.clipboard.write([new ClipboardItem({{'text/html':new Blob([html],{{type:'text/html'}}),'text/plain':new Blob([text],{{type:'text/plain'}})}})]).then(done,()=>legacy());
- }} else legacy();
- function legacy(){{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();done();}}
-}}
+function copyHtml(id,b){{const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}}
 </script></body></html>"""
 
 
