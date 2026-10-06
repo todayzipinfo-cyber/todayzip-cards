@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-07",
+  "format": "reel",
+  "category": "세탁",
+  "theme": "laundry",
+  "cover": {
+    "kicker": "꺼내 보니 누런 여름옷",
+    "title": "흰 옷은 왜\n누렇게 될까?",
+    "image_queries": ["white clothes hangers", "white laundry drying", "clothes rack"],
+    "image_id": 6893061
+  },
+  "scenes": [
+    {
+      "heading": "땀과 피지가\n산화돼요",
+      "body": "눈에 안 보이는 땀과 피지가\n섬유에 남아 있다가\n공기와 만나 누렇게 변해요.",
+      "image_queries": ["shirts on hangers", "folded white shirts", "wardrobe clothes"],
+      "image_id": 9611374
+    },
+    {
+      "heading": "따뜻한 물에\n과탄산소다",
+      "body": "40~60도 물에 과탄산소다를\n포장 권장량대로 녹여요.\n찬물에선 반응이 약해요.",
+      "image_queries": ["hand washing clothes", "laundry bucket", "washing powder"],
+      "image_id": 4919935
+    },
+    {
+      "heading": "30분 담갔다가\n세탁기로",
+      "body": "옷을 30분쯤 담가 두고\n그대로 세탁기에 넣어\n평소처럼 빨면 돼요.",
+      "image_queries": ["front load washing machine", "washing machine laundry", "laundry"],
+      "image_id": 1164344
+    },
+    {
+      "heading": "섬유유연제는\n정량만",
+      "body": "덜 헹군 세제와 유연제도\n누렇게 변하는 원인이에요.\n정량만 넣고 충분히 헹궈요.",
+      "image_queries": ["laundry detergent", "detergent washing machine", "laundry room shelf"],
+      "image_id": 296058
+    },
+    {
+      "heading": "이것만은\n꼭 주의해요",
+      "body": "락스나 식초와 섞지 말고\n고무장갑 끼고 환기해요.\n울과 실크엔 쓰지 마세요.",
+      "image_queries": ["rubber gloves cleaning", "yellow rubber gloves", "cleaning gloves"],
+      "image_id": 512027
+    }
+  ],
+  "outro": {
+    "title": "누런 흰 옷\n이렇게 살려요",
+    "points": [
+      "원인은 땀과 피지의 산화",
+      "40~60도 물에 과탄산소다",
+      "30분 담갔다가 세탁기로",
+      "유연제는 정량, 헹굼은 충분히",
+      "락스와 섞지 말고 장갑·환기"
+    ]
+  },
+  "products": [
+    {"name": "과탄산소다", "why": "따뜻한 물에서 산소 거품으로 누런 때를 분해"}
+  ],
+  "caption": "분명 하얗게 넣어둔 여름옷, 꺼내 보니 누렇게 변해 있죠? 👕\n\n원인은 눈에 안 보이던 땀과 피지가 시간이 지나며 산화된 거예요.\n따뜻한 물과 과탄산소다로 되살리는 방법을 순서대로 정리했어요.\n특히 네 번째는 많은 분들이 놓치는 원인이에요.\n옷장에 넣기 전 한 번 더 빨고 바싹 말려 두면 예방에도 좋아요.\n\n⚠️ 과탄산소다는 락스·산성 세제와 섞지 말고, 장갑을 끼고 환기하며 사용하세요. 울·실크 등은 세탁 표시를 꼭 확인하세요.\n\n여러분 집 흰 옷은 어떤가요? 나만의 방법이 있다면 댓글로 알려주세요 👇\n\n📌 저장해두고 주말에 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": ["살림꿀팁", "살림", "세탁꿀팁", "빨래꿀팁", "흰옷세탁", "누런얼룩", "과탄산소다", "옷정리", "환절기살림", "투데이집"]
+}
