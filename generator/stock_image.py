@@ -79,18 +79,26 @@ def contact_sheet(hits, path):
     sheet.save(path, quality=85)
 
 
+def candidates_for(shots, outdir):
+    """shots: [(이름, image_queries 를 가진 dict)] -> outdir 에 _cand_<이름>.jpg 와 candidates.json"""
+    outdir = Path(outdir)
+    result = {}
+    for name, s in shots:
+        if not s.get("image_queries"):
+            continue
+        hits = search(s["image_queries"])
+        sheet = outdir / f"_cand_{name}.jpg"
+        contact_sheet(hits, sheet)
+        result[name] = {str(i + 1): h["id"] for i, h in enumerate(hits[:8])}
+        print(name, sheet, len(hits), "후보")
+    (outdir / "candidates.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
+
+
 def candidates(content_path):
     content_path = Path(content_path)
     data = json.loads(content_path.read_text(encoding="utf-8"))
     shots = [("cover", data["cover"])] + [(f"scene{i}", s) for i, s in enumerate(data["scenes"], 1)]
-    result = {}
-    for name, s in shots:
-        hits = search(s["image_queries"])
-        sheet = content_path.parent / f"_cand_{name}.jpg"
-        contact_sheet(hits, sheet)
-        result[name] = {str(i + 1): h["id"] for i, h in enumerate(hits[:8])}
-        print(name, sheet, len(hits), "후보")
-    (content_path.parent / "candidates.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
+    candidates_for(shots, content_path.parent)
 
 
 def download(image_id, out_path):

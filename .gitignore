@@ -6,3 +6,8 @@ posts/*/_build/
 posts/*/preview.jpg
 posts/sample-reel/
 __pycache__/
+
+# 블로그 원고: blog.json 만 git 에 올리고 사진·원고 페이지는 PC 에만
+blog/*/img_*.jpg
+blog/*/_cand_*.jpg
+blog/*/draft/
