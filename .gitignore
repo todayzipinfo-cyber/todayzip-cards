@@ -1,0 +1,8 @@
+# 릴스 제작 중간 파일 (게시에는 reel.mp4, cover.jpg, content.json 만 필요)
+posts/*/img_*.png
+posts/*/frame_*.jpg
+posts/*/_cand_*.jpg
+posts/*/_build/
+posts/*/preview.jpg
+posts/sample-reel/
+__pycache__/
