@@ -4,6 +4,6 @@
   "coupang_partners_1000": {
     "threshold": 1000,
     "notified": false,
-    "message": "🎉 팔로워 1,000명 달성! 이제 쿠팡 파트너스 가입할 때예요. partners.coupang.com 가입 후 Claude에게 '쿠팡 파트너스 가입했어'라고 알려주세요."
+    "message": "🎉 인스타 팔로워 1,000명 달성! 이제 인스타에도 쿠팡 제휴 링크를 켤 때예요. Claude에게 '인스타 제휴 링크 켜줘'라고 알려주세요."
   }
 }

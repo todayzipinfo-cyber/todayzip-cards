@@ -8,6 +8,7 @@ import html
 import json
 import re
 import sys
+import urllib.parse
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
@@ -24,7 +25,12 @@ ROOT = Path(__file__).parent.parent
 
 
 def affiliate_enabled():
-    return "**AFFILIATE_ENABLED: true**" in (ROOT / "STYLE.md").read_text(encoding="utf-8")
+    """블로그 제휴 링크 스위치 (BLOG.md). 인스타용 STYLE.md 스위치와 별개."""
+    return "**AFFILIATE_BLOG_ENABLED: true**" in (ROOT / "BLOG.md").read_text(encoding="utf-8")
+
+
+def coupang_search(q):
+    return "https://www.coupang.com/np/search?q=" + urllib.parse.quote(q)
 
 
 def shots(data):
@@ -96,8 +102,8 @@ def body_html(data, photo_no):
                          + "</table>")
     if data.get("products"):
         parts.append("<h3>이런 제품을 고르세요</h3><ul>")
-        for p in data["products"]:
-            link = " <b>[쿠팡 링크 자리]</b>" if aff else ""
+        for i, p in enumerate(data["products"], 1):
+            link = f' <span class="ph">[쿠팡 링크 {i}]</span>' if aff else ""
             parts.append(f"<li><b>{esc(p['name'])}</b>: {esc(p['point'])}{link}</li>")
         parts.append("</ul>")
     if data.get("caution"):
@@ -146,6 +152,7 @@ button.done{{background:#555}}
 <div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
 <p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
 <button onclick="copyHtml('body',this)">본문 복사</button></div>
+{coupang}
 
 <div class="step"><h2>3. 사진 ({n_photos}장, 이 폴더에 있어요)</h2>
 <p class="meta">{folder}</p><div class="photos">{photos}</div></div>
@@ -185,7 +192,18 @@ def build(path, skip_images=False):
         cards.append(f'<figure><img src="{fname}" alt=""><figcaption>사진 {n}</figcaption></figure>')
     body = body_html(data, photo_no)
     chars = len(re.sub(r"<[^>]+>|\[사진[^\]]*\]", "", body))
-    page = PAGE.format(date=data["date"], keyword=html.escape(data["keyword"]), title=html.escape(data["title"]),
+    coupang = ""
+    if affiliate_enabled() and data.get("products"):
+        rows = "".join(
+            f'<li><b>[쿠팡 링크 {i}] {html.escape(p["name"])}</b> · '
+            f'<a href="{coupang_search(p.get("search") or p["name"])}" target="_blank" rel="noopener">쿠팡에서 찾기 ↗</a></li>'
+            for i, p in enumerate(data["products"], 1))
+        coupang = ('<div class="step"><h2>2-1. 쿠팡 링크 만들기</h2>'
+                   '<p class="meta">① 쿠팡에서 찾기로 알맞은 상품을 고르고 주소를 복사 → ② 쿠팡 파트너스 '
+                   '<a href="https://partners.coupang.com" target="_blank" rel="noopener">간편 링크 만들기</a>에 붙여넣어 '
+                   '링크 생성 → ③ 본문의 빨간 [쿠팡 링크 N] 자리를 그 링크로 바꾸기</p>'
+                   f'<ul>{rows}</ul></div>')
+    page = PAGE.format(date=data["date"], coupang=coupang, keyword=html.escape(data["keyword"]), title=html.escape(data["title"]),
                        chars=chars, body=body, photos="".join(cards), n_photos=n, folder=html.escape(str(out)),
                        tags=html.escape(" ".join("#" + t for t in data["tags"])))
     (out / "index.html").write_text(page, encoding="utf-8")
