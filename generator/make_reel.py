@@ -112,20 +112,20 @@ def overlay_scene(s, num, total, accent):
         shadow_text(layer, (PAD, y), line, hf, "white", 8)
         y += 96 + 20
     # 하단 정보 박스 (릴스 UI 를 피하려고 아래 380px 은 비운다)
-    bf = font(FONT_REG, 42)
+    bf = font(FONT_BOLD, 44)  # 얇은 글씨는 영상 압축에서 깨져 보여서 굵게 쓴다
     lines = wrap(d, s["body"], bf, W - 2 * PAD - 80)
-    box_h = len(lines) * (42 + 20) + 80
+    box_h = len(lines) * (44 + 22) + 80
     top = H - 400 - box_h
     box = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     ImageDraw.Draw(box).rounded_rectangle((PAD - 10, top, W - PAD + 10, top + box_h), radius=34,
-                                          fill=(15, 15, 15, 185))
+                                          fill=(15, 15, 15, 215))
     layer.alpha_composite(box)
     d = ImageDraw.Draw(layer)
     d.rectangle((PAD - 10, top + 30, PAD - 2, top + box_h - 30), fill=accent)
     yy = top + 40
     for line in lines:
-        d.text((PAD + 40, yy), line, font=bf, fill="white")
-        yy += 42 + 20
+        shadow_text(layer, (PAD + 40, yy), line, bf, "white", 3)
+        yy += 44 + 22
     # 진행 표시
     seg = (W - 2 * PAD - (total - 1) * 10) / total
     for i in range(total):
@@ -145,11 +145,11 @@ def overlay_outro(o, accent):
         shadow_text(layer, (PAD, y), line, tf, "white", 8)
         y += 96 + 22
     y += 50
-    pf = font(FONT_REG, 50)
+    pf = font(FONT_BOLD, 50)
     for p in o.get("points", []):
         d.ellipse((PAD + 4, y + 22, PAD + 30, y + 48), fill=accent)
         for line in wrap(d, p, pf, W - 2 * PAD - 60):
-            d.text((PAD + 56, y), line, font=pf, fill="white")
+            shadow_text(layer, (PAD + 56, y), line, pf, "white", 3)
             y += 50 + 14
         y += 22
     cf = font(FONT_BOLD, 50)
@@ -187,7 +187,7 @@ def render_clip(ff, bg_path, ov_path, dur, out, zoom_in=True):
           f":d={frames}:s={W}x{H}:fps={FPS}[bg];[bg][1:v]overlay=0:0,format=yuv420p[v]")
     subprocess.run([ff, "-y", "-loglevel", "error", "-loop", "1", "-i", str(bg_path), "-loop", "1",
                     "-i", str(ov_path), "-filter_complex", vf, "-map", "[v]", "-t", str(dur),
-                    "-r", str(FPS), "-c:v", "libx264", "-preset", "medium", "-crf", "20", str(out)],
+                    "-r", str(FPS), "-c:v", "libx264", "-preset", "slow", "-crf", "16", str(out)],
                    check=True)
 
 
@@ -257,7 +257,7 @@ def main(path, skip_images=False):
     subprocess.run([ff, "-y", "-loglevel", "error", *inputs, "-stream_loop", "-1", "-i", str(music),
                     "-filter_complex", ";".join(filt),
                     "-map", last, "-map", "[a]", "-t", f"{total_dur:.2f}", "-c:v", "libx264",
-                    "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest",
+                    "-preset", "slow", "-crf", "16", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest",
                     "-movflags", "+faststart", str(out / "reel.mp4")], check=True)
     shutil.copy(out / "frame_00.jpg", out / "cover.jpg")
     shutil.rmtree(tmp)
