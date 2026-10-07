@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-08",
+  "format": "reel",
+  "category": "수납·정리",
+  "theme": "storage",
+  "cover": {
+    "kicker": "환절기 옷 정리 전에",
+    "title": "옷장은 왜\n금방 꽉 찰까?",
+    "image_queries": [
+      "wardrobe clothes hanging",
+      "closet clothes rack",
+      "clothes hangers"
+    ],
+    "image_id": 3981732
+  },
+  "scenes": [
+    {
+      "heading": "계절이 섞이고\n기준이 없어요",
+      "body": "지난 계절 옷과 안 입는 옷이\n자리를 차지한 채로\n새 옷이 계속 들어와요.",
+      "image_queries": [
+        "messy closet clothes",
+        "pile of clothes",
+        "cluttered wardrobe"
+      ],
+      "image_id": 1853504
+    },
+    {
+      "heading": "지난 계절 옷은\n뒤로 보내요",
+      "body": "여름옷은 깨끗이 빨아\n수납함에 담고 옷장 위나\n아래, 뒤쪽에 보관해요.",
+      "image_queries": [
+        "wicker storage basket shelf",
+        "storage baskets closet",
+        "linen basket"
+      ],
+      "image_id": 4696557
+    },
+    {
+      "heading": "1년 안 입은 옷은\n비워요",
+      "body": "지난 1년 동안 한 번도\n안 입었다면 나눔이나\n중고 판매를 고민해 봐요.",
+      "image_queries": [
+        "stack of jeans",
+        "folded clothes",
+        "clothes pile"
+      ],
+      "image_id": 428614
+    },
+    {
+      "heading": "니트와 티셔츠는\n세워서 수납",
+      "body": "접은 옷을 서랍에 세우면\n한눈에 보이고 꺼낼 때\n다른 옷이 흐트러지지 않아요.",
+      "image_queries": [
+        "folded clothes drawer",
+        "drawer organizer clothes",
+        "folded sweaters"
+      ],
+      "image_id": 443506
+    },
+    {
+      "heading": "옷걸이를\n한 종류로",
+      "body": "얇은 옷걸이로 통일하면\n걸 수 있는 옷이 늘고\n줄도 반듯하게 맞춰져요.",
+      "image_queries": [
+        "matching hangers closet",
+        "wooden hangers rail",
+        "hangers"
+      ],
+      "image_id": 2619832
+    }
+  ],
+  "outro": {
+    "title": "꽉 찬 옷장\n이렇게 비워요",
+    "points": [
+      "원인은 섞인 계절과 기준 없음",
+      "지난 계절 옷은 수납함으로",
+      "1년 안 입은 옷은 비우기",
+      "접은 옷은 서랍에 세우기",
+      "옷걸이는 얇은 걸로 통일"
+    ]
+  },
+  "caption": "옷장 문 열 때마다 옷이 쏟아질 것 같은 분 계신가요? 🙋\n\n옷장이 금방 꽉 차는 건 옷이 많아서라기보다, 지난 계절 옷과 안 입는 옷이 앞자리를 차지하고 있어서예요.\n환절기 옷 바꾸기 전에 딱 네 가지만 해 보세요.\n특히 세워서 수납하기는 서랍 공간이 확 달라져요.\n\n여러분 옷장은 지금 몇 % 차 있나요? 댓글로 알려주세요 👇\n\n📌 저장해두고 주말에 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "정리정돈",
+    "수납꿀팁",
+    "옷장정리",
+    "환절기옷정리",
+    "옷정리",
+    "세로수납",
+    "자취꿀팁",
+    "투데이집"
+  ],
+  "music": "calm"
+}
