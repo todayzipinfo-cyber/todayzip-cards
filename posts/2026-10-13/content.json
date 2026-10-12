@@ -50,21 +50,21 @@
       "heading": "봉지에 담가\n1시간 두기",
       "body": "헤드를 봉지째 담그고\n세면대에 내려두세요.",
       "image_queries": [
-        "bathroom sink white clean",
-        "washbasin bathroom",
-        "bathroom sink"
+        "shower head plastic bag",
+        "handheld shower head",
+        "shower head"
       ],
-      "image_id": 15551
+      "image_id": 8323895
     },
     {
       "heading": "칫솔로\n구멍 문지르기",
       "body": "남은 물때는 칫솔로\n살살 문지르고 헹궈요.",
       "image_queries": [
-        "toothbrush cleaning faucet",
-        "cleaning faucet",
-        "faucet"
+        "cleaning shower head",
+        "shower head nozzles close up",
+        "shower head holes"
       ],
-      "image_id": 493039
+      "image_id": 653671
     },
     {
       "heading": "이것만은\n꼭 지키세요",
