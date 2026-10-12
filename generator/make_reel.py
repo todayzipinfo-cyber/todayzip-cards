@@ -28,6 +28,7 @@ ACCENTS = {"life": "#4FA3FF", "money": "#3DDC84", "health": "#FFB547", "trend": 
            "kitchen": "#FF9F43", "bath": "#38BDF8", "laundry": "#A5B4FC", "storage": "#FACC15",
            "season": "#FF6B6B", "picks": "#F472B6"}
 DUR_COVER, DUR_SCENE, DUR_OUTRO, XFADE = 1.2, 3.5, 3.0, 0.3
+BOX_DELAY = 0.5  # 장면 정보 박스가 나타나는 시점(초)
 
 
 def font(path, size):
@@ -98,6 +99,7 @@ def overlay_cover(c, accent):
 
 
 def overlay_scene(s, num, total, accent):
+    """(제목 레이어, 정보 박스 레이어). 박스는 영상에서 조금 늦게 나타난다."""
     layer = gradient(220, 820, 200, 760)
     d = ImageDraw.Draw(layer)
     brand(layer)
@@ -119,12 +121,11 @@ def overlay_scene(s, num, total, accent):
     box = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     ImageDraw.Draw(box).rounded_rectangle((PAD - 10, top, W - PAD + 10, top + box_h), radius=34,
                                           fill=(15, 15, 15, 215))
-    layer.alpha_composite(box)
-    d = ImageDraw.Draw(layer)
-    d.rectangle((PAD - 10, top + 30, PAD - 2, top + box_h - 30), fill=accent)
+    bd = ImageDraw.Draw(box)
+    bd.rectangle((PAD - 10, top + 30, PAD - 2, top + box_h - 30), fill=accent)
     yy = top + 40
     for line in lines:
-        shadow_text(layer, (PAD + 40, yy), line, bf, "white", 3)
+        shadow_text(box, (PAD + 40, yy), line, bf, "white", 3)
         yy += 44 + 22
     # 진행 표시
     seg = (W - 2 * PAD - (total - 1) * 10) / total
@@ -132,7 +133,7 @@ def overlay_scene(s, num, total, accent):
         x0 = PAD + i * (seg + 10)
         d.rounded_rectangle((x0, 150, x0 + seg, 158), radius=4,
                             fill=accent if i < num else (255, 255, 255, 90))
-    return layer
+    return layer, box
 
 
 def overlay_outro(o, accent):
@@ -179,14 +180,20 @@ def pick_music(data):
     return tracks[0]
 
 
-def render_clip(ff, bg_path, ov_path, dur, out, zoom_in=True):
-    """배경은 천천히 확대/축소, 그 위에 글자 레이어를 얹는다."""
+def render_clip(ff, bg_path, ov_path, dur, out, zoom_in=True, ov2_path=None):
+    """배경은 천천히 확대/축소, 그 위에 글자 레이어를 얹는다. ov2 는 BOX_DELAY 뒤 페이드인."""
     frames = int(dur * FPS)
     z = f"1+0.08*on/{frames}" if zoom_in else f"1.08-0.08*on/{frames}"
     vf = (f"[0:v]scale={W * 2}:{H * 2},zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-          f":d={frames}:s={W}x{H}:fps={FPS}[bg];[bg][1:v]overlay=0:0,format=yuv420p[v]")
+          f":d={frames}:s={W}x{H}:fps={FPS}[bg];[bg][1:v]overlay=0:0")
+    extra = []
+    if ov2_path:
+        extra = ["-loop", "1", "-i", str(ov2_path)]
+        vf += (f"[t];[2:v]format=rgba,fade=t=in:st={BOX_DELAY}:d=0.3:alpha=1[b];"
+               f"[t][b]overlay=x=0:y='40*max(0,1-(t-{BOX_DELAY})/0.3)':eval=frame")
+    vf += ",format=yuv420p[v]"
     subprocess.run([ff, "-y", "-loglevel", "error", "-loop", "1", "-i", str(bg_path), "-loop", "1",
-                    "-i", str(ov_path), "-filter_complex", vf, "-map", "[v]", "-t", str(dur),
+                    "-i", str(ov_path), *extra, "-filter_complex", vf, "-map", "[v]", "-t", str(dur),
                     "-r", str(FPS), "-c:v", "libx264", "-preset", "slow", "-crf", "16", str(out)],
                    check=True)
 
@@ -227,17 +234,25 @@ def main(path, skip_images=False):
             bg = bg.filter(ImageFilter.GaussianBlur(12))
         bg_path = tmp / f"bg_{name}.png"
         bg.save(bg_path)
+        box = None
         if name == "cover":
             ov, dur = overlay_cover(s, accent), DUR_COVER
         elif name == "outro":
             ov, dur = overlay_outro(s, accent), DUR_OUTRO
         else:
-            ov, dur = overlay_scene(s, idx, total, accent), DUR_SCENE
+            (ov, box), dur = overlay_scene(s, idx, total, accent), DUR_SCENE
+        dur = s.get("dur", dur)  # content.json 에서 장면별 길이 지정 가능
         ov_path = tmp / f"ov_{name}.png"
         ov.save(ov_path)
-        Image.alpha_composite(bg.convert("RGBA"), ov).convert("RGB").save(out / f"frame_{idx:02d}.jpg", quality=90)
+        box_path = None
+        full = ov
+        if box is not None:
+            box_path = tmp / f"box_{name}.png"
+            box.save(box_path)
+            full = Image.alpha_composite(ov, box)
+        Image.alpha_composite(bg.convert("RGBA"), full).convert("RGB").save(out / f"frame_{idx:02d}.jpg", quality=90)
         clip = tmp / f"clip_{idx:02d}.mp4"
-        render_clip(ff, bg_path, ov_path, dur, clip, zoom_in=idx % 2 == 0)
+        render_clip(ff, bg_path, ov_path, dur, clip, zoom_in=idx % 2 == 0, ov2_path=box_path)
         clips.append((clip, dur))
 
     # 장면 사이 크로스페이드 + 무음 오디오 트랙
