@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-13",
+  "format": "reel",
+  "category": "욕실·청소",
+  "theme": "bath",
+  "music": "calm",
+  "cover": {
+    "kicker": "물줄기가 사방으로",
+    "title": "샤워기 물때\n구연산이 답",
+    "image_queries": [
+      "shower head water",
+      "shower head bathroom",
+      "shower"
+    ],
+    "image_id": 3088184
+  },
+  "scenes": [
+    {
+      "heading": "하얀 석회가\n구멍을 막아요",
+      "body": "수돗물 속 석회 성분이\n구멍에 쌓여 굳은 거예요.",
+      "image_queries": [
+        "shower head limescale close up",
+        "shower head nozzle close up",
+        "shower head"
+      ],
+      "image_id": 3857470
+    },
+    {
+      "heading": "구연산물에\n1시간 담그기",
+      "body": "물 500ml에 구연산 2스푼,\n봉지에 담가 두고 헹궈요.",
+      "image_queries": [
+        "bathroom faucet chrome sink",
+        "bathroom sink clean",
+        "bathroom interior white"
+      ],
+      "image_id": 268102
+    },
+    {
+      "heading": "락스와는\n절대 섞지 않기",
+      "body": "염소계 세제와 섞으면 위험,\n환기하고 장갑 끼세요.",
+      "image_queries": [
+        "rubber gloves cleaning bathroom",
+        "yellow rubber gloves",
+        "bathroom cleaning"
+      ],
+      "image_id": 415390
+    }
+  ],
+  "outro": {
+    "title": "샤워기 물때\n이렇게 없애요",
+    "points": [
+      "원인은 수돗물 속 석회 성분",
+      "구연산물에 1시간 담갔다 헹구기",
+      "락스와 섞지 말고 환기·장갑"
+    ]
+  },
+  "caption": "샤워기 물줄기가 사방으로 튀거나 약해졌다면? 🚿\n\n분사구에 하얗게 굳은 물때(석회) 때문이에요.\n물 500ml에 구연산 2스푼을 풀어 비닐봉지에 담고, 헤드를 1시간 정도 담갔다가 깨끗한 물로 충분히 헹궈 주세요.\n그래도 막힌 구멍은 칫솔로 살살 문질러 주면 돼요.\n봉지는 매달지 말고 세면대나 대야에 내려두는 게 안전해요.\n\n⚠️ 구연산은 락스 등 염소계 세제와 절대 섞지 마세요. 환기하고 고무장갑을 껴 주세요. 베이킹소다와 섞으면 효과가 사라지고, 재질에 따라 손상될 수 있으니 설명서도 확인하세요.\n\n여러분 집 샤워기 물줄기는 괜찮은가요? 댓글로 알려주세요 👇\n\n📌 저장해두고 주말 욕실 청소 때 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "청소꿀팁",
+    "욕실청소",
+    "화장실청소",
+    "샤워기청소",
+    "물때제거",
+    "구연산",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
