@@ -27,7 +27,7 @@ ACCENTS = {"life": "#4FA3FF", "money": "#3DDC84", "health": "#FFB547", "trend": 
            # 살림 분야 (STYLE.md 요일표)
            "kitchen": "#FF9F43", "bath": "#38BDF8", "laundry": "#A5B4FC", "storage": "#FACC15",
            "season": "#FF6B6B", "picks": "#F472B6"}
-DUR_COVER, DUR_SCENE, DUR_OUTRO, XFADE = 3.5, 4.5, 4.0, 0.5
+DUR_COVER, DUR_SCENE, DUR_OUTRO, XFADE = 1.2, 3.5, 3.0, 0.3
 
 
 def font(path, size):

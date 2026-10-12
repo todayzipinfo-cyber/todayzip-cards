@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-12",
+  "format": "reel",
+  "category": "주방",
+  "theme": "kitchen",
+  "music": "bright",
+  "cover": {
+    "kicker": "씻어도 나는 도마 냄새",
+    "title": "도마 냄새\n굵은소금이 답",
+    "image_queries": [
+      "wooden cutting board kitchen",
+      "cutting board knife",
+      "cutting board"
+    ],
+    "image_id": 3085024
+  },
+  "scenes": [
+    {
+      "heading": "칼자국 속\n물기가 원인",
+      "body": "칼자국에 낀 음식물과\n물기에 세균이 자라요.",
+      "image_queries": [
+        "cutting board scratches close up",
+        "used wooden cutting board",
+        "cutting board"
+      ],
+      "image_id": 3394195
+    },
+    {
+      "heading": "굵은소금으로\n문질러 씻기",
+      "body": "소금을 넉넉히 뿌려 문지르고\n미지근한 물로 헹궈요.",
+      "image_queries": [
+        "coarse salt kitchen",
+        "sea salt crystals bowl",
+        "salt"
+      ],
+      "image_id": 4316903
+    },
+    {
+      "heading": "세워서\n바싹 말리기",
+      "body": "통풍되는 곳에 세워 말려요.\n덜 마른 채 넣지 마세요.",
+      "image_queries": [
+        "cutting board drying rack kitchen",
+        "cutting boards standing kitchen",
+        "kitchen sink window"
+      ],
+      "image_id": 6215762
+    }
+  ],
+  "outro": {
+    "title": "도마 냄새\n이렇게 없애요",
+    "points": [
+      "냄새 원인은 칼자국 속 물기",
+      "굵은소금으로 문질러 씻기",
+      "세워서 바싹 말리기"
+    ]
+  },
+  "caption": "도마 씻었는데도 비린내, 김치 냄새 그대로인 분 계신가요? 🔪\n\n냄새의 원인은 칼자국 사이에 남은 음식물과 물기예요.\n굵은소금이 연마제처럼 칼자국 속까지 긁어내 줘요.\n햇볕 잘 드는 곳에 세워 두면 더 좋아요.\n칼자국이 너무 깊거나 갈라졌다면 바꿀 때가 된 거예요.\n\n여러분은 도마 냄새 어떻게 잡으세요? 댓글로 알려주세요 👇\n\n📌 저장해두고 오늘 설거지 때 해보기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "주방꿀팁",
+    "주방살림",
+    "도마",
+    "도마관리",
+    "도마냄새",
+    "굵은소금",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
