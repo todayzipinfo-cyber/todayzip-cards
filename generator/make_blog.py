@@ -24,8 +24,11 @@ DISCLOSURE = "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이�
 ROOT = Path(__file__).parent.parent
 
 
-def affiliate_enabled():
-    """블로그 제휴 링크 스위치 (BLOG.md). 인스타용 STYLE.md 스위치와 별개."""
+def affiliate_enabled(data=None):
+    """블로그 제휴 링크 스위치 (BLOG.md). 인스타용 STYLE.md 스위치와 별개.
+    글마다 blog.json 의 "affiliate": false 로 끌 수 있다 (없으면 켜짐)."""
+    if data is not None and data.get("affiliate") is False:
+        return False
     return "**AFFILIATE_BLOG_ENABLED: true**" in (ROOT / "BLOG.md").read_text(encoding="utf-8")
 
 
@@ -82,7 +85,7 @@ def esc(s):
 
 
 def body_html(data, photo_no):
-    aff = affiliate_enabled()
+    aff = affiliate_enabled(data)
     parts = []
     if aff and data.get("products"):
         parts.append(f'<p class="disc">{DISCLOSURE}</p>')
@@ -203,7 +206,7 @@ def build(path, skip_images=False):
     body = body_html(data, photo_no)
     chars = len(re.sub(r"<[^>]+>|\[사진[^\]]*\]", "", body))
     coupang = ""
-    if affiliate_enabled() and data.get("products") and not all(p.get("link") for p in data["products"]):
+    if affiliate_enabled(data) and data.get("products") and not all(p.get("link") for p in data["products"]):
         rows = "".join(
             f'<li><b>[쿠팡 링크 {i}] {html.escape(p["name"])}</b> · '
             f'<a href="{coupang_search(p.get("search") or p["name"])}" target="_blank" rel="noopener">쿠팡에서 찾기 ↗</a></li>'
