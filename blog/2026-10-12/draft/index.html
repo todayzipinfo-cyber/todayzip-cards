@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-10-12</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-10-12 · 핵심 키워드 <b>계절옷 보관</b> · 본문 약 2,492자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">계절옷 보관 방법, 리빙박스·압축팩·부직포 수납함 차이와 고르는 법</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+
+
+<div class="step"><h2>3. 사진 (5장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-10-12\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec4.jpg" alt=""><figcaption>사진 4</figcaption></figure><figure><img src="05_sec5.jpg" alt=""><figcaption>사진 5</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">계절옷보관,옷정리,옷장정리,리빙박스,압축팩,부직포수납함,패딩보관,수납꿀팁,살림템,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="계절옷보관" onclick="copyTag(this)">계절옷보관</button><button class="chip" data-tag="옷정리" onclick="copyTag(this)">옷정리</button><button class="chip" data-tag="옷장정리" onclick="copyTag(this)">옷장정리</button><button class="chip" data-tag="리빙박스" onclick="copyTag(this)">리빙박스</button><button class="chip" data-tag="압축팩" onclick="copyTag(this)">압축팩</button><button class="chip" data-tag="부직포수납함" onclick="copyTag(this)">부직포수납함</button><button class="chip" data-tag="패딩보관" onclick="copyTag(this)">패딩보관</button><button class="chip" data-tag="수납꿀팁" onclick="copyTag(this)">수납꿀팁</button><button class="chip" data-tag="살림템" onclick="copyTag(this)">살림템</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<p class="ph">[사진 1: 썸네일]</p>
+<p>아침저녁으로 쌀쌀해지면 옷장 정리를 미룰 수가 없죠. 여름옷을 넣고 니트와 패딩을 꺼내려는데, 옷장은 이미 꽉 차 있고 수납함은 뭘 사야 할지 막막해요.</p>
+<p>계절옷 보관은 어떤 옷을 어디에 넣느냐에 따라 결과가 달라져요. 오늘은 리빙박스, 압축팩, 부직포 수납함의 차이를 표로 비교하고, 옷 종류별로 맞는 수납함 고르는 법과 보관 전 체크리스트까지 정리해 드릴게요.</p>
+<h3>왜 수납함부터 따져야 할까?</h3>
+<p class="ph">[사진 2]</p>
+<p>옷을 몇 달 동안 넣어 두면 가장 큰 적은 습기와 눌림이에요. 공기가 안 통하는 곳에 습기가 갇히면 꿉꿉한 냄새나 얼룩이 생기기 쉽고, 오래 눌린 옷은 모양이 잘 돌아오지 않아요.</p>
+<p>그래서 계절옷 보관은 &#x27;얼마나 많이 넣느냐&#x27;보다 &#x27;이 옷에 공기와 공간이 필요한가&#x27;를 먼저 따져야 실패가 줄어들어요.</p>
+<h3>리빙박스·압축팩·부직포 수납함 한눈에 비교</h3>
+<p>세 가지 수납함의 특징을 표로 정리했어요. 한 가지로 통일하기보다 옷 종류에 따라 나눠 쓰는 게 좋아요.</p>
+<table><tr><th>구분</th><th>리빙박스</th><th>압축팩</th><th>부직포 수납함</th></tr><tr><td>소재</td><td>플라스틱(PP 등)</td><td>비닐 + 밸브</td><td>통기되는 부직포 천</td></tr><tr><td>장점</td><td>튼튼하고 쌓기 좋음, 먼지 차단</td><td>부피를 크게 줄임</td><td>가볍고 공기가 통함, 접어서 보관</td></tr><tr><td>단점</td><td>습기가 갇히기 쉬움</td><td>충전재·니트가 눌림</td><td>형태가 무너지기 쉬움, 먼지 유입</td></tr><tr><td>잘 맞는 옷</td><td>티셔츠·면바지 등 잘 마른 옷</td><td>충전재 없는 점퍼, 얇은 면 옷</td><td>니트, 패딩, 이불</td></tr><tr><td>보관 위치</td><td>베란다 수납장, 옷장 아래</td><td>침대 밑, 좁은 틈새</td><td>옷장 위 칸, 선반</td></tr></table>
+<h3>리빙박스: 잘 마른 면 옷에</h3>
+<p class="ph">[사진 3]</p>
+<p>리빙박스는 튼튼하고 여러 개를 쌓을 수 있어서 반팔 티셔츠, 면바지처럼 잘 구겨지지 않는 옷을 많이 넣기에 좋아요. 투명한 제품은 안에 든 옷이 보여 다시 꺼낼 때 편해요.</p>
+<p>다만 뚜껑을 닫으면 공기가 거의 통하지 않아요. 옷을 완전히 말린 뒤 넣고, 제습제를 함께 넣어 두면 습기 걱정을 줄일 수 있어요.</p>
+<h3>압축팩: 공간은 아끼지만 옷을 가려서</h3>
+<p class="ph">[사진 4]</p>
+<p>압축팩은 공기를 빼서 부피를 크게 줄여 줘요. 하지만 오래 압축하면 다운 충전재가 눌리고, 니트는 원래 모양으로 잘 돌아오지 않을 수 있어요. 가죽이나 털처럼 통풍이 필요한 소재도 밀봉하지 않는 게 좋아요.</p>
+<p>충전재가 없는 바람막이나 얇은 면 실내복, 여분 침구 커버처럼 눌려도 괜찮은 것 위주로 쓰세요.</p>
+<h3>부직포 수납함: 니트·패딩·이불에</h3>
+<p class="ph">[사진 5]</p>
+<p>부직포 수납함은 천처럼 공기가 통해서 니트, 패딩, 구스·오리털 이불처럼 숨 쉴 공간이 필요한 옷에 잘 맞아요. 꽉 채우기보다 살짝 여유 있게 넣어야 눌림이 덜해요.</p>
+<p>먼지가 들어올 수 있으니 뚜껑이나 지퍼가 있는 제품을 고르고, 바닥보다는 선반이나 옷장 위 칸에 두는 게 좋아요.</p>
+<h3>계절옷 보관 전 체크리스트</h3>
+<p>어떤 수납함을 쓰든 넣기 전 준비가 반이에요. 아래 항목만 지켜도 내년에 꺼낼 때 훨씬 깨끗해요.</p>
+<ul><li>한 번이라도 입은 옷은 세탁해서 땀과 피지 얼룩 없애기</li><li>세탁 후 속까지 완전히 말린 다음 넣기</li><li>케어라벨이 드라이클리닝이면 라벨대로 관리하기</li><li>수납함마다 옷 종류를 적어 두기</li><li>꺼낸 패딩·이불은 하루 정도 펼쳐 두고 흔들어 부풀리기</li></ul>
+<h3>이런 제품을 고르세요</h3><ul>
+<li><b>리빙박스</b>: 쌓아 둘 곳의 높이를 재고, 안이 보이는 투명 제품이면 찾기 편해요 <a href="https://link.coupang.com/a/hMFpdqO2w011">👉 쿠팡에서 보기</a></li>
+<li><b>부직포 수납함</b>: 니트·패딩용. 뚜껑이나 지퍼가 있어 먼지를 막아 주는 것 <a href="https://link.coupang.com/a/hMFpdt1xIa">👉 쿠팡에서 보기</a></li>
+<li><b>의류 압축팩</b>: 충전재 없는 옷 전용. 밸브가 튼튼하고 여러 크기가 섞인 구성 <a href="https://link.coupang.com/a/hMFpdwCqn6">👉 쿠팡에서 보기</a></li>
+<li><b>옷장 제습제</b>: 리빙박스와 옷장 안 습기 관리용. 물이 고이는 형태는 옷에 닿지 않게 <a href="https://link.coupang.com/a/hMFpdAbNO8">👉 쿠팡에서 보기</a></li>
+</ul>
+<h3>꼭 알아두세요</h3><ul><li>통에 물이 고이는 제습제는 쓰러지거나 새면 옷과 바닥을 상하게 할 수 있어요. 옷에 직접 닿지 않게 세워 두고, 물이 차면 바로 교체하세요.</li><li>방충제는 제품 표시대로 한 종류만 쓰고, 종류가 다른 방충제를 한 수납함에 함께 넣지 마세요. 아이와 반려동물 손이 닿지 않는 곳에 두세요.</li><li>리빙박스를 높이 쌓으면 넘어질 수 있어요. 무거운 박스는 아래, 가벼운 박스는 위에 두고 키보다 높이 쌓지 마세요.</li><li>압축팩은 아이가 머리에 쓰지 않도록 손 닿지 않는 곳에 보관하세요.</li></ul>
+<h3>자주 묻는 질문</h3>
+<p><b>Q. 패딩은 압축팩에 넣으면 안 되나요?</b><br>A. 오래 압축하면 충전재가 눌려 복원이 잘 안 될 수 있어요. 옷걸이에 걸거나 부직포 수납함에 여유 있게 넣는 쪽이 안전해요. 꺼낸 뒤에는 하루 정도 펼쳐 두고 흔들어 주세요.</p>
+<p><b>Q. 리빙박스에 니트를 넣어도 되나요?</b><br>A. 잘 말린 니트라면 넣을 수 있지만 꽉 채우면 눌림이 생겨요. 여유 있게 넣고 제습제를 함께 두세요. 가능하면 통기되는 부직포 수납함이 더 잘 맞아요.</p>
+<p>정리하면, 잘 마른 면 옷은 리빙박스, 눌려도 괜찮은 얇은 옷은 압축팩, 니트·패딩·이불은 부직포 수납함이에요. 어떤 계절옷 보관 방법이든 세탁과 완전 건조가 먼저라는 것만 기억하세요.</p>
+<p>여러분은 계절옷을 어떻게 보관하세요? 옷장 정리 꿀팁이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p>
+<p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
