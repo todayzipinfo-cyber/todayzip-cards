@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-14",
+  "format": "reel",
+  "category": "세탁",
+  "theme": "laundry",
+  "music": "calm",
+  "cover": {
+    "kicker": "빨았더니 작아진 니트",
+    "title": "줄어든 니트\n린스로 늘려요",
+    "image_queries": [
+      "knit sweater folded",
+      "wool sweater",
+      "sweater"
+    ],
+    "image_id": 7482269,
+    "dur": 1.6
+  },
+  "scenes": [
+    {
+      "heading": "혹시 니트가\n작아졌나요?",
+      "body": "빨았더니 소매가 짧고\n품이 꽉 끼게 됐다면!",
+      "image_queries": [
+        "knitted sweater sleeves",
+        "wool sweater hanging",
+        "knitwear"
+      ],
+      "image_id": 4372724
+    },
+    {
+      "heading": "범인은\n열과 마찰",
+      "body": "털 섬유가 뜨거운 물과\n비빔에 엉켜 줄어요.",
+      "image_queries": [
+        "wool knit texture close up",
+        "knitted fabric texture",
+        "wool yarn"
+      ],
+      "image_id": 4726505
+    },
+    {
+      "heading": "린스물\n만들기",
+      "body": "미지근한 물에\n린스 한두 뚜껑 풀어요.",
+      "image_queries": [
+        "soaking clothes in water basin",
+        "laundry basin water",
+        "bucket water laundry"
+      ],
+      "image_id": 6267690
+    },
+    {
+      "heading": "20~30분\n담가 두기",
+      "body": "담근 채 소매와 밑단을\n조금씩 살살 늘려요.",
+      "image_queries": [
+        "sweater in water",
+        "hand wash clothes basin",
+        "washing laundry by hand"
+      ],
+      "image_id": 2043054
+    },
+    {
+      "heading": "비틀지 말고\n눌러서 물기",
+      "body": "마른 수건으로 감싸\n꾹꾹 눌러 짜 주세요.",
+      "image_queries": [
+        "folded knit sweater",
+        "knitted sweater folded stack",
+        "sweater folded"
+      ],
+      "image_id": 5712341
+    },
+    {
+      "heading": "눕혀서\n말리세요",
+      "body": "옷걸이·건조기는 금지,\n모양 잡아 평평하게!",
+      "image_queries": [
+        "sweater flat lay drying",
+        "knit sweater flat lay",
+        "sweater on bed"
+      ],
+      "image_id": 8233356
+    }
+  ],
+  "outro": {
+    "title": "줄어든 니트\n이렇게 살려요",
+    "points": [
+      "원인은 열과 마찰",
+      "미지근한 물 + 린스 한두 뚜껑",
+      "20~30분 담그고 살살 늘리기",
+      "비틀지 말고 눕혀서 말리기"
+    ],
+    "dur": 3.8
+  },
+  "caption": "아끼던 니트, 한 번 빨았더니 작아졌나요? 🧶\n\n니트의 털 섬유는 뜨거운 물과 마찰을 만나면 서로 엉키며 줄어들어요.\n미지근한 물에 헤어 린스(또는 섬유유연제)를 한두 뚜껑 풀고 20~30분 담가 두세요. 담근 채로 소매와 밑단을 조금씩 살살 늘려 주면 돼요.\n물기는 비틀지 말고 마른 수건으로 감싸 꾹꾹 눌러 빼고, 모양을 잡아 평평하게 눕혀서 말려 주세요.\n\n⚠️ 너무 뜨거운 물은 오히려 손상을 줄 수 있어요. 시도 전 케어라벨을 꼭 확인하고, 캐시미어·앙고라처럼 비싼 소재나 심하게 뭉친 니트는 세탁소에 맡기는 게 안전해요. 린스를 많이 넣으면 잔여물이 남을 수 있어요.\n\n여러분은 니트 줄어든 경험 있나요? 댓글로 알려주세요 👇\n\n📌 저장해두고 니트 꺼낼 때 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "세탁꿀팁",
+    "니트세탁",
+    "줄어든니트",
+    "니트복원",
+    "울세탁",
+    "가을옷",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
