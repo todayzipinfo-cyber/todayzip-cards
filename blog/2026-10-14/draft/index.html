@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-10-14</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-10-14 · 핵심 키워드 <b>외풍 차단</b> · 본문 약 2,413자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">외풍 차단 방법, 단열 뽁뽁이·방풍비닐·문풍지 차이와 고르는 법</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+
+
+<div class="step"><h2>3. 사진 (5장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-10-14\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec4.jpg" alt=""><figcaption>사진 4</figcaption></figure><figure><img src="05_sec5.jpg" alt=""><figcaption>사진 5</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">외풍차단,단열뽁뽁이,방풍비닐,문풍지,창문단열,겨울준비,난방비절약,결로방지,살림템,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="외풍차단" onclick="copyTag(this)">외풍차단</button><button class="chip" data-tag="단열뽁뽁이" onclick="copyTag(this)">단열뽁뽁이</button><button class="chip" data-tag="방풍비닐" onclick="copyTag(this)">방풍비닐</button><button class="chip" data-tag="문풍지" onclick="copyTag(this)">문풍지</button><button class="chip" data-tag="창문단열" onclick="copyTag(this)">창문단열</button><button class="chip" data-tag="겨울준비" onclick="copyTag(this)">겨울준비</button><button class="chip" data-tag="난방비절약" onclick="copyTag(this)">난방비절약</button><button class="chip" data-tag="결로방지" onclick="copyTag(this)">결로방지</button><button class="chip" data-tag="살림템" onclick="copyTag(this)">살림템</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="ph">[사진 1: 썸네일]</p>
+<p>아침저녁 공기가 차가워지면서 창가에 손을 대면 서늘한 바람이 느껴지기 시작했죠. 난방을 틀어도 발이 시리다면 집 어딘가로 바람이 새고 있을 가능성이 커요.</p>
+<p>외풍 차단은 무엇을 붙이느냐보다 어디에 붙이느냐가 먼저예요. 오늘은 단열 뽁뽁이, 방풍비닐, 문풍지의 차이를 표로 비교하고, 우리 집에 맞는 걸 고르는 법과 붙이는 순서까지 정리해 드릴게요.</p>
+<h3>왜 바람 새는 곳부터 찾아야 할까?</h3>
+<p class="ph">[사진 2]</p>
+<p>찬 바람은 대부분 유리보다 틈으로 들어와요. 창틀과 창문 사이, 창문이 겹치는 부분, 현관문 아래가 대표적이에요. 틈을 그대로 두고 유리에만 무언가를 붙이면 바람은 계속 새어 들어와요.</p>
+<p>창문을 닫은 상태에서 틈 주변에 손등을 천천히 대 보세요. 서늘한 바람이 느껴지는 곳을 표시해 두면 어떤 제품이 얼마나 필요한지 정하기 쉬워져요.</p>
+<h3>뽁뽁이·방풍비닐·문풍지 한눈에 비교</h3>
+<p>세 가지는 막는 위치가 달라요. 하나만 고르기보다 틈은 문풍지, 유리 면은 뽁뽁이나 방풍비닐처럼 나눠 쓰는 경우가 많아요.</p>
+<table><tr><th>구분</th><th>단열 뽁뽁이</th><th>방풍비닐</th><th>문풍지</th></tr><tr><td>막는 곳</td><td>유리 면</td><td>창문 전체(창틀 포함)</td><td>문·창문 틈새</td></tr><tr><td>붙이는 법</td><td>물 뿌려 붙이기 또는 접착식</td><td>창틀 둘레에 테이프로 고정</td><td>틈에 맞춰 잘라 붙이기</td></tr><tr><td>장점</td><td>간편하고 떼기 쉬움</td><td>틈새 바람까지 함께 막음</td><td>간단하고 부담 없음</td></tr><tr><td>단점</td><td>채광·시야가 줄어듦</td><td>설치 후 창문을 열기 어려움</td><td>유리 면 냉기는 못 막음</td></tr><tr><td>잘 맞는 곳</td><td>잘 안 여는 창, 베란다 창</td><td>안 쓰는 방 창문, 외풍 심한 창</td><td>모든 문과 창문의 틈</td></tr></table>
+<h3>단열 뽁뽁이: 유리 면 냉기를 줄일 때</h3>
+<p class="ph">[사진 3]</p>
+<p>단열 뽁뽁이는 공기층이 유리의 찬 기운을 덜 전해 주는 원리예요. 그래서 택배 포장용보다 공기층이 두껍게 만들어진 단열용 제품을 고르는 게 좋아요. 물만 뿌려 붙이는 방식이라 전월세 집에서도 부담이 적어요.</p>
+<p>다만 햇빛과 바깥 풍경이 함께 가려져요. 해가 잘 드는 창은 낮에 햇볕으로 데워지는 효과가 줄 수 있으니, 잘 열지 않는 창이나 베란다 창 위주로 쓰세요. 결로가 심한 창에 물 부착식을 쓰면 습기가 오래 남을 수 있으니 수시로 닦아 주세요.</p>
+<h3>방풍비닐: 외풍이 심한 창을 통째로</h3>
+<p class="ph">[사진 4]</p>
+<p>방풍비닐은 창틀 둘레에 테이프로 고정해 창문 전체를 한 겹 더 감싸요. 틈새 바람과 유리 냉기를 함께 줄일 수 있어서 오래된 창이나 외풍이 유난히 심한 방에 잘 맞아요.</p>
+<p>대신 한 번 붙이면 그 창으로는 환기하기 어려워요. 바람이 잘 막힌 만큼 습기가 갇혀 결로나 곰팡이가 생길 수 있으니, 다른 창이나 문으로 하루 몇 번씩 꼭 환기하세요.</p>
+<h3>문풍지: 틈새를 막는 기본템</h3>
+<p class="ph">[사진 5]</p>
+<p>문풍지는 문과 창문의 틈을 메우는 용도예요. 예전 스펀지형은 떼고 나면 자국이 남기 쉬웠는데, 요즘은 투명한 우레탄이나 실리콘 소재도 많아 눈에 덜 띄어요. 현관문 아래처럼 틈이 넓은 곳은 문 하단에 끼우는 형태가 편해요.</p>
+<p>틈이 아주 넓어 문풍지로 메워지지 않으면 실리콘 보수가 필요할 수 있어요. 이 경우 전월세라면 집주인과 먼저 상의하세요.</p>
+<h3>외풍 차단 붙이기 전 체크리스트</h3>
+<p>외풍 차단은 순서만 지켜도 효과가 달라져요. 붙이기 전에 아래 항목을 확인하세요.</p>
+<ul><li>바람 새는 곳을 먼저 찾아 표시하기</li><li>틈새(문풍지) → 유리 면(뽁뽁이·방풍비닐) → 커튼·러그 순서로 막기</li><li>붙일 자리의 먼지와 물기를 깨끗이 닦고 완전히 말리기</li><li>틈 너비와 창 크기를 재고 넉넉하게 사기</li><li>환기할 창 하나는 막지 않고 남겨 두기</li></ul>
+<h3>이런 제품을 고르세요</h3><ul>
+<li><b>단열용 뽁뽁이</b>: 포장용이 아닌 단열용으로, 공기층이 두껍고 물로 붙이는 형태</li>
+<li><b>투명 문풍지</b>: 틈 너비에 맞는 두께, 떼어도 자국이 덜 남는 소재</li>
+<li><b>문 하단 바람막이</b>: 현관문·방문 아래 틈용. 문 두께에 맞는 끼우는 형태</li>
+<li><b>창문 방풍비닐</b>: 창틀 크기보다 여유 있는 크기, 테이프가 함께 든 구성</li>
+</ul>
+<h3>꼭 알아두세요</h3><ul><li>방풍비닐이나 뽁뽁이로 창을 막으면 습기가 갇히기 쉬워요. 하루 몇 번 짧게 환기하고, 결로가 생기면 바로 닦아 곰팡이를 막으세요.</li><li>가스레인지, 보일러, 가스난로가 있는 공간은 환기구나 급기구를 절대 막지 마세요. 일산화탄소가 쌓일 수 있어요.</li><li>높은 창에 붙일 때는 의자 대신 안정된 발판을 쓰고, 혼자 무리하게 몸을 내밀지 마세요.</li><li>포장 비닐과 자르고 남은 방풍비닐은 아이가 가지고 놀지 않도록 바로 정리하세요.</li></ul>
+<h3>자주 묻는 질문</h3>
+<p><b>Q. 뽁뽁이를 붙이면 결로가 없어지나요?</b><br>A. 유리 표면이 덜 차가워져 줄어들 수는 있지만, 단열만으로는 결로가 해결되지 않아요. 실내 습도를 관리하고 환기를 함께 해야 해요.</p>
+<p><b>Q. 봄이 되면 떼야 하나요?</b><br>A. 햇빛이 강해지는 계절에는 떼는 걸 권해요. 오래 두면 자국이 남거나 지저분해지기 쉽고, 창을 시원하게 열기도 어려워요.</p>
+<p>정리하면, 틈새 바람은 문풍지, 잘 안 여는 창은 단열 뽁뽁이, 외풍이 심한 창은 방풍비닐이에요. 어떤 외풍 차단 방법이든 바람 새는 곳을 먼저 찾고, 환기할 창 하나는 남겨 두는 것만 기억하세요.</p>
+<p>여러분 집은 어디서 바람이 제일 많이 새나요? 효과 본 외풍 차단 팁이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
