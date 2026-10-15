@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-15",
+  "format": "reel",
+  "category": "수납·정리",
+  "theme": "storage",
+  "music": "warm",
+  "cover": {
+    "kicker": "이불 넣기 전 필독",
+    "title": "여름 이불\n속까지 말려요",
+    "image_queries": [
+      "linen closet",
+      "folded blankets",
+      "bedding"
+    ],
+    "image_id": 2407875,
+    "dur": 1.6
+  },
+  "scenes": [
+    {
+      "heading": "꺼냈더니\n퀴퀴한 냄새?",
+      "body": "작년에 넣은 이불에서\n냄새와 얼룩이 났다면",
+      "image_queries": [
+        "duvet",
+        "bed linen",
+        "bedding"
+      ],
+      "image_id": 1358907
+    },
+    {
+      "heading": "범인은\n남은 땀과 습기",
+      "body": "땀·피지와 덜 마른 습기가\n곰팡이를 키워요.",
+      "image_queries": [
+        "duvet",
+        "bed linen",
+        "white sheets"
+      ],
+      "image_id": 820149
+    },
+    {
+      "heading": "헹굼 한 번\n더 하기",
+      "body": "세탁 표시를 확인하고\n헹굼을 넉넉히 해요.",
+      "image_queries": [
+        "washing machine bedding",
+        "washing machine laundry",
+        "washing machine"
+      ],
+      "image_id": 5089939
+    },
+    {
+      "heading": "그늘에서\n속까지 말리기",
+      "body": "누빔·가장자리까지\n뒤집어 바짝 말려요.",
+      "image_queries": [
+        "sheets drying",
+        "laundry drying",
+        "clothesline"
+      ],
+      "image_id": 3395699
+    },
+    {
+      "heading": "부직포 가방에\n헐렁하게",
+      "body": "비닐·밀폐 박스 대신\n통기되는 가방에 넣어요.",
+      "image_queries": [
+        "folded blankets",
+        "blanket stack",
+        "blankets"
+      ],
+      "image_id": 72155
+    },
+    {
+      "heading": "오리털은\n압축 금지",
+      "body": "눌리면 복원이 어려워요.\n제습제는 함께 넣어요.",
+      "image_queries": [
+        "duvet",
+        "white comforter",
+        "bedding"
+      ],
+      "image_id": 3667768
+    }
+  ],
+  "outro": {
+    "title": "여름 이불\n이렇게 넣어요",
+    "points": [
+      "원인은 남은 땀과 습기",
+      "헹굼 넉넉히, 속까지 건조",
+      "부직포 가방 + 제습제",
+      "오리털·구스는 압축 금지"
+    ],
+    "dur": 3.8
+  },
+  "products": [
+    {
+      "name": "부직포 이불 보관백",
+      "why": "통기가 돼서 습기가 갇히지 않아요"
+    },
+    {
+      "name": "옷장용 제습제",
+      "why": "이불장 속 습기를 줄여 곰팡이·냄새 예방"
+    }
+  ],
+  "caption": "작년 여름 이불 꺼냈더니 퀴퀴한 냄새, 누런 얼룩 있었나요? 🛏️\n\n남아 있던 땀·피지와 덜 마른 습기가 원인일 수 있어요.\n세탁 표시를 확인하고 헹굼을 넉넉히 한 뒤, 그늘에서 누빔·가장자리까지 뒤집어 속까지 바짝 말려 주세요.\n보관은 비닐이나 밀폐 박스 대신 통기가 되는 부직포 보관백에 헐렁하게 넣고, 이불장에 제습제를 함께 두면 좋아요. 위에 무거운 물건은 올리지 마세요.\n\n⚠️ 오리털·구스 이불은 오래 압축하면 털이 눌려 복원이 어려울 수 있어요. 제습제는 물이 차면 바꾸고, 쓰러지지 않게 세워 두세요.\n\n여러분은 여름 이불 어떻게 보관하세요? 댓글로 알려주세요 👇\n\n📌 저장해두고 이불 정리하는 날 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "정리수납",
+    "수납정리",
+    "이불정리",
+    "이불보관",
+    "침구정리",
+    "환절기정리",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
