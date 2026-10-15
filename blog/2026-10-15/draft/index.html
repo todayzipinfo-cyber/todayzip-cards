@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-10-15</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-10-15 · 핵심 키워드 <b>겨울 이불 고르는 법</b> · 본문 약 2,430자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">겨울 이불 고르는 법, 구스·극세사·마이크로화이바 차이와 체크리스트</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+
+
+<div class="step"><h2>3. 사진 (5장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-10-15\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec4.jpg" alt=""><figcaption>사진 4</figcaption></figure><figure><img src="05_sec5.jpg" alt=""><figcaption>사진 5</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">겨울이불,겨울이불고르는법,구스이불,극세사이불,마이크로화이바이불,이불추천기준,이불세탁,겨울준비,살림템,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="겨울이불" onclick="copyTag(this)">겨울이불</button><button class="chip" data-tag="겨울이불고르는법" onclick="copyTag(this)">겨울이불고르는법</button><button class="chip" data-tag="구스이불" onclick="copyTag(this)">구스이불</button><button class="chip" data-tag="극세사이불" onclick="copyTag(this)">극세사이불</button><button class="chip" data-tag="마이크로화이바이불" onclick="copyTag(this)">마이크로화이바이불</button><button class="chip" data-tag="이불추천기준" onclick="copyTag(this)">이불추천기준</button><button class="chip" data-tag="이불세탁" onclick="copyTag(this)">이불세탁</button><button class="chip" data-tag="겨울준비" onclick="copyTag(this)">겨울준비</button><button class="chip" data-tag="살림템" onclick="copyTag(this)">살림템</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="ph">[사진 1: 썸네일]</p>
+<p>여름 이불을 정리하고 나면 바로 고민이 시작되죠. 작년 이불은 좀 얇은 것 같고, 새로 사자니 구스, 극세사, 마이크로화이바까지 이름도 가격도 제각각이에요.</p>
+<p>겨울 이불 고르는 법은 의외로 단순해요. 소재마다 따뜻해지는 방식과 관리법이 다르니, 우리 집 세탁 여건과 추위 정도에 맞추면 돼요. 오늘은 소재별 차이를 표로 비교하고, 살 때 태그에서 확인할 것들을 체크리스트로 정리해 드릴게요.</p>
+<h3>왜 소재부터 따져야 할까?</h3>
+<p class="ph">[사진 2]</p>
+<p>이불이 따뜻한 이유는 소재마다 달라요. 구스는 솜털이 부풀며 공기를 많이 머금어 따뜻하고, 극세사는 아주 가는 섬유가 촘촘하게 몸에 닿아 포근함을 줘요. 마이크로화이바 솜은 합성 충전재가 공기층을 만드는 방식이에요.</p>
+<p>그래서 같은 겨울 이불이라도 무게, 세탁 방법, 촉감이 크게 달라요. 가벼운 걸 원하는지, 집에서 자주 빨고 싶은지를 먼저 정하면 선택지가 확 줄어들어요.</p>
+<h3>구스·극세사·마이크로화이바 한눈에 비교</h3>
+<p>아래 표는 일반적인 특징이에요. 같은 소재라도 충전량과 원단에 따라 차이가 있으니 기준으로만 참고하세요.</p>
+<table><tr><th>구분</th><th>구스(거위털)</th><th>극세사</th><th>마이크로화이바 솜</th></tr><tr><td>따뜻한 방식</td><td>솜털이 부풀어 공기층 형성</td><td>촘촘한 섬유가 몸에 밀착</td><td>합성 솜이 공기층 형성</td></tr><tr><td>무게감</td><td>가벼운 편</td><td>무거운 편</td><td>중간</td></tr><tr><td>세탁</td><td>라벨 확인, 손이 많이 감</td><td>물세탁 쉬움</td><td>물세탁 쉬움</td></tr><tr><td>장점</td><td>가볍고 보온성 좋음</td><td>포근한 촉감, 관리 편함</td><td>가격 부담 적고 관리 편함</td></tr><tr><td>단점</td><td>가격이 높고 털 빠짐 가능</td><td>정전기, 보풀 생기기 쉬움</td><td>오래 쓰면 솜이 꺼지기 쉬움</td></tr><tr><td>잘 맞는 집</td><td>추위 많이 타고 가벼운 이불 선호</td><td>포근한 촉감 선호, 자주 빨래</td><td>아이 방, 자취방, 자주 세탁</td></tr></table>
+<h3>구스 이불: 태그에서 꼭 볼 세 가지</h3>
+<p class="ph">[사진 3]</p>
+<p>첫째는 솜털 비율이에요. 태그의 90:10, 80:20 같은 숫자는 솜털과 깃털의 비율로, 솜털이 많을수록 가볍고 부드러운 편이에요. 둘째는 필파워로, 눌렀다 놓았을 때 다시 부풀어 오르는 힘이에요. 숫자가 높을수록 공기를 많이 품는다고 보면 돼요.</p>
+<p>셋째가 가장 중요한 충전량(g)이에요. 솜털 비율과 필파워가 좋아도 충전량이 적으면 덜 따뜻해요. 같은 크기라면 충전량을 나란히 비교하세요. 원산지와 충전재 가공 국가가 따로 적혀 있는 경우도 있으니 구분해서 보세요.</p>
+<h3>극세사·마이크로화이바: 관리가 편한 선택</h3>
+<p class="ph">[사진 4]</p>
+<p>극세사는 아주 가는 섬유로 짠 원단이라 손에 닿는 느낌이 포근하고, 집 세탁기로 빨기 쉬워요. 대신 정전기가 잘 생기고, 오래 쓰면 보풀이 올라올 수 있어요. 무게감이 있는 편이라 묵직한 이불을 좋아하는 분께 잘 맞아요.</p>
+<p>마이크로화이바 솜 이불은 겉감 안에 합성 솜을 넣은 형태예요. 가격 부담이 적고 물세탁이 쉬워 아이 방이나 자취방에 많이 써요. 다만 오래 쓰면 솜이 눌려 꺼질 수 있으니 누빔(퀼팅)이 촘촘한 제품이 솜 쏠림이 덜해요.</p>
+<h3>겨울 이불 사기 전 체크리스트</h3>
+<p class="ph">[사진 5]</p>
+<p>겨울 이불은 크고 무거워서 사고 나서 바꾸기가 번거로워요. 장바구니에 담기 전에 아래 항목을 확인하세요.</p>
+<ul><li>침대 크기보다 가로세로가 넉넉한지 (싱글·퀸 규격 확인)</li><li>구스라면 솜털 비율, 필파워, 충전량(g)이 모두 표시돼 있는지</li><li>집 세탁기로 빨 수 있는 크기와 무게인지, 세탁 라벨은 어떤지</li><li>누빔(퀼팅)이 촘촘해 충전재가 한쪽으로 쏠리지 않는지</li><li>커버를 따로 씌울지, 커버 일체형인지</li></ul>
+<h3>이런 제품을 고르세요</h3><ul>
+<li><b>구스 이불</b>: 솜털 비율·필파워·충전량(g)이 모두 표시된 제품, 입체 봉제로 털 쏠림이 적은 구조</li>
+<li><b>극세사 이불</b>: 물세탁 가능 표시, 보풀이 덜 생기는 촘촘한 원단</li>
+<li><b>마이크로화이바 솜 이불</b>: 누빔이 촘촘하고 집 세탁기에 들어가는 크기</li>
+<li><b>이불 커버</b>: 이불 크기에 맞고 지퍼나 끈으로 고정되는 형태</li>
+</ul>
+<h3>꼭 알아두세요</h3><ul><li>전기요나 전기매트 위에 두꺼운 이불을 접어 올려 두면 열이 갇혀 과열될 수 있어요. 사용 설명서를 지키고 외출할 때는 전원을 꺼 주세요.</li><li>영아는 두껍고 무거운 이불을 덮으면 얼굴이 덮일 수 있어요. 아기 이불은 가볍고 얇은 것으로 따로 준비하세요.</li><li>구스 이불은 드라이클리닝하면 털의 유분이 빠져 복원력이 떨어질 수 있다는 설명이 많아요. 세탁 라벨을 먼저 확인하세요.</li><li>다운 이불을 압축팩에 오래 넣어 두면 털이 눌려 복원력이 떨어질 수 있어요. 완전히 말린 뒤 통기되는 부직포 보관함에 두세요.</li></ul>
+<h3>자주 묻는 질문</h3>
+<p><b>Q. 솜털 비율이 높으면 무조건 더 따뜻한가요?</b><br>A. 아니에요. 보온은 충전량의 영향이 커요. 솜털 비율, 필파워, 충전량을 함께 보고 같은 크기끼리 비교하세요.</p>
+<p><b>Q. 극세사 정전기는 어떻게 줄이나요?</b><br>A. 세탁할 때 섬유유연제를 적당히 쓰고, 실내가 건조하면 습도를 조금 올려 주면 정전기가 덜 생겨요.</p>
+<p>정리하면, 가볍고 따뜻한 걸 원하면 구스, 포근한 촉감과 쉬운 세탁이 우선이면 극세사, 부담 없이 자주 빨고 싶다면 마이크로화이바 솜이에요. 어떤 겨울 이불이든 태그의 충전량과 세탁 라벨부터 확인하는 게 겨울 이불 고르는 법의 핵심이에요.</p>
+<p>여러분은 어떤 이불을 덮고 계신가요? 겨울 이불 고를 때 꼭 보는 기준이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
