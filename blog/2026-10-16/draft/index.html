@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-10-16</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-10-16 · 핵심 키워드 <b>전기히터 고르는 법</b> · 본문 약 2,448자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">전기히터 고르는 법, 세라믹·카본·오일라디에이터 차이와 체크리스트</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+
+
+<div class="step"><h2>3. 사진 (5장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-10-16\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec4.jpg" alt=""><figcaption>사진 4</figcaption></figure><figure><img src="05_sec5.jpg" alt=""><figcaption>사진 5</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">전기히터,전기히터고르는법,세라믹히터,카본히터,오일라디에이터,온풍기,난방비절약,겨울준비,살림템,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="전기히터" onclick="copyTag(this)">전기히터</button><button class="chip" data-tag="전기히터고르는법" onclick="copyTag(this)">전기히터고르는법</button><button class="chip" data-tag="세라믹히터" onclick="copyTag(this)">세라믹히터</button><button class="chip" data-tag="카본히터" onclick="copyTag(this)">카본히터</button><button class="chip" data-tag="오일라디에이터" onclick="copyTag(this)">오일라디에이터</button><button class="chip" data-tag="온풍기" onclick="copyTag(this)">온풍기</button><button class="chip" data-tag="난방비절약" onclick="copyTag(this)">난방비절약</button><button class="chip" data-tag="겨울준비" onclick="copyTag(this)">겨울준비</button><button class="chip" data-tag="살림템" onclick="copyTag(this)">살림템</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<p class="ph">[사진 1: 썸네일]</p>
+<p>아침저녁으로 손발이 시려지면 보일러를 틀기엔 이르고, 방 하나만 잠깐 데울 히터가 생각나죠. 그런데 막상 찾아보면 세라믹, 카본, 오일라디에이터까지 종류가 많아 뭐가 다른지 헷갈려요.</p>
+<p>전기히터 고르는 법의 핵심은 &#x27;어떤 공간을, 얼마나 오래 데울지&#x27;예요. 오늘은 방식별 차이를 표로 비교하고, 전기요금 보는 법과 체크리스트, 안전 수칙까지 정리해 드릴게요.</p>
+<h3>왜 방식부터 따져야 할까?</h3>
+<p class="ph">[사진 2]</p>
+<p>전기히터는 전기를 열로 바꾼다는 점은 같지만, 그 열을 전하는 방식이 달라요. 바람으로 공기를 데우는 온풍형, 빛(적외선)으로 앞에 있는 사람과 물건을 직접 데우는 복사형, 본체가 천천히 달궈져 열을 내는 축열형으로 나눌 수 있어요.</p>
+<p>그래서 같은 방이라도 체감이 달라요. 출근 준비 30분처럼 짧게 쓰는지, 몇 시간씩 켜 두는지를 먼저 정하면 선택이 쉬워져요.</p>
+<h3>세라믹·카본·오일라디에이터 한눈에 비교</h3>
+<p>아래는 일반적인 특징이에요. 같은 방식이라도 출력(W)과 크기에 따라 차이가 있으니 기준으로만 참고하세요.</p>
+<table><tr><th>구분</th><th>세라믹(온풍형)</th><th>카본(복사형)</th><th>오일라디에이터(축열형)</th></tr><tr><td>데우는 방식</td><td>세라믹 발열체 + 팬 바람</td><td>적외선으로 앞쪽을 직접</td><td>속의 오일을 데워 본체 전체 발열</td></tr><tr><td>따뜻해지는 속도</td><td>빠름</td><td>켜자마자 바로</td><td>느림(본체가 데워질 때까지)</td></tr><tr><td>열 유지</td><td>끄면 금방 식음</td><td>끄면 금방 식음</td><td>끈 뒤에도 한동안 따뜻함</td></tr><tr><td>소음</td><td>팬 소리 있음</td><td>거의 없음</td><td>거의 없음</td></tr><tr><td>아쉬운 점</td><td>실내가 건조해지기 쉬움</td><td>앞쪽만 따뜻, 눈부심</td><td>무겁고 처음 데우는 데 시간</td></tr><tr><td>잘 맞는 곳</td><td>욕실 앞, 짧은 사용</td><td>책상 밑, 주방 등 한 자리</td><td>침실, 오래 켜 두는 방</td></tr></table>
+<h3>전기요금은 &#x27;방식&#x27;보다 &#x27;와트×시간&#x27;</h3>
+<p class="ph">[사진 3]</p>
+<p>전기히터는 들어간 전기가 거의 그대로 열이 되는 기기라, 같은 와트(W)를 같은 시간 켜면 방식이 달라도 쓰는 전기량은 같아요. 1,000W 히터를 1시간 켜면 1kWh, 2,000W면 2kWh예요. &#x27;전기 덜 먹는 히터&#x27;라는 말보다 출력과 사용 시간을 보는 게 정확해요.</p>
+<p>가정용 전기요금은 많이 쓸수록 단가가 올라가는 누진제라, 히터를 오래 켜면 다른 가전까지 높은 단가 구간으로 넘어갈 수 있어요. 출력 단계 조절과 온도 조절 기능이 있으면 필요한 만큼만 켜기 쉬워요.</p>
+<h3>전기히터 사기 전 체크리스트</h3>
+<p class="ph">[사진 4]</p>
+<p>전기히터는 화재와 바로 연결되는 가전이라 성능보다 안전 기능을 먼저 보세요. 장바구니에 담기 전에 아래 항목을 확인하세요.</p>
+<ul><li>KC 안전인증 표시가 있는지</li><li>넘어지면 전원이 꺼지는 전도 차단 기능이 있는지</li><li>과열되면 스스로 꺼지는 과열 방지 기능이 있는지</li><li>출력을 단계별로 낮출 수 있는지, 온도 조절·타이머가 있는지</li><li>공간 크기에 맞는 출력(W)인지, 오일라디에이터는 무게와 바퀴 유무</li></ul>
+<h3>놓는 자리와 쓰는 습관</h3>
+<p class="ph">[사진 5]</p>
+<p>전기히터는 멀티탭 말고 벽 콘센트에 단독으로 꽂는 게 기본이에요. 소비전력이 큰 기기라 멀티탭에 다른 가전과 함께 꽂으면 과열될 수 있어요. 소방서 안내처럼 벽에서 20cm쯤 띄우고, 이불·커튼·소파 같은 타기 쉬운 물건과도 거리를 두세요.</p>
+<p>세라믹 온풍형은 실내가 건조해지기 쉬우니 습도를 함께 챙기고, 카본은 몸에 너무 가까이 대지 마세요. 오일라디에이터는 데워지면 단계를 낮춰 쓰면 좋아요.</p>
+<h3>이런 제품을 고르세요</h3><ul>
+<li><b>세라믹 온풍기</b>: 출력 단계 조절, 전도·과열 차단, 짧게 빨리 데울 때 <a href="https://link.coupang.com/a/hST9lPxsgm">👉 쿠팡에서 보기</a></li>
+<li><b>카본 히터</b>: 한 자리 집중 난방, 각도 조절과 전도 차단 기능 <a href="https://link.coupang.com/a/hST9lSWI9s">👉 쿠팡에서 보기</a></li>
+<li><b>오일라디에이터</b>: 오래 켜 두는 침실용, 온도 조절과 바퀴 달린 제품 <a href="https://link.coupang.com/a/hST9lWE70n">👉 쿠팡에서 보기</a></li>
+<li><b>히터용 타이머·온도 조절 기능 제품</b>: 끄는 걸 잊지 않도록 꺼짐 예약이 되는 형태 <a href="https://link.coupang.com/a/hST9l0UR2q">👉 쿠팡에서 보기</a></li>
+</ul>
+<h3>꼭 알아두세요</h3><ul><li>히터는 멀티탭이 아닌 벽 콘센트에 단독으로 꽂고, 플러그나 콘센트가 뜨겁거나 변색됐다면 바로 사용을 멈추세요.</li><li>외출하거나 잠들 때는 전원을 꺼 주세요. 켜 둔 채 잠들어야 한다면 타이머를 꼭 맞추세요.</li><li>빨래를 히터 위나 바로 앞에서 말리지 마세요. 젖은 옷이 데워지며 불이 붙을 수 있어요.</li><li>아이와 반려동물이 있다면 표면이 뜨거워지는 제품은 손이 닿지 않는 곳에 두고, 화상에 주의하세요.</li></ul>
+<h3>자주 묻는 질문</h3>
+<p><b>Q. 오일라디에이터가 전기를 덜 쓰나요?</b><br>A. 같은 와트로 같은 시간 켜면 사용량은 비슷해요. 다만 끈 뒤에도 열이 남아 단계를 낮춰 쓰기 좋은 편이에요.</p>
+<p><b>Q. 욕실에서 써도 되나요?</b><br>A. 물이 튀는 곳은 감전 위험이 있어요. 설명서에 욕실 사용 가능 표시가 없다면 욕실 밖에서 쓰세요.</p>
+<p>정리하면, 짧게 빨리 데울 땐 세라믹, 책상 앞 한 자리는 카본, 오래 켜 두는 침실은 오일라디에이터예요. 어떤 방식이든 안전 기능과 출력·사용 시간을 먼저 보는 게 전기히터 고르는 법의 핵심이에요.</p>
+<p>여러분은 어떤 전기히터를 쓰고 계신가요? 겨울 난방 팁이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p>
+<p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
