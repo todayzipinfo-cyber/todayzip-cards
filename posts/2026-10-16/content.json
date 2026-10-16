@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-16",
+  "format": "reel",
+  "category": "계절 살림",
+  "theme": "season",
+  "music": "calm",
+  "cover": {
+    "kicker": "꺼내 쓰기 전 필독",
+    "title": "가습기 첫 개시\n구연산 세척",
+    "image_queries": [
+      "humidifier",
+      "diffuser humidifier",
+      "aroma diffuser mist"
+    ],
+    "image_id": 4069846,
+    "dur": 1.6
+  },
+  "scenes": [
+    {
+      "heading": "혹시 그냥\n바로 켜나요?",
+      "body": "작년에 넣어둔 가습기,\n물만 붓고 켜면 곤란해요.",
+      "image_queries": [
+        "diffuser mist",
+        "humidifier",
+        "essential oil diffuser"
+      ],
+      "image_id": 4884638
+    },
+    {
+      "heading": "범인은\n하얀 물때",
+      "body": "수조와 진동판에 남은\n물때가 굳어 있어요.",
+      "image_queries": [
+        "humidifier",
+        "white aroma diffuser",
+        "ultrasonic diffuser"
+      ],
+      "image_id": 4492859
+    },
+    {
+      "heading": "구연산물\n채우기",
+      "body": "물에 구연산을 녹여\n수조에 부어 주세요.",
+      "image_queries": [
+        "spoon powder water glass",
+        "pouring water measuring cup",
+        "glass of water"
+      ],
+      "image_id": 4738462
+    },
+    {
+      "heading": "물때 불리고\n부드럽게 닦기",
+      "body": "물때가 불면 부드러운\n솔로 살살 닦아요.",
+      "image_queries": [
+        "cleaning brush sponge",
+        "cleaning humidifier",
+        "cleaning brush"
+      ],
+      "image_id": 491097
+    },
+    {
+      "heading": "맑은 물로\n여러 번 헹구기",
+      "body": "냄새가 안 날 때까지\n헹구고 바짝 말려요.",
+      "image_queries": [
+        "rinsing water sink",
+        "tap water running",
+        "water faucet"
+      ],
+      "image_id": 10370290
+    },
+    {
+      "heading": "이것만은\n꼭 지키세요",
+      "body": "락스·주방세제·살균제 금지\n환기, 고무장갑 필수!",
+      "image_queries": [
+        "rubber gloves cleaning",
+        "yellow rubber gloves",
+        "cleaning gloves"
+      ],
+      "image_id": 5073829
+    }
+  ],
+  "outro": {
+    "title": "가습기 첫 개시\n이렇게 씻어요",
+    "points": [
+      "원인은 굳은 물때",
+      "구연산물로 물때 불리기",
+      "맑은 물로 헹구고 완전 건조",
+      "락스·세제·살균제 금지"
+    ],
+    "dur": 3.8
+  },
+  "caption": "작년에 넣어둔 가습기, 물만 붓고 바로 켜면 안 돼요 💧\n\n수조와 진동판에 남아 굳은 물때부터 없애야 해요.\n물에 구연산을 녹여 수조에 붓고, 물때가 불면 부드러운 솔로 살살 닦아 주세요. 구연산이 없다면 식초를 물에 1:10 정도로 섞어 써도 돼요.\n마지막엔 냄새가 안 날 때까지 맑은 물로 여러 번 헹구고, 완전히 말린 뒤 사용하세요.\n\n⚠️ 락스나 주방세제, 살균제는 넣지 마세요. 잔여물이 공기 중으로 나올 수 있어요. 구연산·식초는 락스와 절대 섞지 말고, 환기하고 고무장갑을 껴 주세요. 진동판 등 부품 세척법은 제품 설명서를 꼭 확인하세요.\n\n여러분은 가습기 언제부터 꺼내 쓰세요? 댓글로 알려주세요 👇\n\n📌 저장해두고 가습기 꺼내는 날 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "청소꿀팁",
+    "가습기",
+    "가습기청소",
+    "가습기세척",
+    "구연산",
+    "환절기",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
