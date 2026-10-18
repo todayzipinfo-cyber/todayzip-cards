@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-10-19</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-10-19 · 핵심 키워드 <b>김치통 고르는 법</b> · 본문 약 2,292자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">김치통 고르는 법, 플라스틱·스테인리스·유리 차이와 김장 전 체크리스트</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+
+
+<div class="step"><h2>3. 사진 (5장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-10-19\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec4.jpg" alt=""><figcaption>사진 4</figcaption></figure><figure><img src="05_sec5.jpg" alt=""><figcaption>사진 5</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">김치통,김치통고르는법,김치통추천기준,스테인리스김치통,유리김치통,김장준비,김치보관,밀폐용기,살림템,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="김치통" onclick="copyTag(this)">김치통</button><button class="chip" data-tag="김치통고르는법" onclick="copyTag(this)">김치통고르는법</button><button class="chip" data-tag="김치통추천기준" onclick="copyTag(this)">김치통추천기준</button><button class="chip" data-tag="스테인리스김치통" onclick="copyTag(this)">스테인리스김치통</button><button class="chip" data-tag="유리김치통" onclick="copyTag(this)">유리김치통</button><button class="chip" data-tag="김장준비" onclick="copyTag(this)">김장준비</button><button class="chip" data-tag="김치보관" onclick="copyTag(this)">김치보관</button><button class="chip" data-tag="밀폐용기" onclick="copyTag(this)">밀폐용기</button><button class="chip" data-tag="살림템" onclick="copyTag(this)">살림템</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="ph">[사진 1: 썸네일]</p>
+<p>김장철이 다가오면 냉장고 속 김치통부터 꺼내 보게 되죠. 빨갛게 물들고 냄새가 배어 씻어도 개운하지 않은 통을 보면 이번엔 바꿔야 하나 고민돼요. 막상 사려고 보면 플라스틱, 스테인리스, 유리까지 종류가 많아 헷갈리고요.</p>
+<p>김치통 고르는 법의 핵심은 &#x27;재질·밀폐·크기&#x27; 세 가지예요. 오늘은 재질별 차이를 표로 비교하고, 김장 전에 확인할 체크리스트와 냄새 덜 배게 쓰는 법까지 정리해 드릴게요.</p>
+<h3>왜 재질부터 따져야 할까?</h3>
+<p class="ph">[사진 2]</p>
+<p>김치는 마늘·젓갈 같은 향이 강한 재료에 고춧가루 색소, 발효하면서 생기는 산 성분까지 들어 있어요. 그래서 오래 담아 두면 통 표면에 냄새와 붉은 물이 남기 쉬워요.</p>
+<p>특히 플라스틱은 쓰다 보면 생기는 미세한 흠집에 국물 성분이 스며들 수 있어요. 어떤 재질은 냄새에 강하고, 어떤 재질은 가볍고 저렴한 식으로 장단점이 갈리니 쓰는 습관에 맞춰 고르는 게 좋아요.</p>
+<h3>플라스틱·스테인리스·유리 한눈에 비교</h3>
+<p>아래는 일반적인 특징이에요. 같은 재질이라도 두께와 뚜껑 구조에 따라 차이가 있으니 기준으로만 참고하세요.</p>
+<table><tr><th>구분</th><th>플라스틱(PP·트라이탄)</th><th>스테인리스</th><th>유리</th></tr><tr><td>냄새·색 배임</td><td>배기 쉬움(흠집 생기면 더)</td><td>적은 편, 국물색이 남기도</td><td>가장 적은 편</td></tr><tr><td>무게</td><td>가벼움</td><td>중간</td><td>무거움</td></tr><tr><td>속 보임</td><td>보임(반투명·투명)</td><td>안 보임</td><td>잘 보임</td></tr><tr><td>깨짐·변형</td><td>안 깨지나 변형·흠집</td><td>찌그러질 수 있음</td><td>떨어뜨리면 깨짐</td></tr><tr><td>가격대</td><td>저렴한 편</td><td>비싼 편</td><td>중간~비싼 편</td></tr><tr><td>잘 맞는 곳</td><td>대용량 김장, 김치냉장고</td><td>오래 두는 묵은지</td><td>소분해서 먹는 냉장고용</td></tr></table>
+<h3>김치통 사기 전 체크리스트</h3>
+<p class="ph">[사진 3]</p>
+<p>김치는 발효하면서 가스와 국물이 생겨서, 뚜껑이 약하면 냉장고 안에 냄새가 퍼지고 국물이 새요. 장바구니에 담기 전에 아래 항목을 확인하세요.</p>
+<ul><li>뚜껑이 네 면을 잠그는 락 방식인지, 실리콘 패킹이 있는지</li><li>패킹을 분리해서 씻을 수 있는지 (틈에 냄새가 남기 쉬움)</li><li>김치냉장고에 넣을 거라면 칸 안쪽 가로·세로·높이를 재고 맞는지</li><li>용량(L)과 함께 &#x27;배추 몇 포기용&#x27;인지 제품 설명을 확인했는지</li><li>누름판이 있는지 (김치가 국물 위로 뜨는 것을 줄여 줌)</li><li>식품용 표시와 세척·전자레인지·식기세척기 사용 가능 여부</li></ul>
+<h3>큰 통 하나보다 나눠 담기</h3>
+<p class="ph">[사진 4]</p>
+<p>큰 통 하나에 다 담아 두면 꺼낼 때마다 김치 전체가 공기에 닿아요. 김장 김치는 큰 통에 보관하고, 일주일쯤 먹을 양만 작은 통에 덜어 쓰면 맛이 덜 변하고 냄새도 덜 퍼져요.</p>
+<p>그래서 김치통 고르는 법을 정할 때는 &#x27;큰 통 1~2개 + 작은 통 몇 개&#x27;처럼 묶어서 생각하면 좋아요. 큰 통은 가벼운 플라스틱, 작은 통은 냄새가 덜 배는 유리처럼 섞어 써도 돼요.</p>
+<h3>냄새 덜 배게 쓰고 관리하는 법</h3>
+<p class="ph">[사진 5]</p>
+<p>김치는 발효하며 부피가 늘고 국물이 올라오니 통에 가득 채우지 말고 여유를 두세요. 꾹 눌러 담고 위를 위생 비닐이나 누름판으로 덮으면 공기 닿는 면이 줄어요.</p>
+<p>다 먹은 통은 바로 씻는 게 가장 좋아요. 플라스틱은 거친 수세미로 문지르면 흠집이 생겨 오히려 냄새가 더 배니 부드러운 스펀지를 쓰고, 패킹은 분리해서 씻은 뒤 완전히 말려서 끼우세요.</p>
+<h3>이런 제품을 고르세요</h3><ul>
+<li><b>4면 락 플라스틱 김치통(대용량)</b>: 김장 김치 보관용, 가볍고 김치냉장고 칸 규격에 맞는 것</li>
+<li><b>스테인리스 김치통</b>: 오래 두는 묵은지용, 패킹 분리 세척이 되는 것</li>
+<li><b>유리 밀폐용기(소분용)</b>: 일주일 먹을 양 덜어 두기, 속이 보여 남은 양 확인이 쉬움</li>
+<li><b>누름판 있는 김치통</b>: 김치가 국물 위로 뜨는 것을 줄이고 싶을 때</li>
+</ul>
+<h3>꼭 알아두세요</h3><ul><li>유리 용기는 냉동실에서 꺼내 바로 전자레인지에 넣거나 뜨거운 물을 부으면 온도 차로 깨질 수 있어요.</li><li>전자레인지·식기세척기·냉동실 사용 가능 여부는 제품마다 달라요. 표시가 없으면 쓰지 마세요.</li><li>김치를 검은 비닐봉지 등 식품용이 아닌 봉투에 담아 오래 두지 마세요.</li><li>무거운 유리·스테인리스 통은 높은 칸이나 아이 손 닿는 곳에 두지 말고, 꺼낼 때 떨어뜨리지 않게 주의하세요.</li></ul>
+<h3>자주 묻는 질문</h3>
+<p><b>Q. 이미 냄새 밴 플라스틱 통은 계속 써도 되나요?</b><br>A. 냄새가 배어도 깨끗이 씻었다면 김치 전용으로 쓰는 경우가 많아요. 다만 흠집이 많거나 뿌옇게 변형됐다면 바꾸는 게 좋아요.</p>
+<p><b>Q. 김치냉장고 기본 통이 부족하면 아무 통이나 넣어도 되나요?</b><br>A. 모델마다 칸 크기가 달라서 높이가 안 맞으면 뚜껑이 눌려요. 칸 안쪽 치수를 재고 그보다 조금 작은 통을 고르세요.</p>
+<p>정리하면, 대용량 김장은 가벼운 플라스틱, 오래 두는 묵은지는 스테인리스, 덜어 먹는 소분용은 유리예요. 어떤 재질이든 뚜껑 밀폐와 크기를 먼저 보는 게 김치통 고르는 법의 핵심이에요.</p>
+<p>여러분은 김치통 냄새를 어떻게 관리하고 계신가요? 김장 준비 팁이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
