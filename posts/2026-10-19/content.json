@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-19",
+  "format": "reel",
+  "category": "주방",
+  "theme": "kitchen",
+  "music": "bright",
+  "cover": {
+    "kicker": "안 지워지는 얼룩",
+    "title": "전자레인지 때\n레몬물 5분",
+    "image_queries": [
+      "microwave oven kitchen",
+      "microwave kitchen counter",
+      "microwave"
+    ],
+    "image_id": 7706307,
+    "dur": 1.6
+  },
+  "scenes": [
+    {
+      "heading": "문 열 때마다\n찝찝하죠?",
+      "body": "천장에 튄 얼룩, 묵은 냄새\n닦아도 잘 안 지워져요.",
+      "image_queries": [
+        "microwave",
+        "microwave oven",
+        "microwave kitchen"
+      ],
+      "image_id": 6914223
+    },
+    {
+      "heading": "범인은\n말라붙은 국물",
+      "body": "데울 때 튄 국물과 기름이\n굳어서 딱 붙어 있어요.",
+      "image_queries": [
+        "microwave kitchen",
+        "microwave",
+        "small kitchen microwave"
+      ],
+      "image_id": 3496594
+    },
+    {
+      "heading": "레몬 썰어\n물에 넣기",
+      "body": "내열 그릇에 물 한 컵,\n레몬 몇 조각 넣어요.",
+      "image_queries": [
+        "lemon water glass",
+        "lemon slice water",
+        "lemon"
+      ],
+      "image_id": 1187656
+    },
+    {
+      "heading": "3~5분 돌리고\n문 닫고 기다리기",
+      "body": "돌린 뒤 바로 열지 말고\n5분 두면 얼룩이 불어요.",
+      "image_queries": [
+        "microwave",
+        "microwave oven",
+        "microwave close up"
+      ],
+      "image_id": 7530726
+    },
+    {
+      "heading": "부드러운\n행주로 닦기",
+      "body": "벽면과 회전판을 닦고\n문 열어 바짝 말려요.",
+      "image_queries": [
+        "microwave kitchen island",
+        "microwave",
+        "kitchen microwave"
+      ],
+      "image_id": 3999561
+    },
+    {
+      "heading": "이것만은\n꼭 지키세요",
+      "body": "그릇이 뜨거우니 장갑 필수\n철수세미는 쓰지 마세요.",
+      "image_queries": [
+        "oven mitt",
+        "oven glove",
+        "pot holder"
+      ],
+      "image_id": 2878734
+    }
+  ],
+  "outro": {
+    "title": "전자레인지 때\n이렇게 닦아요",
+    "points": [
+      "원인은 말라붙은 국물·기름",
+      "물 한 컵 + 레몬 몇 조각",
+      "3~5분 돌리고 5분 두기",
+      "뜨거운 그릇 주의, 철수세미 금지"
+    ],
+    "dur": 3.8
+  },
+  "caption": "전자레인지 안쪽, 마지막으로 닦은 게 언제인가요? 🍋\n\n천장과 벽에 튄 국물·기름이 굳어서 그냥 닦으면 잘 안 지워져요.\n내열 그릇에 물 한 컵과 레몬 몇 조각을 넣고 3~5분 돌린 뒤, 문을 닫은 채 5분 정도 두면 증기에 얼룩이 불어요. 그다음 부드러운 행주로 벽면과 회전판을 닦고, 문을 열어 바짝 말려 주세요. 레몬이 없으면 물만 써도 얼룩은 불어요.\n\n⚠️ 꺼낼 때 그릇과 물이 아주 뜨거우니 주방 장갑을 끼세요. 철수세미나 거친 수세미는 내부 코팅과 안쪽 판(마이카)을 긁을 수 있어요. 판이 타거나 손상됐다면 무리하지 말고 서비스센터 점검을 받으세요. 오래 굳은 때는 한 번에 안 떨어질 수 있어요.\n\n여러분은 전자레인지 얼마나 자주 닦으세요? 댓글로 알려주세요 👇\n\n📌 저장해두고 오늘 저녁에 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "주방꿀팁",
+    "주방살림",
+    "청소꿀팁",
+    "전자레인지",
+    "전자레인지청소",
+    "레몬",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
