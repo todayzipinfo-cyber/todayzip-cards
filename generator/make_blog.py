@@ -84,6 +84,25 @@ def esc(s):
     return html.escape(s).replace("\n", "<br>")
 
 
+ORDER = ["summary", "sections", "products", "caution", "faq", "related"]
+# 원고 본문의 사용자 작업 자리 표시 (글자 수에서 뺀다)
+MARKER = re.compile(r"\[(?:사진|직접 찍은 사진 넣기|이전 글 링크)[^\]]*\]|📷")
+
+
+def related_posts(data):
+    """related 날짜 -> [(제목, 발행 주소 또는 None)]. 주소는 blog/published.json (BLOG.md 7장)."""
+    pub_file = ROOT / "blog" / "published.json"
+    pub = json.loads(pub_file.read_text(encoding="utf-8")) if pub_file.exists() else {}
+    out = []
+    for d in data.get("related", []):
+        f = ROOT / "blog" / d / "blog.json"
+        if d == data["date"] or not f.exists():
+            print(f"related {d}: blog.json 이 없어 건너뜁니다")
+            continue
+        out.append((json.loads(f.read_text(encoding="utf-8"))["title"], pub.get(d)))
+    return out
+
+
 def body_html(data, photo_no):
     aff = affiliate_enabled(data)
     parts = []
@@ -91,20 +110,32 @@ def body_html(data, photo_no):
         parts.append(f'<p class="disc">{DISCLOSURE}</p>')
     parts.append(f'<p class="ph">[사진 {photo_no["thumbnail"]}: 썸네일]</p>')
     parts += [f"<p>{esc(p)}</p>" for p in data["intro"]]
-    for i, s in enumerate(data["sections"], 1):
-        parts.append(f"<h3>{esc(s['heading'])}</h3>")
-        if f"sec{i}" in photo_no:
-            parts.append(f'<p class="ph">[사진 {photo_no[f"sec{i}"]}]</p>')
-        parts += [f"<p>{esc(p)}</p>" for p in s.get("paragraphs", [])]
-        if s.get("list"):
-            parts.append("<ul>" + "".join(f"<li>{esc(x)}</li>" for x in s["list"]) + "</ul>")
-        if s.get("table"):
-            tb = s["table"]
-            parts.append("<table><tr>" + "".join(f"<th>{esc(h)}</th>" for h in tb["head"]) + "</tr>"
-                         + "".join("<tr>" + "".join(f"<td>{esc(c)}</td>" for c in r) + "</tr>" for r in tb["rows"])
-                         + "</table>")
-    if data.get("products"):
-        parts.append("<h3>이런 제품을 고르세요</h3><ul>")
+
+    def summary():
+        if data.get("summary"):
+            parts.append("<h3>한눈에 보기</h3><ul>" + "".join(f"<li>{esc(x)}</li>" for x in data["summary"]) + "</ul>")
+
+    def sections():
+        for i, s in enumerate(data["sections"], 1):
+            no = f"{i}. " if data.get("numbered") else ""
+            parts.append(f"<h3>{no}{esc(s['heading'])}</h3>")
+            if f"sec{i}" in photo_no:
+                parts.append(f'<p class="ph">[사진 {photo_no[f"sec{i}"]}]</p>')
+            if s.get("own_photo"):  # 사용자가 집에서 찍어 넣을 사진 (BLOG.md 6장)
+                parts.append(f'<p><span class="ph">📷 [직접 찍은 사진 넣기: {esc(s["own_photo"])}]</span></p>')
+            parts.extend(f"<p>{esc(p)}</p>" for p in s.get("paragraphs", []))
+            if s.get("list"):
+                parts.append("<ul>" + "".join(f"<li>{esc(x)}</li>" for x in s["list"]) + "</ul>")
+            if s.get("table"):
+                tb = s["table"]
+                parts.append("<table><tr>" + "".join(f"<th>{esc(h)}</th>" for h in tb["head"]) + "</tr>"
+                             + "".join("<tr>" + "".join(f"<td>{esc(c)}</td>" for c in r) + "</tr>" for r in tb["rows"])
+                             + "</table>")
+
+    def products():
+        if not data.get("products"):
+            return
+        parts.append(f"<h3>{esc(data.get('products_heading') or '이런 제품을 고르세요')}</h3><ul>")
         for i, p in enumerate(data["products"], 1):
             link = ""
             if aff and p.get("link"):  # 이미 만든 파트너스 링크
@@ -113,12 +144,30 @@ def body_html(data, photo_no):
                 link = f' <span class="ph">[쿠팡 링크 {i}]</span>'
             parts.append(f"<li><b>{esc(p['name'])}</b>: {esc(p['point'])}{link}</li>")
         parts.append("</ul>")
-    if data.get("caution"):
-        parts.append("<h3>꼭 알아두세요</h3><ul>" + "".join(f"<li>{esc(c)}</li>" for c in data["caution"]) + "</ul>")
-    if data.get("faq"):
-        parts.append("<h3>자주 묻는 질문</h3>")
-        for f in data["faq"]:
-            parts.append(f"<p><b>Q. {esc(f['q'])}</b><br>A. {esc(f['a'])}</p>")
+
+    def caution():
+        if data.get("caution"):
+            parts.append(f"<h3>{esc(data.get('caution_heading') or '꼭 알아두세요')}</h3><ul>"
+                         + "".join(f"<li>{esc(c)}</li>" for c in data["caution"]) + "</ul>")
+
+    def faq():
+        if data.get("faq"):
+            parts.append(f"<h3>{esc(data.get('faq_heading') or '자주 묻는 질문')}</h3>")
+            for f in data["faq"]:
+                parts.append(f"<p><b>Q. {esc(f['q'])}</b><br>A. {esc(f['a'])}</p>")
+
+    def related():
+        posts = related_posts(data)
+        if posts:
+            parts.append("<h3>함께 보면 좋은 글</h3><ul>" + "".join(
+                f'<li><a href="{html.escape(url)}">{esc(t)}</a></li>' if url
+                else f'<li><span class="ph">[이전 글 링크: {esc(t)}]</span></li>' for t, url in posts) + "</ul>")
+
+    blocks = {"summary": summary, "sections": sections, "products": products,
+              "caution": caution, "faq": faq, "related": related}
+    order = data.get("order") or ORDER
+    for name in order + [b for b in ORDER if b not in order]:  # 빠뜨린 블록은 뒤에 붙인다
+        blocks[name]()
     parts += [f"<p>{esc(p)}</p>" for p in data["outro"]]
     parts.append("<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p>")
     if aff and data.get("products"):
@@ -153,7 +202,7 @@ button.done{{background:#555}}
 .chip{{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}}
 .chip.done{{background:var(--acc);color:#fff}}
 </style></head><body><div class="wrap">
-<p class="meta">📝 {date} · 핵심 키워드 <b>{keyword}</b> · 본문 약 {chars:,}자</p>
+<p class="meta">📝 {date} · 핵심 키워드 <b>{keyword}</b>{meta} · 본문 약 {chars:,}자</p>
 
 <div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">{title}</div>
 <button onclick="copyText('title',this)">제목 복사</button></div>
@@ -176,8 +225,10 @@ button.done{{background:#555}}
 </div>
 <script>
 function flash(b){{b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}}
-function copyTag(b){{navigator.clipboard.writeText(b.dataset.tag).then(()=>flash(b),()=>{{const t=document.createElement('textarea');t.value=b.dataset.tag;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();flash(b);}});}}
-function copyText(id,b){{navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>flash(b),()=>copyHtml(id,b));}}
+function copyPlain(s,b){{const done=()=>flash(b),old=()=>{{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();}};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}}
+function copyTag(b){{copyPlain(b.dataset.tag,b);}}
+function copyText(id,b){{copyPlain(document.getElementById(id).textContent,b);}}
 function copyHtml(id,b){{const r=document.createRange();r.selectNodeContents(document.getElementById(id));
  const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}}
 </script></body></html>"""
@@ -204,7 +255,15 @@ def build(path, skip_images=False):
         photo_no[name] = n
         cards.append(f'<figure><img src="{fname}" alt=""><figcaption>사진 {n}</figcaption></figure>')
     body = body_html(data, photo_no)
-    chars = len(re.sub(r"<[^>]+>|\[사진[^\]]*\]", "", body))
+    chars = len(MARKER.sub("", re.sub(r"<[^>]+>", "", body)))
+    todo = [f"<li>📷 {html.escape(s['heading'])}: <b>{html.escape(s['own_photo'])}</b></li>"
+            for s in data["sections"] if s.get("own_photo")]
+    todo += [f"<li>🔗 이전 글 링크: <b>{html.escape(t)}</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li>"
+             for t, url in related_posts(data) if not url]
+    if todo:
+        todo = ('<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2>'
+                '<p class="meta">찍은 사진을 그 자리에 올리고 표시 줄은 지워주세요. 못 한 것은 줄만 지워도 돼요.</p>'
+                f'<ul>{"".join(todo)}</ul></div>')
     coupang = ""
     if affiliate_enabled(data) and data.get("products") and not all(p.get("link") for p in data["products"]):
         rows = "".join(
@@ -216,7 +275,10 @@ def build(path, skip_images=False):
                    '<a href="https://partners.coupang.com" target="_blank" rel="noopener">간편 링크 만들기</a>에 붙여넣어 '
                    '링크 생성 → ③ 본문의 빨간 [쿠팡 링크 N] 자리를 그 링크로 바꾸기</p>'
                    f'<ul>{rows}</ul></div>')
-    page = PAGE.format(date=data["date"], coupang=coupang, keyword=html.escape(data["keyword"]), title=html.escape(data["title"]),
+    meta = " · ".join(f"{k} {html.escape(v)}" for k, v in
+                      (("보조", ", ".join(data.get("sub_keywords", []))), ("구성", data.get("layout", ""))) if v)
+    page = PAGE.format(date=data["date"], coupang=coupang + (todo or ""), meta=f" · {meta}" if meta else "",
+                       keyword=html.escape(data["keyword"]), title=html.escape(data["title"]),
                        chars=chars, body=body, photos="".join(cards), n_photos=n, folder=html.escape(str(out)),
                        tags=html.escape(",".join(data["tags"])),
                        chips="".join(f'<button class="chip" data-tag="{html.escape(t)}" onclick="copyTag(this)">'
