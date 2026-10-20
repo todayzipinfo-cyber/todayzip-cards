@@ -1,0 +1,103 @@
+{
+    "date":  "2026-10-21",
+    "format":  "reel",
+    "category":  "세탁",
+    "theme":  "laundry",
+    "music":  "calm",
+    "cover":  {
+                  "kicker":  "꺼내 보니 납작한 패딩",
+                  "title":  "숨 죽은 패딩\n두드려 살려요",
+                  "image_queries":  [
+                                        "down jackets hanging rack",
+                                        "puffer coat",
+                                        "winter coats hanging"
+                                    ],
+                  "image_id":  985387,
+                  "dur":  1.6
+              },
+    "scenes":  [
+                   {
+                       "heading":  "꺼낸 패딩이\n납작한가요?",
+                       "body":  "작년보다 얇아지고\n얼룩까지 보인다면!",
+                       "image_queries":  [
+                                             "down jacket closet",
+                                             "puffer jacket hanging",
+                                             "winter coat hanger"
+                                         ],
+                       "image_id":  2605328
+                   },
+                   {
+                       "heading":  "범인은\n뭉친 충전재",
+                       "body":  "때와 눌림이 쌓이면\n털이 뭉쳐 숨이 죽어요.",
+                       "image_queries":  [
+                                             "down feathers close up",
+                                             "duck down feather",
+                                             "puffer jacket texture"
+                                         ],
+                       "image_id":  60552
+                   },
+                   {
+                       "heading":  "지퍼 잠그고\n중성세제 준비",
+                       "body":  "30도 이하 미지근한 물에\n중성세제 조금만 풀어요.",
+                       "image_queries":  [
+                                             "pouring laundry detergent cap",
+                                             "laundry soap liquid",
+                                             "detergent washing machine"
+                                         ],
+                       "image_id":  4865368
+                   },
+                   {
+                       "heading":  "비비지 말고\n눌러 빨기",
+                       "body":  "세탁기는 울 코스 단독,\n손빨래는 꾹꾹 눌러요.",
+                       "image_queries":  [
+                                             "washing machine laundry",
+                                             "front load washing machine",
+                                             "washing machine"
+                                         ],
+                       "image_id":  8539115
+                   },
+                   {
+                       "heading":  "눕혀 말리며\n탁탁 두드리기",
+                       "body":  "그늘에 평평하게 두고\n뭉친 곳을 풀어 주세요.",
+                       "image_queries":  [
+                                             "clothes drying rack indoor",
+                                             "drying laundry indoors",
+                                             "laundry drying"
+                                         ],
+                       "image_id":  16134
+                   },
+                   {
+                       "heading":  "이것만은\n꼭 지키세요",
+                       "body":  "섬유유연제·표백제 금지,\n라벨 먼저 확인하세요.",
+                       "image_queries":  [
+                                             "laundry symbols label",
+                                             "garment tag",
+                                             "clothes tag"
+                                         ],
+                       "image_id":  6893067
+                   }
+               ],
+    "outro":  {
+                  "title":  "숨 죽은 패딩\n이렇게 살려요",
+                  "points":  [
+                                 "원인은 뭉친 충전재",
+                                 "30도 이하 물 + 중성세제 조금",
+                                 "눕혀 말리며 탁탁 두드리기",
+                                 "섬유유연제·표백제는 금지"
+                             ],
+                  "dur":  3.8
+              },
+    "caption":  "옷장에서 꺼낸 패딩, 작년보다 납작해졌나요? 🧥\n\n패딩 속 솜털은 때와 오랜 눌림이 쌓이면 서로 뭉쳐서 숨이 죽어요.\n지퍼와 단추를 모두 잠그고, 30도 이하 미지근한 물에 다운 전용(중성) 세제를 조금만 풀어 주세요. 세탁기는 울 코스로 단독 세탁, 손빨래라면 비비지 말고 꾹꾹 눌러 빨면 돼요.\n헹군 뒤에는 그늘에 평평하게 눕혀 말리면서 손으로 탁탁 두드려 뭉친 털을 풀어 주세요. 다 마른 뒤에도 한 번 더 두드려 주면 빵빵해져요.\n\n⚠️ 섬유유연제와 표백제는 털의 유분을 상하게 할 수 있어 넣지 않아요. 세제를 많이 넣으면 오히려 털이 뻣뻣해질 수 있고, 세탁 전에는 꼭 케어라벨을 확인하세요. 물세탁 불가 표시가 있거나 비싼 제품이라면 세탁소에 맡기는 게 안전해요.\n\n여러분은 패딩, 집에서 빠나요? 세탁소에 맡기나요? 댓글로 알려주세요 👇\n\n📌 저장해두고 패딩 꺼낼 때 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+    "hashtags":  [
+                     "살림꿀팁",
+                     "살림",
+                     "세탁꿀팁",
+                     "패딩세탁",
+                     "패딩관리",
+                     "다운점퍼",
+                     "겨울옷정리",
+                     "환절기살림",
+                     "자취꿀팁",
+                     "투데이집"
+                 ]
+}
