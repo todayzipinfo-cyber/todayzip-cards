@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-23",
+  "format": "reel",
+  "category": "계절 살림",
+  "theme": "season",
+  "music": "calm",
+  "cover": {
+    "kicker": "닦아도 또 맺힌다면",
+    "title": "창문 결로\n환기가 답",
+    "image_queries": [
+      "window condensation",
+      "condensation drops window glass",
+      "foggy window"
+    ],
+    "image_id": 2417333,
+    "dur": 1.6
+  },
+  "scenes": [
+    {
+      "heading": "아침마다\n물방울 맺히나요?",
+      "body": "닦아도 다음 날이면\n또 맺혀 있어요.",
+      "image_queries": [
+        "condensation window morning",
+        "water drops glass window",
+        "window rain drops"
+      ],
+      "image_id": 7394409
+    },
+    {
+      "heading": "범인은\n실내 습기",
+      "body": "따뜻하고 습한 공기가\n찬 유리에 닿아 생겨요.",
+      "image_queries": [
+        "condensation glass drops macro",
+        "steamy window",
+        "fogged glass"
+      ],
+      "image_id": 2545289
+    },
+    {
+      "heading": "하루 두세 번\n맞바람 환기",
+      "body": "창문 양쪽을 짧게 열어\n습한 공기를 내보내요.",
+      "image_queries": [
+        "open window curtain",
+        "open window room",
+        "window fresh air"
+      ],
+      "image_id": 2675282
+    },
+    {
+      "heading": "맺힌 물기는\n바로 닦기",
+      "body": "마른 수건으로 유리와\n창틀 물기까지 닦아요.",
+      "image_queries": [
+        "wiping window cloth",
+        "cleaning window",
+        "window cleaning"
+      ],
+      "image_id": 5928696
+    },
+    {
+      "heading": "습기 생기면\n바로 내보내기",
+      "body": "샤워·요리 뒤엔\n환풍기를 돌려 주세요.",
+      "image_queries": [
+        "steam cooking pot kitchen",
+        "steaming pot",
+        "kitchen steam"
+      ],
+      "image_id": 1972423
+    },
+    {
+      "heading": "이것만은\n꼭 지키세요",
+      "body": "창틀 곰팡이 제거제는\n환기·고무장갑 필수!",
+      "image_queries": [
+        "rubber gloves cleaning window",
+        "rubber gloves",
+        "cleaning gloves spray"
+      ],
+      "image_id": 9663247
+    }
+  ],
+  "outro": {
+    "title": "창문 결로\n이렇게 막아요",
+    "points": [
+      "원인은 실내 습기",
+      "맞바람 환기 하루 두세 번",
+      "물기는 바로 닦기",
+      "제거제는 다른 세제와 섞지 않기"
+    ],
+    "dur": 3.8
+  },
+  "caption": "아침마다 창문에 물방울, 닦아도 다음 날 또 맺히나요? 💧\n\n결로는 따뜻하고 습한 실내 공기가 차가운 유리에 닿아 물로 바뀌는 현상이에요. 그래서 닦기만 하면 습기가 그대로 남아 또 생겨요.\n하루 두세 번 창문 양쪽을 짧게 열어 맞바람으로 환기하고, 맺힌 물기는 마른 수건으로 유리와 창틀까지 바로 닦아 주세요. 샤워나 요리 뒤에는 환풍기를 돌려 습기를 바로 내보내는 게 좋아요. 단열재를 붙여도 환기는 함께 해야 해요.\n\n⚠️ 창틀에 곰팡이가 생겨 제거제를 쓸 땐 창문을 열고 고무장갑을 끼세요. 락스 성분 제품은 식초·구연산 같은 산성 세제와 절대 섞지 마세요. 매년 심하게 반복되면 창호 단열 점검을 받아 보세요.\n\n여러분 집은 결로가 어느 창문에 제일 심한가요? 댓글로 알려주세요 👇\n\n📌 저장해두고 추워지면 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "청소꿀팁",
+    "결로",
+    "결로방지",
+    "창문결로",
+    "겨울살림",
+    "환기",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}

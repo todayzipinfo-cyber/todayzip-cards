@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-22",
+  "format": "reel",
+  "category": "수납·정리",
+  "theme": "storage",
+  "music": "warm",
+  "cover": {
+    "kicker": "또 버린 반찬 있나요",
+    "title": "냉장고 정리\n투명 통이 답",
+    "image_queries": [
+      "organized refrigerator containers",
+      "open refrigerator food",
+      "refrigerator"
+    ],
+    "image_id": 0,
+    "dur": 1.6
+  },
+  "scenes": [
+    {
+      "heading": "구석에서\n상한 반찬 발견?",
+      "body": "산 걸 또 사고\n결국 버리게 되나요?",
+      "image_queries": [
+        "full refrigerator",
+        "refrigerator shelves food",
+        "fridge"
+      ],
+      "image_id": 0
+    },
+    {
+      "heading": "범인은\n안 보이는 자리",
+      "body": "뒤에 숨은 음식은\n있는 줄도 잊어요.",
+      "image_queries": [
+        "refrigerator inside",
+        "fridge shelves",
+        "refrigerator food"
+      ],
+      "image_id": 0
+    },
+    {
+      "heading": "다 꺼내고\n버릴 것 고르기",
+      "body": "소비기한 지난 건 버리고\n선반을 닦아 주세요.",
+      "image_queries": [
+        "empty refrigerator",
+        "cleaning refrigerator",
+        "fridge cleaning"
+      ],
+      "image_id": 0
+    },
+    {
+      "heading": "투명 통에\n이름·날짜 적기",
+      "body": "속이 보이는 통에 담고\n라벨로 날짜를 표시해요.",
+      "image_queries": [
+        "glass food containers",
+        "food storage containers",
+        "meal prep containers"
+      ],
+      "image_id": 0
+    },
+    {
+      "heading": "칸마다\n자리 정하기",
+      "body": "문 쪽은 양념·음료,\n아래 칸은 고기·생선.",
+      "image_queries": [
+        "refrigerator door shelves",
+        "organized fridge",
+        "refrigerator vegetables"
+      ],
+      "image_id": 0
+    },
+    {
+      "heading": "새 건 뒤로\n오래된 건 앞으로",
+      "body": "꽉 채우지 말고\n냉기 길을 남겨 두세요.",
+      "image_queries": [
+        "open fridge",
+        "refrigerator milk eggs",
+        "refrigerator"
+      ],
+      "image_id": 0
+    }
+  ],
+  "outro": {
+    "title": "냉장고 정리\n이렇게 해요",
+    "points": [
+      "원인은 안 보이는 자리",
+      "투명 통 + 이름·날짜 라벨",
+      "칸마다 자리 정하기",
+      "새 건 뒤로, 꽉 채우지 않기"
+    ],
+    "dur": 3.8
+  },
+  "products": [
+    {
+      "name": "투명 냉장고 정리 용기",
+      "why": "속이 보여서 있는 음식을 잊지 않아요"
+    },
+    {
+      "name": "라벨 스티커",
+      "why": "이름과 날짜를 적어 먼저 먹을 것을 알 수 있어요"
+    }
+  ],
+  "caption": "냉장고 구석에서 잊고 있던 반찬, 또 버리셨나요? 🥲\n\n냉장고가 금방 엉망이 되는 건 뒤에 숨은 음식이 안 보여서예요. 안 보이면 있는 줄 잊고, 같은 걸 또 사게 돼요.\n한 번 다 꺼내 소비기한 지난 건 정리하고, 속이 보이는 투명 통에 담아 이름·날짜 라벨을 붙여 주세요.\n문 쪽은 양념·음료, 아래 칸은 고기·생선처럼 칸마다 자리를 정하고, 새로 산 건 뒤로, 오래된 건 앞으로 두면 먼저 먹을 게 바로 보여요.\n\n💡 냉장고는 꽉 채울수록 좋은 게 아니에요. 냉기가 돌 수 있게 틈을 남겨 두세요.\n\n여러분 냉장고에서 제일 자주 잊히는 음식은 뭔가요? 댓글로 알려주세요 👇\n\n📌 저장해두고 주말에 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "정리수납",
+    "냉장고정리",
+    "냉장고수납",
+    "주방정리",
+    "선입선출",
+    "식비절약",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
