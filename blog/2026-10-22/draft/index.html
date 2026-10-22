@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-10-22</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-10-22 · 핵심 키워드 <b>냉장고 정리용기 살 때 실수</b> · 보조 냉장고 정리, 냉장고 정리용기, 밀폐용기 재질 · 구성 mistakes · 본문 약 2,362자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">냉장고 정리용기 살 때 실수 5가지, 사이즈·재질·모양 확인법</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2><p class="meta">찍은 사진을 그 자리에 올리고 표시 줄은 지워주세요. 못 한 것은 줄만 지워도 돼요.</p><ul><li>📷 치수를 안 재고 &#x27;대용량&#x27;부터 산다: <b>냉장고 선반 안쪽 깊이를 줄자로 재는 모습</b></li><li>📷 재질 표기를 안 보고 산다: <b>집에 있는 밀폐용기 바닥이나 뚜껑의 재질·온도 표시를 확대한 모습</b></li><li>🔗 이전 글 링크: <b>김치통 고르는 법, 플라스틱·스테인리스·유리 차이와 김장 전 체크리스트</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li></ul></div>
+
+<div class="step"><h2>3. 사진 (5장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-10-22\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec2.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec3.jpg" alt=""><figcaption>사진 4</figcaption></figure><figure><img src="05_sec4.jpg" alt=""><figcaption>사진 5</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">냉장고정리,냉장고정리용기,정리용기,밀폐용기,트라이탄용기,유리밀폐용기,냉장고수납,주방정리,살림팁,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="냉장고정리" onclick="copyTag(this)">냉장고정리</button><button class="chip" data-tag="냉장고정리용기" onclick="copyTag(this)">냉장고정리용기</button><button class="chip" data-tag="정리용기" onclick="copyTag(this)">정리용기</button><button class="chip" data-tag="밀폐용기" onclick="copyTag(this)">밀폐용기</button><button class="chip" data-tag="트라이탄용기" onclick="copyTag(this)">트라이탄용기</button><button class="chip" data-tag="유리밀폐용기" onclick="copyTag(this)">유리밀폐용기</button><button class="chip" data-tag="냉장고수납" onclick="copyTag(this)">냉장고수납</button><button class="chip" data-tag="주방정리" onclick="copyTag(this)">주방정리</button><button class="chip" data-tag="살림팁" onclick="copyTag(this)">살림팁</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="ph">[사진 1: 썸네일]</p>
+<p>냉장고 정리 사진을 보고 용기를 잔뜩 주문했는데, 막상 넣어 보니 선반에 안 들어가거나 문이 안 닫힌 적 있나요? 정리용기는 하나하나는 싸도 세트로 사면 금액이 꽤 되고, 크기가 안 맞으면 반품도 번거로워요.</p>
+<p>그래서 오늘은 냉장고 정리용기 살 때 실수를 다섯 가지로 정리했어요. 실수마다 왜 문제가 되는지, 대신 무엇을 확인하면 되는지 함께 알려 드릴게요.</p>
+<h3>한눈에 보기</h3><ul><li>주문 전에 선반 깊이·높이와 문 선반 폭을 줄자로 재요.</li><li>용도에 맞춰 재질(PP·트라이탄·유리)과 내열·내냉 온도 표기를 확인해요.</li><li>사각·투명·같은 시리즈로 맞추고, 칸을 꽉 채우지 않아요.</li></ul>
+<h3>1. 치수를 안 재고 &#x27;대용량&#x27;부터 산다</h3>
+<p class="ph">[사진 2]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 냉장고 선반 안쪽 깊이를 줄자로 재는 모습]</span></p>
+<p>가장 흔한 실수예요. 냉장고는 모델마다 선반 깊이와 칸 높이가 달라서, 같은 용기라도 우리 집에서는 뒤쪽이 걸리거나 위 칸에 닿을 수 있어요.</p>
+<p>주문 전에 선반 깊이, 칸 높이, 문 선반 폭 세 곳을 줄자로 재 두세요. 판매 페이지 치수는 재는 방법에 따라 조금씩 차이가 날 수 있으니 1~2cm 정도 여유를 두고 고르는 게 안전해요.</p>
+<h3>2. 재질 표기를 안 보고 산다</h3>
+<p class="ph">[사진 3]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 집에 있는 밀폐용기 바닥이나 뚜껑의 재질·온도 표시를 확대한 모습]</span></p>
+<p>정리용기는 겉보기가 비슷해도 재질이 달라요. 용도에 맞지 않는 재질을 고르면 냄새가 배거나, 무거워서 손이 안 가거나, 데울 때 쓸 수 없어 다시 사게 돼요.</p>
+<p>제품 표기에서 재질과 내열·내냉 온도를 꼭 확인하세요. 투명 플라스틱 중 트라이탄은 상세페이지에 &#x27;코폴리에스터&#x27;로 적혀 있기도 해요.</p>
+<table><tr><th>구분</th><th>PP(폴리프로필렌)</th><th>트라이탄(코폴리에스터)</th><th>유리</th></tr><tr><td>투명도</td><td>반투명이 많음</td><td>투명해서 안이 잘 보임</td><td>투명</td></tr><tr><td>무게</td><td>가벼움</td><td>가벼움</td><td>무거움</td></tr><tr><td>깨짐</td><td>잘 안 깨짐</td><td>잘 안 깨짐</td><td>떨어뜨리면 깨질 수 있음</td></tr><tr><td>냄새·색 배임</td><td>기름진 음식은 배기 쉬움</td><td>제품 표기 확인</td><td>잘 안 뱀</td></tr><tr><td>잘 맞는 곳</td><td>채소·소분 재료</td><td>자주 꺼내 보는 반찬·간식</td><td>김치·카레 등 냄새 강한 음식</td></tr></table>
+<h3>3. 둥근 용기와 사각 용기를 섞어 산다</h3>
+<p class="ph">[사진 4]</p>
+<p>둥근 용기는 모서리마다 빈틈이 생겨 같은 칸에 넣을 수 있는 양이 줄어요. 모양과 크기가 제각각이면 겹쳐 쌓기도 어려워 결국 앞줄만 쓰게 돼요.</p>
+<p>냉장고 정리용기는 사각형 위주로, 가능하면 같은 시리즈에서 크기만 다르게 고르세요. 뚜껑 규격이 같으면 쌓기 쉽고, 뚜껑을 잃어버려도 서로 바꿔 쓸 수 있어요.</p>
+<h3>4. 불투명 용기에 이름표 없이 넣는다</h3>
+<p class="ph">[사진 5]</p>
+<p>안이 안 보이는 용기에 담으면 무엇이 있는지 잊기 쉬워요. 같은 재료를 또 사거나, 안쪽에서 유통기한을 넘긴 음식을 뒤늦게 발견하게 되죠.</p>
+<p>자주 꺼내는 반찬과 간식은 투명 용기에 담고, 뚜껑이나 옆면에 내용물과 담은 날짜를 적은 이름표를 붙여 두세요. 마스킹테이프와 네임펜만 있어도 충분해요.</p>
+<h3>5. 칸을 빈틈없이 꽉 채운다</h3>
+<p>정리용기가 생기면 칸을 가득 채우고 싶어지는데, 냉장고는 찬 공기가 돌아야 고르게 차가워져요. 용기가 냉기 나오는 곳을 막거나 칸을 빽빽하게 채우면 일부 칸만 덜 차가울 수 있어요.</p>
+<p>칸마다 손이 들어갈 정도의 여유를 남기고, 한 번에 세트로 사기보다 가장 자주 쓰는 칸부터 두세 개 넣어 본 뒤 늘리는 방법을 권해요.</p>
+<h3>사기 전에 한 번 더</h3><ul><li>플라스틱 용기를 전자레인지에 쓸 때는 제품에 표시된 사용 가능 여부와 내열 온도를 먼저 확인하고, 뚜껑은 살짝 열어 두세요.</li><li>유리 용기는 급격한 온도 변화에 약할 수 있어요. 냉동실에서 꺼내 바로 뜨거운 물이나 오븐에 넣지 말고, 냉동 가능 여부도 표기를 확인하세요.</li><li>뜨거운 음식은 한 김 식힌 뒤 담아 넣어야 냉장고 안 온도가 덜 올라가요.</li><li>무거운 유리 용기는 아이 손이 닿는 아래 칸이나 문 선반보다 안쪽 선반에 두세요.</li></ul>
+<h3>이런 조건으로 고르세요</h3><ul>
+<li><b>사각 투명 정리용기 세트</b>: 같은 시리즈로 크기만 다르게, 뚜껑 규격이 같은 것</li>
+<li><b>내열 유리 밀폐용기</b>: 김치·카레처럼 냄새와 색이 강한 음식, 데워 먹을 반찬용</li>
+<li><b>냉장고 수납 바구니(손잡이형)</b>: 소스·작은 통을 묶어 앞으로 당겨 꺼낼 때, 선반 깊이에 맞는 길이</li>
+<li><b>마스킹테이프·네임펜</b>: 내용물과 담은 날짜를 적어 붙일 때</li>
+</ul>
+<h3>많이 묻는 질문</h3>
+<p><b>Q. 정리용기는 몇 개부터 사면 될까요?</b><br>A. 가장 어수선한 칸 하나를 기준으로 두세 개만 먼저 사 보세요. 넣어 보고 크기가 맞으면 같은 시리즈로 늘리면 실패가 적어요.</p>
+<p><b>Q. PP 용기는 오래 써도 괜찮나요?</b><br>A. 흠집이 많아지거나 색과 냄새가 배어 안 빠지면 바꿔 주는 게 좋아요. 용기끼리 겹쳐 쌓으면 흠집이 생기기 쉬우니 씻은 뒤엔 뚜껑을 따로 보관하세요.</p>
+<h3>함께 보면 좋은 글</h3><ul><li><span class="ph">[이전 글 링크: 김치통 고르는 법, 플라스틱·스테인리스·유리 차이와 김장 전 체크리스트]</span></li></ul>
+<p>정리하면, 냉장고 정리용기 살 때 실수는 치수·재질·모양·이름표·여유 공간 다섯 가지만 챙기면 대부분 피할 수 있어요. 자주 꺼내는 반찬은 투명 사각 용기, 냄새 강한 음식은 유리 용기로 나눠 고르면 무난해요.</p>
+<p>여러분 냉장고에서 가장 정리가 안 되는 칸은 어디인가요? 댓글로 알려 주시면 그 칸에 맞는 정리법도 다뤄 볼게요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
