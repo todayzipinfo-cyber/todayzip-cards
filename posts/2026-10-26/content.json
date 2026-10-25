@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-26",
+  "format": "reel",
+  "category": "주방",
+  "theme": "kitchen",
+  "music": "bright",
+  "cover": {
+    "kicker": "쿰쿰한 커피 냄새",
+    "title": "텀블러 냄새\n과탄산 30분",
+    "image_queries": [
+      "thermos bottle",
+      "vacuum flask",
+      "stainless steel water bottle"
+    ],
+    "image_id": 4943216,
+    "dur": 1.6
+  },
+  "scenes": [
+    {
+      "heading": "씻어도 나는\n쿰쿰한 냄새",
+      "body": "안쪽에 갈색 커피 자국,\n뚜껑에선 냄새가 나죠?",
+      "image_queries": [
+        "thermos",
+        "insulated bottle",
+        "thermos cup"
+      ],
+      "image_id": 2565513
+    },
+    {
+      "heading": "범인은\n커피 때와 물기",
+      "body": "커피·차 얼룩이 쌓이고\n덜 마른 물기에 냄새가 배요.",
+      "image_queries": [
+        "coffee thermos",
+        "thermos coffee cup",
+        "flask coffee"
+      ],
+      "image_id": 7372035
+    },
+    {
+      "heading": "뚜껑·패킹\n먼저 분리",
+      "body": "고무 패킹을 빼서\n주방세제로 따로 씻어요.",
+      "image_queries": [
+        "water bottle lid",
+        "bottle cap stainless",
+        "thermos"
+      ],
+      "image_id": 660024
+    },
+    {
+      "heading": "따뜻한 물에\n과탄산 한 스푼",
+      "body": "작은 스푼 하나 넣고\n뚜껑 열고 30분 둬요.",
+      "image_queries": [
+        "thermos bottle kitchen",
+        "reusable bottle",
+        "vacuum flask"
+      ],
+      "image_id": 4423681
+    },
+    {
+      "heading": "헹구고\n거꾸로 말리기",
+      "body": "깨끗이 헹군 뒤 엎어서\n속까지 완전히 말려요.",
+      "image_queries": [
+        "water bottles",
+        "stainless steel bottle",
+        "reusable water bottle"
+      ],
+      "image_id": 4943218
+    },
+    {
+      "heading": "이것만은\n꼭 지키세요",
+      "body": "담글 땐 뚜껑 닫지 말고\n장갑 끼고 식초와 섞지 마요.",
+      "image_queries": [
+        "yellow rubber gloves",
+        "rubber gloves cleaning",
+        "cleaning gloves"
+      ],
+      "image_id": 4943220
+    }
+  ],
+  "outro": {
+    "title": "텀블러 냄새\n이렇게 없애요",
+    "points": [
+      "원인은 커피 때 + 덜 마른 물기",
+      "패킹 분리해서 따로 세척",
+      "따뜻한 물 + 과탄산 1스푼, 30분",
+      "뚜껑 열어 두기, 식초와 섞지 않기"
+    ],
+    "dur": 3.8
+  },
+  "caption": "아침마다 쓰는 텀블러, 뚜껑 열면 쿰쿰한 냄새 나지 않나요? ☕\n\n커피와 차 얼룩이 안쪽에 쌓이고, 패킹 틈에 덜 마른 물기가 남으면 냄새가 배요.\n뚜껑과 고무 패킹을 분리해 주방세제로 따로 씻고, 몸통에는 따뜻한 물과 과탄산소다 작은 스푼 하나를 넣어 30분 정도 둔 뒤 깨끗이 헹궈 주세요. 마지막엔 거꾸로 엎어 속까지 완전히 말린 다음 뚜껑을 닫아요.\n\n⚠️ 과탄산소다를 넣었을 땐 거품과 기체가 생기니 절대 뚜껑을 닫지 마세요. 고무장갑을 끼고, 식초·구연산과 섞지 마세요(효과가 서로 사라져요). 락스 같은 염소계 표백제나 철수세미는 내부를 상하게 할 수 있어요. 코팅 텀블러는 제품 설명서를 먼저 확인하세요. 씻어도 냄새가 계속되면 패킹이나 텀블러 교체를 생각해 보세요.\n\n여러분은 텀블러 얼마나 자주 세척하세요? 댓글로 알려주세요 👇\n\n📌 저장해두고 주말에 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "주방꿀팁",
+    "주방살림",
+    "청소꿀팁",
+    "텀블러",
+    "텀블러세척",
+    "과탄산소다",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
