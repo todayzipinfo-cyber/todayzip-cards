@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-10-26</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-10-26 · 핵심 키워드 <b>옷장 제습제 염화칼슘 실리카겔 차이</b> · 보조 옷장 제습제, 습기제거제, 실리카겔 제습제 · 구성 vs · 본문 약 2,490자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">옷장 제습제 염화칼슘 실리카겔 차이, 공간별로 고르는 법과 교체 시기</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2><p class="meta">찍은 사진을 그 자리에 올리고 표시 줄은 지워주세요. 못 한 것은 줄만 지워도 돼요.</p><ul><li>📷 이런 집은 염화칼슘이 맞아요: <b>옷장 바닥 구석이나 벽에 붙은 쪽 안쪽을 비춘 모습(제습제 둘 자리)</b></li><li>📷 교체 시기, 이렇게 확인해요: <b>집에 있는 제습제 통 옆면·뒷면의 교체 시기 안내 문구를 가까이 찍은 모습</b></li><li>🔗 이전 글 링크: <b>계절옷 보관 방법, 리빙박스·압축팩·부직포 수납함 차이와 고르는 법</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li><li>🔗 이전 글 링크: <b>외풍 차단 방법, 단열 뽁뽁이·방풍비닐·문풍지 차이와 고르는 법</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li></ul></div>
+
+<div class="step"><h2>3. 사진 (4장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-10-26\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec2.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec4.jpg" alt=""><figcaption>사진 4</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">옷장제습제,습기제거제,염화칼슘제습제,실리카겔,옷장습기,옷장곰팡이,결로,겨울살림,살림팁,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="옷장제습제" onclick="copyTag(this)">옷장제습제</button><button class="chip" data-tag="습기제거제" onclick="copyTag(this)">습기제거제</button><button class="chip" data-tag="염화칼슘제습제" onclick="copyTag(this)">염화칼슘제습제</button><button class="chip" data-tag="실리카겔" onclick="copyTag(this)">실리카겔</button><button class="chip" data-tag="옷장습기" onclick="copyTag(this)">옷장습기</button><button class="chip" data-tag="옷장곰팡이" onclick="copyTag(this)">옷장곰팡이</button><button class="chip" data-tag="결로" onclick="copyTag(this)">결로</button><button class="chip" data-tag="겨울살림" onclick="copyTag(this)">겨울살림</button><button class="chip" data-tag="살림팁" onclick="copyTag(this)">살림팁</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="ph">[사진 1: 썸네일]</p>
+<p>창문에 물방울이 맺히기 시작하면 옷장 안도 함께 눅눅해져요. 꺼낸 코트에서 퀴퀴한 냄새가 나면 그제야 제습제를 찾게 되는데, 통형·걸이형·봉지형까지 종류가 많아 헷갈려요.</p>
+<p>옷장 제습제는 대부분 염화칼슘 아니면 실리카겔이에요. 오늘은 옷장 제습제 염화칼슘 실리카겔 차이를 표로 비교하고, 우리 집 어느 공간에 무엇이 맞는지, 언제 바꿔야 하는지까지 정리해 드릴게요.</p>
+<h3>한눈에 보기</h3><ul><li>습기가 많은 옷장 아래·붙박이장 구석은 흡습력이 강한 염화칼슘 통형이 잘 맞아요.</li><li>서랍·가방·신발 안처럼 좁고 쏟아지면 곤란한 곳은 액체가 안 생기는 실리카겔이 편해요.</li><li>어느 쪽이든 닫힌 공간에서만 효과가 커요. 문을 자주 여는 옷장은 환기와 함께 써요.</li></ul>
+<h3>한눈에 비교: 염화칼슘 vs 실리카겔</h3>
+<p>두 가지는 습기를 잡는 방식이 달라요. 염화칼슘은 습기를 빨아들이면서 스스로 녹아 액체가 되고, 실리카겔은 작은 구멍이 많은 알갱이 표면에 습기를 붙잡아 모양이 그대로 남아요.</p>
+<p>그래서 염화칼슘은 흡습력이 강한 대신 물이 고이고, 실리카겔은 깔끔하지만 같은 양이면 잡는 습기가 적은 편이에요.</p>
+<table><tr><th>구분</th><th>염화칼슘</th><th>실리카겔</th></tr><tr><td>습기 잡는 힘</td><td>강한 편</td><td>상대적으로 약한 편</td></tr><tr><td>다 쓴 뒤 모습</td><td>통 안에 물이 고임, 알갱이가 녹음</td><td>알갱이 그대로, 지시약 제품은 색이 변함</td></tr><tr><td>흘림·얼룩 걱정</td><td>쏟으면 옷·금속에 얼룩·부식</td><td>거의 없음</td></tr><tr><td>재사용</td><td>어려움(다 차면 교체)</td><td>열로 말려 다시 쓰는 제품 있음</td></tr><tr><td>잘 맞는 곳</td><td>옷장 아래, 붙박이장 구석, 다용도실</td><td>서랍, 가방, 신발 안, 보관함</td></tr></table>
+<h3>이런 집은 염화칼슘이 맞아요</h3>
+<p class="ph">[사진 2]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 옷장 바닥 구석이나 벽에 붙은 쪽 안쪽을 비춘 모습(제습제 둘 자리)]</span></p>
+<p>북향 방이나 외벽에 붙은 붙박이장처럼 겨울에 결로가 잘 생기는 곳은 습기 양이 많아요. 이런 공간에는 흡습력이 강한 염화칼슘 통형이나 걸이형이 잘 맞아요.</p>
+<p>습한 공기는 아래쪽에 머물기 쉬워서, 통형은 옷장 바닥 구석에 두고 걸이형은 옷 사이에 걸어 주면 좋아요. 다만 옷장 문을 하루에도 몇 번씩 열면 바깥 습기가 계속 들어와 효과가 줄어드니, 맑은 날엔 문을 열어 환기도 함께 해 주세요.</p>
+<h3>이런 곳은 실리카겔이 편해요</h3>
+<p class="ph">[사진 3]</p>
+<p>서랍장, 가방 속, 신발 안, 계절 옷을 넣은 리빙박스처럼 좁고 닫힌 공간은 습기 양이 많지 않아요. 이런 곳에 물이 차는 제습제를 넣으면 쓰러졌을 때 내용물이 쏟아질 수 있어 실리카겔이 더 편해요.</p>
+<p>색이 변하는 지시약형을 고르면 교체 시기를 눈으로 알 수 있어요. 열로 말려 다시 쓸 수 있다고 표시된 제품은 설명서에 적힌 방법과 온도대로만 말려 주세요.</p>
+<h3>교체 시기, 이렇게 확인해요</h3>
+<p class="ph">[사진 4]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 집에 있는 제습제 통 옆면·뒷면의 교체 시기 안내 문구를 가까이 찍은 모습]</span></p>
+<p>염화칼슘 통형은 위쪽 알갱이가 다 녹아 젤리처럼 되거나 물이 표시선까지 차면 바꿀 때예요. 사용 기간은 집 습도와 계절에 따라 크게 달라지니, 날짜보다 통 안 상태를 기준으로 보세요.</p>
+<p>실리카겔은 지시약 색이 바뀌었는지가 기준이에요. 통 옆면이나 포장 뒷면에 제품별 교체 기준이 적혀 있으니 처음 둘 때 읽어 두세요.</p>
+<h3>많이 묻는 질문</h3>
+<p><b>Q. 옷장 제습제는 몇 개 넣어야 하나요?</b><br>A. 옷장 크기와 습도에 따라 달라서 정해진 개수는 없어요. 제품 포장에 적힌 권장 공간을 먼저 보고, 습기가 많은 아래 칸과 벽 쪽부터 하나씩 늘려 보세요.</p>
+<p><b>Q. 제습제만 넣으면 곰팡이가 안 생기나요?</b><br>A. 제습제는 닫힌 공간의 습기를 덜어 줄 뿐이에요. 옷장을 벽에서 조금 띄우고, 젖은 옷은 완전히 말린 뒤 넣고, 맑은 날 문을 열어 환기하는 것을 함께 해야 효과가 커요.</p>
+<p><b>Q. 고인 물은 어떻게 버리나요?</b><br>A. 제품 포장의 버리는 방법을 먼저 따르세요. 보통 고무장갑을 끼고 뚜껑을 열어 변기나 배수구에 붓고 물을 충분히 흘려보낸 뒤, 통은 분리배출 표시에 맞춰 버려요.</p>
+<h3>이런 조건이면 이걸로</h3><ul>
+<li><b>염화칼슘 통형 제습제</b>: 옷장 바닥 구석·붙박이장처럼 습기가 많은 곳, 물이 차는 양이 보이는 투명 통</li>
+<li><b>염화칼슘 걸이형 제습제</b>: 옷 사이에 거는 용도, 물 고이는 주머니가 튼튼하고 옷에 닿지 않게 걸 수 있는 것</li>
+<li><b>지시약형 실리카겔 제습제</b>: 서랍·가방·리빙박스용, 색이 변해 교체 시기를 알 수 있는 것</li>
+<li><b>재사용 실리카겔 제습제</b>: 건조 방법과 온도가 설명서에 분명하게 적힌 제품</li>
+</ul>
+<h3>꼭 알아두세요</h3><ul><li>염화칼슘 제습제에 고인 물은 마시는 물이 아니에요. 아이와 반려동물 손이 닿지 않는 곳에 두고, 실수로 삼켰다면 바로 병원에 문의하세요.</li><li>고인 물이 눈이나 피부에 닿으면 자극이 생길 수 있어요. 버릴 때는 고무장갑을 끼고, 눈에 들어가면 바로 깨끗한 물로 충분히 씻은 뒤 증상이 계속되면 진료를 받으세요.</li><li>염화칼슘 액체는 옷에 얼룩을 남기고 금속을 부식시킬 수 있어요. 통이 쓰러지지 않게 평평한 곳에 두고, 걸이형은 옷과 금속 행거에 직접 닿지 않게 걸어 주세요.</li><li>실리카겔 봉지도 아이가 입에 넣지 않게 보관하세요.</li></ul>
+<h3>함께 보면 좋은 글</h3><ul><li><span class="ph">[이전 글 링크: 계절옷 보관 방법, 리빙박스·압축팩·부직포 수납함 차이와 고르는 법]</span></li><li><span class="ph">[이전 글 링크: 외풍 차단 방법, 단열 뽁뽁이·방풍비닐·문풍지 차이와 고르는 법]</span></li></ul>
+<p>정리하면, 습기가 많은 옷장 아래와 붙박이장 구석은 염화칼슘, 서랍·가방·신발처럼 좁고 쏟아지면 곤란한 곳은 실리카겔이 잘 맞아요. 옷장 제습제 염화칼슘 실리카겔 차이를 알고 공간별로 나눠 두세요.</p>
+<p>여러분 집에서 가장 눅눅한 곳은 옷장, 신발장, 다용도실 중 어디인가요? 댓글로 알려 주시면 그 공간에 맞는 습기 관리법도 정리해 볼게요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
