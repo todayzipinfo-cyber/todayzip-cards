@@ -86,7 +86,7 @@ def esc(s):
 
 ORDER = ["summary", "sections", "products", "caution", "faq", "related"]
 # 원고 본문의 사용자 작업 자리 표시 (글자 수에서 뺀다)
-MARKER = re.compile(r"\[(?:사진|직접 찍은 사진 넣기|이전 글 링크)[^\]]*\]|📷")
+MARKER = re.compile(r"\[(?:사진|직접 찍은 사진 넣기|이전 글 링크|내 경험 한두 줄)[^\]]*\]|📷|✍️")
 
 
 def related_posts(data):
@@ -124,6 +124,8 @@ def body_html(data, photo_no):
             if s.get("own_photo"):  # 사용자가 집에서 찍어 넣을 사진 (BLOG.md 6장)
                 parts.append(f'<p><span class="ph">📷 [직접 찍은 사진 넣기: {esc(s["own_photo"])}]</span></p>')
             parts.extend(f"<p>{esc(p)}</p>" for p in s.get("paragraphs", []))
+            if s.get("my_note"):  # 사용자가 직접 쓸 우리 집 이야기 (BLOG.md 6-1장)
+                parts.append(f'<p><span class="ph">✍️ [내 경험 한두 줄: {esc(s["my_note"])}]</span></p>')
             if s.get("list"):
                 parts.append("<ul>" + "".join(f"<li>{esc(x)}</li>" for x in s["list"]) + "</ul>")
             if s.get("table"):
@@ -258,11 +260,13 @@ def build(path, skip_images=False):
     chars = len(MARKER.sub("", re.sub(r"<[^>]+>", "", body)))
     todo = [f"<li>📷 {html.escape(s['heading'])}: <b>{html.escape(s['own_photo'])}</b></li>"
             for s in data["sections"] if s.get("own_photo")]
+    todo += [f"<li>✍️ {html.escape(s['heading'])}: <b>{html.escape(s['my_note'])}</b></li>"
+             for s in data["sections"] if s.get("my_note")]
     todo += [f"<li>🔗 이전 글 링크: <b>{html.escape(t)}</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li>"
              for t, url in related_posts(data) if not url]
     if todo:
         todo = ('<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2>'
-                '<p class="meta">찍은 사진을 그 자리에 올리고 표시 줄은 지워주세요. 못 한 것은 줄만 지워도 돼요.</p>'
+                '<p class="meta">찍은 사진은 그 자리에 올리고, ✍️ 자리는 우리 집 이야기 한두 줄로 바꿔 주세요. 표시 줄은 지우고, 못 한 것은 줄만 지워도 돼요.</p>'
                 f'<ul>{"".join(todo)}</ul></div>')
     coupang = ""
     if affiliate_enabled(data) and data.get("products") and not all(p.get("link") for p in data["products"]):
