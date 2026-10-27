@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-10-28</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-10-28 · 핵심 키워드 <b>겨울 결로 제습기 방식</b> · 보조 제습기, 제올라이트 제습기, 결로 제거 · 구성 qa · 본문 약 2,420자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">겨울 결로 제습기 방식, 컴프레서·제올라이트 차이와 고르는 법 Q&amp;A</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2><p class="meta">찍은 사진은 그 자리에 올리고, ✍️ 자리는 우리 집 이야기 한두 줄로 바꿔 주세요. 표시 줄은 지우고, 못 한 것은 줄만 지워도 돼요.</p><ul><li>📷 겨울엔 왜 제습기가 물을 덜 모을까요?: <b>아침에 물방울이 맺힌 창문이나 창틀 모습</b></li><li>📷 전기를 덜 쓰면서 결로를 줄이려면요?: <b>거실이나 방에 놓인 습도계 숫자</b></li><li>✍️ 겨울엔 왜 제습기가 물을 덜 모을까요?: <b>우리 집에서 결로가 제일 심한 곳은 어디인가요? (창문/베란다/벽 모서리)</b></li><li>✍️ 전기를 덜 쓰면서 결로를 줄이려면요?: <b>결로가 생기면 지금은 어떻게 처리하고 있나요?</b></li><li>🔗 이전 글 링크: <b>외풍 차단 방법, 단열 뽁뽁이·방풍비닐·문풍지 차이와 고르는 법</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li><li>🔗 이전 글 링크: <b>옷장 제습제 염화칼슘 실리카겔 차이, 공간별로 고르는 법과 교체 시기</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li></ul></div>
+
+<div class="step"><h2>3. 사진 (4장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-10-28\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec5.jpg" alt=""><figcaption>사진 4</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">겨울결로,결로제거,제습기,제올라이트제습기,컴프레서제습기,원룸제습기,결로방지,겨울준비,살림템,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="겨울결로" onclick="copyTag(this)">겨울결로</button><button class="chip" data-tag="결로제거" onclick="copyTag(this)">결로제거</button><button class="chip" data-tag="제습기" onclick="copyTag(this)">제습기</button><button class="chip" data-tag="제올라이트제습기" onclick="copyTag(this)">제올라이트제습기</button><button class="chip" data-tag="컴프레서제습기" onclick="copyTag(this)">컴프레서제습기</button><button class="chip" data-tag="원룸제습기" onclick="copyTag(this)">원룸제습기</button><button class="chip" data-tag="결로방지" onclick="copyTag(this)">결로방지</button><button class="chip" data-tag="겨울준비" onclick="copyTag(this)">겨울준비</button><button class="chip" data-tag="살림템" onclick="copyTag(this)">살림템</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<p class="ph">[사진 1: 썸네일]</p>
+<p>아침에 커튼을 걷었더니 창틀에 물이 고여 있나요? 여름에 쓰던 제습기를 꺼내 틀어 봐도 겨울엔 물통이 덜 차서 고장인가 싶을 때가 있어요.</p>
+<p>고장이 아니라 방식 차이일 수 있어요. 겨울 결로 제습기 방식은 크게 컴프레서식과 제올라이트(데시칸트)식으로 나뉘는데, 추운 방에서는 둘의 차이가 커져요. 오늘은 자주 묻는 질문 순서로 차이와 고르는 법을 정리해 드릴게요.</p>
+<h3>겨울엔 왜 제습기가 물을 덜 모을까요?</h3>
+<p class="ph">[사진 2]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 아침에 물방울이 맺힌 창문이나 창틀 모습]</span></p>
+<p>컴프레서식은 냉매로 차갑게 만든 판에 공기를 지나가게 해서 수증기를 물방울로 맺히게 해요. 그런데 방 자체가 차가우면 공기와 차가운 판의 온도 차가 줄어들어 물이 잘 맺히지 않아요. 그래서 실내 온도가 낮을수록 제습량이 떨어지는 편이에요.</p>
+<p>결로는 따뜻하고 습한 실내 공기가 차가운 창이나 벽에 닿을 때 생겨요. 겨울엔 창이 차가워 습도가 아주 높지 않아도 물이 맺혀요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 우리 집에서 결로가 제일 심한 곳은 어디인가요? (창문/베란다/벽 모서리)]</span></p>
+<h3>컴프레서식과 제올라이트식, 뭐가 다른가요?</h3>
+<p>제올라이트식은 습기를 빨아들이는 소재가 수분을 붙잡고, 히터로 그 소재를 데워 수분을 떼어 내 물통에 모으는 방식이에요. 냉각에 기대지 않아 기온이 낮은 방에서도 성능이 비교적 잘 유지돼요. 아래는 일반적인 특징이라 제품마다 차이가 있어요.</p>
+<table><tr><th>구분</th><th>컴프레서식</th><th>제올라이트(데시칸트)식</th></tr><tr><td>원리</td><td>차갑게 식혀 물방울로</td><td>흡습 소재로 빨아들인 뒤 가열</td></tr><tr><td>추운 방</td><td>제습량이 줄기 쉬움</td><td>비교적 잘 유지됨</td></tr><tr><td>전기 사용</td><td>상대적으로 적은 편</td><td>히터 때문에 많은 편</td></tr><tr><td>실내 온도</td><td>거의 변화 없음</td><td>따뜻한 바람이 나와 조금 오름</td></tr><tr><td>무게·소음</td><td>무겁고 압축기 소리</td><td>가볍고 조용한 편</td></tr><tr><td>잘 맞는 계절</td><td>여름·장마</td><td>겨울 결로, 난방 약한 방</td></tr></table>
+<h3>우리 집엔 어떤 방식이 맞을까요?</h3>
+<p class="ph">[사진 3]</p>
+<p>여름 장마가 주된 고민이고 겨울엔 난방을 충분히 한다면 컴프레서식 하나로도 무난해요. 반대로 난방을 약하게 하는 방, 북향 방, 베란다 쪽 방처럼 실내가 서늘하고 겨울 결로가 고민이라면 제올라이트식이 잘 맞아요.</p>
+<p>여름용 제습기가 이미 있다면 겨울용으로 작은 제올라이트식을 하나 더 두는 방법도 있어요. 한 대로 끝내려면 작동 온도 범위를 꼭 확인하세요.</p>
+<h3>원룸 제습기 용량은 얼마나 봐야 하나요?</h3>
+<p>제습기 용량은 하루에 모을 수 있는 물의 양(L/일)으로 표시돼요. 다만 이 수치는 정해진 시험 조건에서 잰 값이라 추운 겨울 방에서는 그만큼 나오지 않을 수 있어요. 한국소비자원 시험에서도 표시 제습량과 실제 측정값이 다른 제품이 있었어요. 그래서 아래 항목을 함께 보세요.</p>
+<ul><li>제습량(L/일)과 함께 시험 조건(온도·습도)이 적혀 있는지</li><li>소비전력(W)과 제습효율(L/kWh) 표시</li><li>물통 크기와 물통이 차면 멈추는 만수 정지 기능</li><li>연속 배수 호스를 연결할 수 있는지</li><li>원하는 습도에 맞춰 켜지고 꺼지는 습도 설정 기능</li></ul>
+<h3>전기를 덜 쓰면서 결로를 줄이려면요?</h3>
+<p class="ph">[사진 4]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 거실이나 방에 놓인 습도계 숫자]</span></p>
+<p>하루 종일 켜 두기보다 습도계로 확인하고 필요한 시간에만 돌리세요. 요리·샤워·빨래 건조 뒤 창을 잠깐 열어 환기하고, 그다음 제습기를 켜면 효율적이에요.</p>
+<p>창틀에 맺힌 물은 마른 걸레로 바로 닦아 주세요. 제습기는 습기를 줄여 줄 뿐 이미 생긴 곰팡이를 없애 주지는 않아요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 결로가 생기면 지금은 어떻게 처리하고 있나요?]</span></p>
+<h3>많이 묻는 질문</h3>
+<p><b>Q. 제습기를 켜면 방이 건조해지지 않나요?</b><br>A. 습도 설정 기능이 있으면 원하는 습도에서 멈춰요. 습도계를 보며 지나치게 낮아지지 않게 맞추세요.</p>
+<p><b>Q. 가습기와 같이 써도 되나요?</b><br>A. 서로 반대 일을 하니 같은 방에서 동시에 켜면 전기만 더 써요.</p>
+<p><b>Q. 제올라이트식은 전기세가 많이 나오나요?</b><br>A. 히터를 쓰는 만큼 같은 시간이면 더 쓰는 편이에요. 표시 소비전력을 보고 필요한 시간에만 켜세요.</p>
+<h3>이런 조건이면 이걸로</h3><ul>
+<li><b>소형 제올라이트 제습기</b>: 난방 약한 방·원룸의 겨울 결로, 가볍고 조용한 형태 <a href="https://link.coupang.com/a/icFgJyLmdE">👉 쿠팡에서 보기</a></li>
+<li><b>원룸용 컴프레서 제습기</b>: 여름 장마가 주 고민, 습도 설정·만수 정지 확인 <a href="https://link.coupang.com/a/icFgJBPqc8">👉 쿠팡에서 보기</a></li>
+<li><b>연속 배수 되는 제습기</b>: 물통 비우기 번거로울 때, 배수 호스 연결 여부 <a href="https://link.coupang.com/a/icFgJErkOW">👉 쿠팡에서 보기</a></li>
+<li><b>디지털 온습도계</b>: 필요할 때만 켜도록 방 습도 확인용 <a href="https://link.coupang.com/a/icFgJIuqBw">👉 쿠팡에서 보기</a></li>
+</ul>
+<h3>사기 전에 한 번 더</h3><ul><li>제습기는 멀티탭보다 벽 콘센트에 단독으로 꽂고, 플러그가 뜨겁거나 변색되면 사용을 멈추세요.</li><li>제올라이트식은 따뜻한 바람이 나오니 바람이 나오는 곳을 커튼·이불로 막지 말고 벽과 간격을 두세요.</li><li>아이나 반려동물이 있는 집은 넘어지지 않는 자리에 두고, 물통의 물은 마시지 않도록 바로 버려 주세요.</li></ul>
+<h3>함께 보면 좋은 글</h3><ul><li><span class="ph">[이전 글 링크: 외풍 차단 방법, 단열 뽁뽁이·방풍비닐·문풍지 차이와 고르는 법]</span></li><li><span class="ph">[이전 글 링크: 옷장 제습제 염화칼슘 실리카겔 차이, 공간별로 고르는 법과 교체 시기]</span></li></ul>
+<p>정리하면, 여름 장마가 주 고민이면 컴프레서식, 서늘한 방의 겨울 결로가 고민이면 제올라이트식이에요. 겨울 결로 제습기 방식을 정한 다음 제습량 조건과 소비전력, 습도 설정 기능을 확인하면 실패가 적어요.</p>
+<p>여러분 집은 결로가 어디에 제일 많이 생기나요? 결로 줄이는 팁이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p>
+<p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
