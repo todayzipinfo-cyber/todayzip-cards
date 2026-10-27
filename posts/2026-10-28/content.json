@@ -1,0 +1,113 @@
+{
+    "date":  "2026-10-28",
+    "format":  "reel",
+    "category":  "세탁",
+    "theme":  "laundry",
+    "music":  "calm",
+    "cover":  {
+                  "kicker":  "입을수록 늘어나는 보풀",
+                  "title":  "니트 보풀\n뒤집어 빨아요",
+                  "image_queries":  [
+                                        "knitted sweater folded",
+                                        "wool sweater",
+                                        "knit sweater texture"
+                                    ],
+                  "image_id":  6915470,
+                  "dur":  1.6
+              },
+    "scenes":  [
+                   {
+                       "heading":  "니트에 보풀\n일어났나요?",
+                       "body":  "팔꿈치·옆구리에\n동글동글 생겼다면!",
+                       "image_queries":  [
+                                             "folded sweaters stack",
+                                             "knitwear pile",
+                                             "cozy knit sweater"
+                                         ],
+                       "image_id":  7098127
+                   },
+                   {
+                       "heading":  "범인은\n쓸리는 마찰",
+                       "body":  "느슨한 털이 쓸리면서\n공처럼 뭉쳐요.",
+                       "image_queries":  [
+                                             "wool knit texture macro",
+                                             "knitted fabric texture",
+                                             "wool yarn"
+                                         ],
+                       "image_id":  1121460
+                   },
+                   {
+                       "heading":  "뒤집어서\n세탁망에 넣기",
+                       "body":  "겉면이 덜 쓸리도록\n안팎을 바꿔 넣어요.",
+                       "image_queries":  [
+                                             "laundry mesh bag",
+                                             "sweater laundry",
+                                             "laundry basket clothes"
+                                         ],
+                       "image_id":  5822386
+                   },
+                   {
+                       "heading":  "울 코스에\n중성세제로",
+                       "body":  "약한 코스로 빨고\n건조기는 피해요.",
+                       "image_queries":  [
+                                             "white washing machine laundry room",
+                                             "washing machine door open",
+                                             "washing machine"
+                                         ],
+                       "image_id":  3106934
+                   },
+                   {
+                       "heading":  "생긴 보풀은\n제거기로 살살",
+                       "body":  "평평하게 펴 놓고\n누르지 말고 밀어요.",
+                       "image_queries":  [
+                                             "folded sweaters shelf",
+                                             "knit sweater flat lay",
+                                             "sweaters on bed"
+                                         ],
+                       "image_id":  7098130
+                   },
+                   {
+                       "heading":  "이것만은\n꼭 지키세요",
+                       "body":  "같은 곳 반복은 금지,\n라벨 먼저 확인해요.",
+                       "image_queries":  [
+                                             "folded clothes closet shelf",
+                                             "wardrobe sweaters",
+                                             "folded clothes"
+                                         ],
+                       "image_id":  4597416
+                   }
+               ],
+    "outro":  {
+                  "title":  "니트 보풀\n이렇게 막아요",
+                  "points":  [
+                                 "원인은 섬유끼리 마찰",
+                                 "뒤집어서 세탁망에 넣기",
+                                 "울 코스 + 중성세제, 건조기 X",
+                                 "준비물: 보풀 제거기·세탁망"
+                             ],
+                  "dur":  3.8
+              },
+    "caption":  "아끼는 니트, 몇 번 입었더니 보풀이 동글동글 일어났나요? 🧶\n\n보풀은 느슨한 섬유가 가방 끈, 책상, 다른 빨래와 쓸리면서 뭉쳐 생겨요. 그래서 마찰만 줄여도 훨씬 덜 생겨요.\n빨 때는 안팎을 뒤집어 세탁망에 넣고, 울 코스나 약한 코스에 중성(울) 세제로 빨아 주세요. 건조기는 피하거나 저온으로 짧게, 다 마르면 접어서 보관해요.\n이미 생긴 보풀은 니트를 평평하게 펴 놓고 보풀 제거기를 누르지 말고 가볍게 밀어 주세요.\n\n🧺 오늘의 살림템\n· 보풀 제거기: 보호망 안 칼날이 튀어나온 보풀만 정리해요\n· 세탁망: 다른 빨래와 쓸리는 마찰을 줄여 줘요\n\n⚠️ 제거기를 같은 곳에 계속 문지르면 멀쩡한 원단까지 깎일 수 있어요. 세탁 전에는 꼭 케어라벨을 확인하고, 물세탁 불가 제품은 세탁소에 맡기세요.\n\n여러분은 보풀, 어떻게 정리하세요? 댓글로 알려주세요 👇\n\n📌 저장해두고 니트 빨 때 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+    "hashtags":  [
+                     "살림꿀팁",
+                     "살림",
+                     "세탁꿀팁",
+                     "니트보풀",
+                     "보풀제거",
+                     "니트세탁",
+                     "니트관리",
+                     "겨울옷관리",
+                     "자취꿀팁",
+                     "투데이집"
+                 ],
+    "products":  [
+                     {
+                         "name":  "보풀 제거기",
+                         "why":  "보호망 안 칼날이 튀어나온 보풀만 정리"
+                     },
+                     {
+                         "name":  "세탁망",
+                         "why":  "다른 빨래와 쓸리는 마찰을 줄여 줌"
+                     }
+                 ]
+}
