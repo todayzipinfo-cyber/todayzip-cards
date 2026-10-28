@@ -1,0 +1,103 @@
+{
+    "date":  "2026-10-29",
+    "format":  "reel",
+    "category":  "수납·정리",
+    "theme":  "storage",
+    "music":  "warm",
+    "cover":  {
+                  "kicker":  "옷장 정리 전 필독",
+                  "title":  "여름옷 보관\n빨아서 넣어요",
+                  "image_queries":  [
+                                        "folded clothes closet",
+                                        "folded t-shirts",
+                                        "wardrobe clothes"
+                                    ],
+                  "image_id":  4696379,
+                  "dur":  1.6
+              },
+    "scenes":  [
+                   {
+                       "heading":  "꺼낸 여름옷이\n누렇게 변했다면",
+                       "body":  "작년에 넣은 흰 티셔츠,\n목둘레가 누렇나요?",
+                       "image_queries":  [
+                                             "white tshirt",
+                                             "tshirt hanger",
+                                             "tshirt"
+                                         ],
+                       "image_id":  1886013
+                   },
+                   {
+                       "heading":  "범인은\n남은 땀과 피지",
+                       "body":  "한 번 입고 그냥 넣으면\n시간이 지나며 누렇게 돼요.",
+                       "image_queries":  [
+                                             "clothes hanger",
+                                             "hangers",
+                                             "shirts"
+                                         ],
+                       "image_id":  2929746
+                   },
+                   {
+                       "heading":  "한 번 입었어도\n꼭 빨아 넣기",
+                       "body":  "땀 자국은 1년 묵히면\n잘 안 지워져요.",
+                       "image_queries":  [
+                                             "laundry basket",
+                                             "washing machine laundry",
+                                             "washing machine"
+                                         ],
+                       "image_id":  1744612
+                   },
+                   {
+                       "heading":  "속까지\n바짝 말리기",
+                       "body":  "덜 마른 습기는\n곰팡이와 냄새의 원인이에요.",
+                       "image_queries":  [
+                                             "laundry drying",
+                                             "clothesline",
+                                             "drying rack"
+                                         ],
+                       "image_id":  804811
+                   },
+                   {
+                       "heading":  "세탁소 비닐은\n벗겨서 보관",
+                       "body":  "통기되는 부직포 커버나\n불투명 박스에 넣어요.",
+                       "image_queries":  [
+                                             "wardrobe",
+                                             "clothes rack",
+                                             "closet shelves"
+                                         ],
+                       "image_id":  4011117
+                   },
+                   {
+                       "heading":  "제습제 함께,\n꽉 채우지 않기",
+                       "body":  "옷 사이로 공기가 통하게\n여유 있게 넣어요.",
+                       "image_queries":  [
+                                             "folded clothes",
+                                             "closet",
+                                             "wardrobe interior"
+                                         ],
+                       "image_id":  166852
+                   }
+               ],
+    "outro":  {
+                  "title":  "여름옷\n이렇게 넣어요",
+                  "points":  [
+                                 "원인은 남은 땀과 피지",
+                                 "한 번 입었어도 꼭 세탁",
+                                 "바짝 말려 비닐은 벗기기",
+                                 "제습제 + 여유 있게 보관"
+                             ],
+                  "dur":  3.8
+              },
+    "caption":  "작년에 넣어둔 흰 티셔츠, 꺼내 보니 목둘레가 누렇게 변해 있었나요? 👕\n\n한 번 입고 그냥 넣은 옷에 남은 땀과 피지가 시간이 지나며 누렇게 변하는 경우가 많아요.\n한 번만 입었어도 꼭 세탁하고, 속까지 바짝 말린 뒤 넣어 주세요.\n세탁소 비닐은 벗기고 통기되는 부직포 커버나 빛을 막는 불투명 박스에 보관하면 좋아요. 옷장에는 제습제를 함께 두고, 옷 사이로 공기가 통하게 여유 있게 넣어 주세요.\n\n여러분은 옷 정리 벌써 끝내셨나요? 댓글로 알려주세요 👇\n\n📌 저장해두고 주말 옷 정리 때 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+    "hashtags":  [
+                     "살림꿀팁",
+                     "살림",
+                     "정리수납",
+                     "옷정리",
+                     "여름옷보관",
+                     "옷장정리",
+                     "환절기정리",
+                     "계절옷정리",
+                     "자취꿀팁",
+                     "투데이집"
+                 ]
+}
