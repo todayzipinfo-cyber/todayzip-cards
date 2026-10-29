@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-30",
+  "format": "reel",
+  "category": "계절 살림",
+  "theme": "season",
+  "music": "warm",
+  "cover": {
+    "kicker": "난방해도 썰렁하면",
+    "title": "창문 외풍\n뽁뽁이 한 장",
+    "image_queries": [
+      "frosted window winter",
+      "window frost ice",
+      "snowy window view"
+    ],
+    "image_id": 2591201,
+    "dur": 1.6
+  },
+  "scenes": [
+    {
+      "heading": "창가만 가면\n썰렁한가요?",
+      "body": "난방을 틀어도\n창 쪽은 차가워요.",
+      "image_queries": [
+        "window winter room",
+        "cold window curtain",
+        "window snow inside"
+      ],
+      "image_id": 4226020
+    },
+    {
+      "heading": "범인은\n얇은 유리와 틈",
+      "body": "유리로 열이 빠지고\n틈으론 찬바람이 와요.",
+      "image_queries": [
+        "window frame close up",
+        "old window glass",
+        "window glass frame"
+      ],
+      "image_id": 2588496
+    },
+    {
+      "heading": "유리 닦고\n물 뿌리기",
+      "body": "먼지를 닦은 뒤\n분무기로 촉촉하게요.",
+      "image_queries": [
+        "spray bottle window",
+        "cleaning window glass",
+        "window cleaning spray"
+      ],
+      "image_id": 2569334
+    },
+    {
+      "heading": "매끈한 면을\n유리에 붙이기",
+      "body": "유리보다 살짝 작게 잘라\n손으로 쓸어 붙여요.",
+      "image_queries": [
+        "window glass close up",
+        "plastic film window",
+        "transparent window glass"
+      ],
+      "image_id": 202592
+    },
+    {
+      "heading": "창틀 틈은\n문풍지로",
+      "body": "바람 드는 틈에 붙여\n찬바람을 막아요.",
+      "image_queries": [
+        "window handle",
+        "white window frame",
+        "window latch close up"
+      ],
+      "image_id": 10505991
+    },
+    {
+      "heading": "이것만은\n꼭 지키세요",
+      "body": "붙인 뒤에도 하루\n두세 번 환기해요.",
+      "image_queries": [
+        "open window fresh air",
+        "open window room",
+        "window curtain light"
+      ],
+      "image_id": 1434067
+    }
+  ],
+  "outro": {
+    "title": "창문 외풍\n이렇게 막아요",
+    "points": [
+      "원인은 얇은 유리와 틈",
+      "물 뿌리고 매끈한 면 붙이기",
+      "창틀 틈은 문풍지로",
+      "하루 두세 번 환기는 꼭"
+    ],
+    "dur": 3.8
+  },
+  "products": [
+    {"name": "에어캡 단열시트", "why": "공기층이 유리로 빠지는 열을 줄여 줌"},
+    {"name": "문풍지", "why": "창틀 틈으로 들어오는 찬바람을 막아 줌"}
+  ],
+  "caption": "난방을 틀어도 창가만 가면 썰렁한가요? 🥶\n\n창문은 집에서 열이 가장 쉽게 빠지는 곳이에요. 얇은 유리로는 열이 새고, 창틀 틈으로는 찬바람이 들어와요.\n유리 먼지를 닦고 분무기로 물을 촉촉하게 뿌린 뒤, 에어캡 단열시트(뽁뽁이)의 매끈한 면을 유리에 대고 손으로 쓸어 붙여 주세요. 유리보다 살짝 작게 자르면 깔끔해요. 뽁뽁이는 유리면만 덮어서, 창틀 틈은 문풍지로 따로 막아야 해요.\n\n✅ 이번 주제 준비물: 에어캡 단열시트, 문풍지, 분무기\n⚠️ 붙인 뒤에도 하루 두세 번은 창문을 열어 환기해 주세요. 습기가 차면 결로와 곰팡이가 생길 수 있어요. 시야가 흐려지니 필요한 창에만 붙이는 것도 방법이에요.\n\n여러분 집은 어느 창문이 제일 추운가요? 댓글로 알려주세요 👇\n\n📌 저장해두고 주말에 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+  "hashtags": [
+    "살림꿀팁",
+    "살림",
+    "겨울살림",
+    "뽁뽁이",
+    "단열시트",
+    "문풍지",
+    "외풍차단",
+    "난방비절약",
+    "자취꿀팁",
+    "투데이집"
+  ]
+}
