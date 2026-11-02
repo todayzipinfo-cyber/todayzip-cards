@@ -1,0 +1,103 @@
+{
+    "date":  "2026-11-03",
+    "format":  "reel",
+    "category":  "욕실·청소",
+    "theme":  "bath",
+    "music":  "calm",
+    "cover":  {
+                  "kicker":  "뿌려도 안 지워진다면",
+                  "title":  "실리콘 곰팡이\n락스 휴지 팩",
+                  "image_queries":  [
+                                        "black mold wall",
+                                        "mold stain wall damp",
+                                        "mildew"
+                                    ],
+                  "image_id":  890561,
+                  "dur":  1.6
+              },
+    "scenes":  [
+                   {
+                       "heading":  "혹시 이런\n증상 있나요?",
+                       "body":  "닦아도 실리콘에\n까만 점이 남아 있다면!",
+                       "image_queries":  [
+                                             "dirty tile grout",
+                                             "old bathroom tiles dirty",
+                                             "bathtub faucet tile edge"
+                                         ],
+                       "image_id":  6893117
+                   },
+                   {
+                       "heading":  "범인은\n스며든 곰팡이",
+                       "body":  "세제를 뿌려도 흘러내려\n오래 머물지 못해요.",
+                       "image_queries":  [
+                                             "caulk",
+                                             "tile grout close up",
+                                             "silicone sealant"
+                                         ],
+                       "image_id":  330747
+                   },
+                   {
+                       "heading":  "휴지에 적셔\n붙이기",
+                       "body":  "희석한 락스를 적셔\n곰팡이 위에 붙여요.",
+                       "image_queries":  [
+                                             "toilet paper roll bathroom",
+                                             "paper towel cleaning bathroom",
+                                             "cleaning bathroom tile"
+                                         ],
+                       "image_id":  4930230
+                   },
+                   {
+                       "heading":  "표시 시간만큼\n그대로 두기",
+                       "body":  "제품 표시 시간을 지키고\n밤샘 방치는 피해요.",
+                       "image_queries":  [
+                                             "bathtub clean white bathroom",
+                                             "bathroom corner tiles",
+                                             "clean bathroom"
+                                         ],
+                       "image_id":  2094682
+                   },
+                   {
+                       "heading":  "떼어 내고\n찬물로 헹구기",
+                       "body":  "휴지는 떼어 버리고\n찬물로 충분히 헹궈요.",
+                       "image_queries":  [
+                                             "shower rinsing bathtub",
+                                             "shower head water bathroom",
+                                             "rinsing bathroom shower"
+                                         ],
+                       "image_id":  8244818
+                   },
+                   {
+                       "heading":  "이것만은\n꼭 지키세요",
+                       "body":  "산성 세제와 섞지 말고\n환기, 고무장갑 필수!",
+                       "image_queries":  [
+                                             "rubber gloves",
+                                             "gloves sink cleaning",
+                                             "hand glove scrubbing bathroom"
+                                         ],
+                       "image_id":  415390
+                   }
+               ],
+    "outro":  {
+                  "title":  "실리콘 곰팡이\n이렇게 없애요",
+                  "points":  [
+                                 "약이 흘러내려 안 지워져요",
+                                 "희석 락스 적신 휴지 붙이기",
+                                 "표시 시간 후 찬물로 헹구기",
+                                 "식초 금지, 환기, 고무장갑"
+                             ],
+                  "dur":  3.8
+              },
+    "caption":  "욕실 실리콘의 까만 곰팡이, 닦아도 그대로라면? 🧻\n\n뿌린 세제가 금방 흘러내려 곰팡이에 오래 닿지 못하기 때문이에요.\n제품 설명대로 희석한 락스를 휴지나 키친타월에 적셔 곰팡이 위에 붙이고, 표시된 시간만큼 둔 뒤 떼어 내고 찬물로 충분히 헹궈 주세요.\n오래 방치하면 실리콘이 상할 수 있어서 밤샘 방치는 피하는 게 좋아요. 실리콘 안쪽까지 검게 변했다면 재시공이 필요할 수 있어요.\n\n⚠️ 락스는 식초, 구연산 등 산성 세제와 절대 섞지 마세요. 창문과 문을 열어 환기하고 고무장갑과 마스크를 착용하세요. 샤워 후 물기를 닦고 환기하면 재발을 줄일 수 있어요.\n\n여러분 집 욕실 실리콘은 괜찮은가요? 댓글로 알려주세요 👇\n\n📌 저장해두고 주말 욕실 청소 때 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+    "hashtags":  [
+                     "살림꿀팁",
+                     "살림",
+                     "청소꿀팁",
+                     "욕실청소",
+                     "화장실청소",
+                     "곰팡이제거",
+                     "실리콘곰팡이",
+                     "락스",
+                     "자취꿀팁",
+                     "투데이집"
+                 ]
+}
