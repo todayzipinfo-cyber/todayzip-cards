@@ -1,0 +1,103 @@
+{
+    "date":  "2026-11-04",
+    "format":  "reel",
+    "category":  "세탁",
+    "theme":  "laundry",
+    "music":  "calm",
+    "cover":  {
+                  "kicker":  "겨울 실내 빨래 냄새",
+                  "title":  "실내 빨래 쉰내\n간격이 답",
+                  "image_queries":  [
+                                        "laundry drying rack indoor",
+                                        "clothes drying rack",
+                                        "hanging laundry indoor"
+                                    ],
+                  "image_id":  3457385,
+                  "dur":  1.6
+              },
+    "scenes":  [
+                   {
+                       "heading":  "실내 빨래\n쉰내 나나요?",
+                       "body":  "겨울에 방에 널면\n꿉꿉한 냄새가 나요.",
+                       "image_queries":  [
+                                             "clothes drying rack room",
+                                             "laundry drying indoors",
+                                             "drying clothes hanger"
+                                         ],
+                       "image_id":  5217079
+                   },
+                   {
+                       "heading":  "범인은\n느린 건조",
+                       "body":  "오래 젖어 있으면\n냄새 세균이 늘어요.",
+                       "image_queries":  [
+                                             "wet laundry hanging",
+                                             "wet towels hanging",
+                                             "damp clothes"
+                                         ],
+                       "image_id":  1569574
+                   },
+                   {
+                       "heading":  "탈수는\n한 번 더 세게",
+                       "body":  "물기를 최대한 빼야\n빨리 말라요.",
+                       "image_queries":  [
+                                             "front load washing machine",
+                                             "washing machine drum",
+                                             "washing machine"
+                                         ],
+                       "image_id":  1164344
+                   },
+                   {
+                       "heading":  "빨래 사이\n간격 넓게",
+                       "body":  "옷끼리 붙지 않게\n띄엄띄엄 널어요.",
+                       "image_queries":  [
+                                             "clothes on hangers drying",
+                                             "laundry hangers rack",
+                                             "clothes hanging line"
+                                         ],
+                       "image_id":  4423661
+                   },
+                   {
+                       "heading":  "선풍기 바람\n빨래 쪽으로",
+                       "body":  "창문을 조금 열거나\n제습기를 함께 켜요.",
+                       "image_queries":  [
+                                             "electric fan room",
+                                             "dehumidifier home",
+                                             "fan indoor"
+                                         ],
+                       "image_id":  75143
+                   },
+                   {
+                       "heading":  "이것만은\n꼭 지키세요",
+                       "body":  "난방기 위엔 널지 말고\n다 마른 뒤 개요.",
+                       "image_queries":  [
+                                             "folded laundry clean",
+                                             "folded towels stack",
+                                             "folded clothes basket"
+                                         ],
+                       "image_id":  1110811
+                   }
+               ],
+    "outro":  {
+                  "title":  "실내 빨래 쉰내\n이렇게 막아요",
+                  "points":  [
+                                 "원인은 오래 젖어 있는 것",
+                                 "탈수 한 번 더, 간격 넓게",
+                                 "선풍기·환기·제습기로 바람",
+                                 "난방기 위 건조는 피하기"
+                             ],
+                  "dur":  3.8
+              },
+    "caption":  "겨울이라 방 안에 빨래를 널었더니 꿉꿉한 쉰내가 나나요? 🧺\n\n실내 빨래 냄새는 대부분 빨래가 너무 오래 젖어 있어서 생겨요. 마르는 동안 냄새를 만드는 세균이 늘어나거든요.\n그래서 핵심은 \u0027빨리 말리기\u0027예요. 마지막 탈수를 한 번 더 세게 돌리고, 옷끼리 붙지 않게 간격을 넓혀 널어 주세요. 선풍기나 서큘레이터 바람을 빨래 쪽으로 보내고, 창문을 조금 열거나 제습기를 함께 켜면 훨씬 빨리 말라요.\n\n⚠️ 난방기나 전기히터 위에 젖은 빨래를 바로 올리지 마세요. 덜 마른 채로 개면 냄새가 다시 나니 끝까지 말린 뒤 정리해요. 냄새가 계속되면 세탁조 청소도 함께 해 주세요.\n\n여러분은 겨울 빨래, 어디에 널어 말리세요? 댓글로 알려주세요 👇\n\n📌 저장해두고 빨래 널 때 따라 하기\n🔔 매일 12시, 살림 고민 해결은 @todayzip.info",
+    "hashtags":  [
+                     "살림꿀팁",
+                     "살림",
+                     "세탁꿀팁",
+                     "빨래냄새",
+                     "실내건조",
+                     "빨래쉰내",
+                     "겨울빨래",
+                     "빨래건조",
+                     "자취꿀팁",
+                     "투데이집"
+                 ]
+}
