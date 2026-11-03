@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-11-03</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-11-03 · 핵심 키워드 <b>욕실 실리콘</b> · 보조 실리콘 곰팡이 제거, 화장실 곰팡이 제거, 욕실 곰팡이 · 구성 qa · 본문 약 2,405자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">욕실 실리콘 곰팡이 안 지워질 때, 락스 팩 순서와 재시공 판단 Q&amp;A</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2><p class="meta">찍은 사진은 그 자리에 올리고, ✍️ 자리는 우리 집 이야기 한두 줄로 바꿔 주세요. 표시 줄은 지우고, 못 한 것은 줄만 지워도 돼요.</p><ul><li>📷 팩으로 안 되면 재시공해야 하나요?: <b>욕실 실리콘의 곰팡이 부분을 가까이에서 찍은 모습</b></li><li>✍️ 왜 닦아도 까만 점이 남나요?: <b>우리 집 욕실에서 실리콘 곰팡이가 제일 먼저 생기는 곳은 어디인가요? (세면대/욕조/샤워부스)</b></li><li>✍️ 팩으로 안 되면 재시공해야 하나요?: <b>우리 집 욕실 실리콘은 지금 어떤 상태인가요? (까만 점/들뜸/갈라짐/깨끗함)</b></li></ul></div>
+
+<div class="step"><h2>3. 사진 (4장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-11-03\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec2.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec4.jpg" alt=""><figcaption>사진 4</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">욕실실리콘,실리콘곰팡이제거,화장실곰팡이제거,욕실곰팡이,욕실청소,락스사용법,실리콘재시공,곰팡이제거,살림정보,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="욕실실리콘" onclick="copyTag(this)">욕실실리콘</button><button class="chip" data-tag="실리콘곰팡이제거" onclick="copyTag(this)">실리콘곰팡이제거</button><button class="chip" data-tag="화장실곰팡이제거" onclick="copyTag(this)">화장실곰팡이제거</button><button class="chip" data-tag="욕실곰팡이" onclick="copyTag(this)">욕실곰팡이</button><button class="chip" data-tag="욕실청소" onclick="copyTag(this)">욕실청소</button><button class="chip" data-tag="락스사용법" onclick="copyTag(this)">락스사용법</button><button class="chip" data-tag="실리콘재시공" onclick="copyTag(this)">실리콘재시공</button><button class="chip" data-tag="곰팡이제거" onclick="copyTag(this)">곰팡이제거</button><button class="chip" data-tag="살림정보" onclick="copyTag(this)">살림정보</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="ph">[사진 1: 썸네일]</p>
+<p>분명히 솔로 박박 문질렀는데 욕실 실리콘의 까만 점이 그대로인가요? 세면대와 욕조 가장자리는 매일 물이 닿는 자리라, 청소를 게을리한 게 아니어도 곰팡이가 생기기 쉬워요.</p>
+<p>그렇다고 무조건 뜯어낼 필요는 없어요. 욕실 실리콘 곰팡이는 표면에 있는지 속까지 번졌는지에 따라 답이 달라지거든요. 오늘은 락스 팩을 안전하게 하는 순서와 재시공을 판단하는 기준을 질문 순서대로 정리해 드릴게요.</p>
+<h3>왜 닦아도 까만 점이 남나요?</h3>
+<p class="ph">[사진 2]</p>
+<p>실리콘 틈과 표면에 곰팡이가 자리 잡았기 때문이에요. 뿌리는 세제는 세로로 난 이음새에서 금방 흘러내려 곰팡이에 오래 닿지 못해요. 그래서 겉만 젖었다가 그대로 씻겨 나가는 일이 많아요.</p>
+<p>솔로 세게 문지르는 것도 답이 아니에요. 실리콘 표면에 흠집이 나면 물때와 습기가 더 잘 남을 수 있어요. 세제를 곰팡이에 오래 붙여 두는 방법이 먼저예요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 우리 집 욕실에서 실리콘 곰팡이가 제일 먼저 생기는 곳은 어디인가요? (세면대/욕조/샤워부스)]</span></p>
+<h3>락스 팩은 어떤 순서로 하나요?</h3>
+<p class="ph">[사진 3]</p>
+<p>핵심은 휴지나 키친타월로 세제가 머물 자리를 만들어 주는 거예요. 작업 전에 욕실 안의 산성 세제부터 밖으로 빼 두세요.</p>
+<ul><li>창문을 열고 환풍기를 켠 뒤 고무장갑과 마스크를 착용해요.</li><li>실리콘의 물기를 마른 천으로 닦아요.</li><li>제품 설명대로 희석한 락스를 휴지에 적셔 곰팡이 위에 붙여요.</li><li>표시된 시간만큼만 두고, 그동안 욕실 문을 열어 환기해요.</li><li>휴지를 떼어 버리고 찬물로 충분히 헹군 뒤 물기를 닦아요.</li></ul>
+<h3>오래 둘수록 더 잘 지워지나요?</h3>
+<p>꼭 그렇지는 않아요. 방치 시간은 제품마다 다르니 라벨을 먼저 따르세요. 원액을 붓거나 밤새 두면 실리콘이 상할 수 있다는 사례도 있어서, 표시 시간을 넘기지 않는 편이 안전해요.</p>
+<p>한 번에 안 지워지면 시간을 늘리기보다 충분히 헹구고 말린 뒤 다시 해 보세요. 세로 이음새처럼 흘러내리는 곳은 젤 타입 곰팡이 제거제가 더 편해요. 다만 젤 제품도 락스 성분인 경우가 많으니, 다른 세제와 섞지 않는 건 똑같아요.</p>
+<h3>팩으로 안 되면 재시공해야 하나요?</h3>
+<p class="ph">[사진 4]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 욕실 실리콘의 곰팡이 부분을 가까이에서 찍은 모습]</span></p>
+<p>두세 번 해 봐도 색이 그대로라면 곰팡이가 속까지 번졌을 수 있어요. 이럴 때는 표면 청소로 해결되지 않아 재시공을 생각할 때예요. 정해진 공식 기준은 없으니 아래 표로 상태를 보고 판단하세요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 우리 집 욕실 실리콘은 지금 어떤 상태인가요? (까만 점/들뜸/갈라짐/깨끗함)]</span></p>
+<table><tr><th>실리콘 상태</th><th>추천 대처</th></tr><tr><td>까만 점이 표면에만 있음</td><td>락스 팩, 물기 관리</td></tr><tr><td>팩을 해도 색이 조금 남음</td><td>말린 뒤 한 번 더, 젤 타입 사용</td></tr><tr><td>반복해도 안쪽이 까맘</td><td>기존 실리콘 제거 후 재시공</td></tr><tr><td>들뜸, 갈라짐, 틈 벌어짐</td><td>재시공, 틈으로 물이 드는지 확인</td></tr><tr><td>아래층 누수, 벽이 계속 젖음</td><td>누수 점검 먼저</td></tr></table>
+<h3>재시공할 때는 뭘 조심해야 하나요?</h3>
+<p>기존 실리콘 위에 덧바르지 말고 깨끗이 걷어낸 뒤 시공하세요. 곰팡이가 남은 자리에 덮으면 오래가기 어려워요. 자리를 완전히 말리고, 욕실용 방수·방곰팡이 표시가 있는 제품을 고르는 게 좋아요.</p>
+<p>경화 시간은 제품마다 다르지만 보통 최소 하루는 물을 쓰지 말라고 안내해요. 시공 뒤에는 샤워 후 물기를 닦고 환기하는 습관이 재발을 줄여요. 욕실 실리콘 위에 샴푸 통을 올려 두지 않는 것도 도움이 돼요. 습기가 잘 안 빠지는 집이라면 제습기도 함께 살펴보세요.</p>
+<h3>많이 묻는 질문</h3>
+<p><b>Q. 식초나 구연산으로도 곰팡이를 지울 수 있나요?</b><br>A. 물때에는 쓰지만, 락스 작업과 함께 쓰면 위험해요. 어쩌다 쓰더라도 같은 날 번갈아 쓰지 말고, 욕실에서 함께 보관하지 마세요.</p>
+<p><b>Q. 뜨거운 물로 헹궈도 되나요?</b><br>A. 찬물로 헹구는 게 좋아요. 뜨거운 물을 쓰면 락스 냄새가 더 올라올 수 있어요.</p>
+<p><b>Q. 셀프 재시공이 어렵다면 어떻게 하나요?</b><br>A. 틈이 크거나 누수가 의심되면 전문가에게 맡기세요. 실리콘 교체만으로 누수가 해결된다고 장담할 수는 없어요.</p>
+<h3>준비해 두면 편한 것</h3><ul>
+<li><b>주방용 또는 욕실용 고무장갑</b>: 손에 맞고 손목까지 덮는 길이가 편해요.</li>
+<li><b>곰팡이 제거 젤</b>: 세로 이음새에 좋아요. 성분과 혼합 금지 문구를 먼저 보세요.</li>
+<li><b>욕실용 스퀴지</b>: 샤워 후 벽과 바닥 물기를 빠르게 밀어낼 수 있어요.</li>
+<li><b>욕실용 방곰팡이 실리콘</b>: 재시공할 때 용도 표시와 경화 시간을 확인하세요.</li>
+</ul>
+<h3>작업 전에 꼭 확인하세요</h3><ul><li>락스를 식초, 구연산, 변기 세정제 같은 산성 제품과 절대 섞지 마세요. 유독한 염소가스가 생길 수 있어요.</li><li>작업 전후로 창문을 열고 환풍기를 켜 충분히 환기하세요.</li><li>장갑과 보호안경을 쓰고, 눈에 튀면 비비지 말고 흐르는 물로 씻은 뒤 병원에 가세요.</li><li>호흡곤란, 어지럼증, 메스꺼움이 느껴지면 바로 욕실에서 나와 진료를 받으세요.</li></ul>
+<h3>함께 보면 좋은 글</h3><ul><li><a href="https://blog.naver.com/jkchosi1911/224456386470">겨울 결로 제습기 방식, 컴프레서·제올라이트 차이와 고르는 법 Q&amp;A</a></li><li><a href="https://blog.naver.com/jkchosi1911/224457916103">창틀 결로 곰팡이 제거, 물기 닦는 순서와 재발 막는 체크리스트</a></li></ul>
+<p>까만 점이 표면에만 있다면 락스 팩부터, 반복해도 안쪽이 까맣거나 들떠 있다면 재시공을 생각해 보세요. 어느 쪽이든 욕실 실리콘을 오래 깨끗하게 쓰는 비결은 샤워 후 물기 닦기와 환기예요.</p>
+<p>여러분 집 욕실에서는 곰팡이가 어디에 제일 먼저 생기나요? 댓글로 알려주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
