@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-11-04</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-11-04 · 핵심 키워드 <b>온열 빨래건조대</b> · 보조 빨래건조대, 실내 빨래 건조, 전기 빨래건조대 · 구성 checklist · 본문 약 2,390자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">온열 빨래건조대 고르는 법, 소비전력·크기·안전 사기 전 체크리스트</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2><p class="meta">찍은 사진은 그 자리에 올리고, ✍️ 자리는 우리 집 이야기 한두 줄로 바꿔 주세요. 표시 줄은 지우고, 못 한 것은 줄만 지워도 돼요.</p><ul><li>📷 펼친 크기와 접은 크기 재 보기: <b>빨래건조대를 둘 자리 바닥을 줄자로 재는 모습</b></li><li>📷 덮개 여부와 우리 집 습기 대책: <b>빨래 사이를 손 한 뼘씩 띄워 넌 건조대 모습</b></li><li>✍️ 펼친 크기와 접은 크기 재 보기: <b>겨울에 실내 빨래는 주로 어디에 너나요? (거실/방/베란다)</b></li><li>✍️ 덮개 여부와 우리 집 습기 대책: <b>실내에 빨래를 널면 마르는 데 보통 얼마나 걸리나요?</b></li><li>🔗 이전 글 링크: <b>롱패딩 집에서 세탁 세제, 중성세제·다운 전용 세제 차이와 세탁기 코스 Q&amp;A</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li></ul></div>
+
+<div class="step"><h2>3. 사진 (4장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-11-04\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec2.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec5.jpg" alt=""><figcaption>사진 4</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">온열빨래건조대,빨래건조대,전기빨래건조대,실내빨래,빨래쉰내,겨울빨래,빨래건조대추천,자취템,겨울준비,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="온열빨래건조대" onclick="copyTag(this)">온열빨래건조대</button><button class="chip" data-tag="빨래건조대" onclick="copyTag(this)">빨래건조대</button><button class="chip" data-tag="전기빨래건조대" onclick="copyTag(this)">전기빨래건조대</button><button class="chip" data-tag="실내빨래" onclick="copyTag(this)">실내빨래</button><button class="chip" data-tag="빨래쉰내" onclick="copyTag(this)">빨래쉰내</button><button class="chip" data-tag="겨울빨래" onclick="copyTag(this)">겨울빨래</button><button class="chip" data-tag="빨래건조대추천" onclick="copyTag(this)">빨래건조대추천</button><button class="chip" data-tag="자취템" onclick="copyTag(this)">자취템</button><button class="chip" data-tag="겨울준비" onclick="copyTag(this)">겨울준비</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<p class="ph">[사진 1: 썸네일]</p>
+<p>겨울에 실내에 빨래를 널면 하루가 지나도 축축하고, 걷을 때 꿉꿉한 냄새가 날 때가 있죠. 의류건조기를 들이기엔 자리도 가격도 부담이라 온열 빨래건조대를 찾아보는 분이 많아요.</p>
+<p>그런데 온열 빨래건조대는 소비전력, 크기, 온도 조절 방식이 제품마다 꽤 달라요. 오늘은 사기 전에 확인할 다섯 가지를 순서대로 정리하고, 어떤 집에 맞는지도 같이 알려 드릴게요.</p>
+<h3>한눈에 보기</h3><ul><li>온열 빨래건조대는 열선으로 빨래를 데워 실내 건조를 돕는 제품이라, 의류건조기보다 소비전력이 작은 대신 시간이 더 걸려요.</li><li>사기 전에는 소비전력(W)·펼친 크기·온도 조절과 자동 꺼짐·KC 인증·덮개 여부 다섯 가지를 확인하세요.</li><li>환기나 제습을 같이 해야 실내 빨래 쉰내를 줄일 수 있어요.</li></ul>
+<h3>1. 소비전력(W)부터 보고 전기요금 계산하기</h3>
+<p class="ph">[사진 2]</p>
+<p>온열 빨래건조대는 봉 안의 열선으로 빨래를 데우는 방식이라, 뜨거운 바람을 돌리는 의류건조기보다 소비전력이 작은 편이에요. 해외 제품 중에는 230W 안팎 모델이 흔하고, 의류건조기는 2,000W가 넘는 경우도 있어요.</p>
+<p>전기 사용량은 소비전력(W) × 사용 시간으로 계산해요. 예를 들어 230W 제품을 5시간 켜면 약 1.15kWh예요. 상세페이지에서 소비전력을 확인하고, 하루 몇 시간 켤지 생각해 두면 전기요금을 미리 짐작할 수 있어요.</p>
+<h3>2. 펼친 크기와 접은 크기 재 보기</h3>
+<p class="ph">[사진 3]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 빨래건조대를 둘 자리 바닥을 줄자로 재는 모습]</span></p>
+<p>온열 빨래건조대는 일자형, 날개형, 여러 단 타워형으로 나뉘어요. 한 번에 널 빨래 양과 놓을 자리를 같이 봐야 해요.</p>
+<p>원룸이라면 펼친 크기만큼 접은 두께도 중요해요. 안 쓸 때 세워 둘 틈이 있는지 줄자로 먼저 재 보세요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 겨울에 실내 빨래는 주로 어디에 너나요? (거실/방/베란다)]</span></p>
+<h3>3. 온도 조절과 타이머·자동 꺼짐 확인</h3>
+<p>온도를 단계별로 고를 수 있는지, 정해진 시간이 지나면 꺼지는 타이머나 자동 꺼짐 기능이 있는지 확인하세요. 밤에 널어 두고 잠드는 집이라면 타이머는 꼭 있는 편이 좋아요.</p>
+<ul><li>온도 단계 조절이 되는지</li><li>타이머 또는 자동 꺼짐 기능</li><li>전원 버튼과 표시등이 잘 보이는지</li><li>전원선 길이가 콘센트까지 닿는지</li></ul>
+<h3>4. KC 인증 표시와 사용 설명서 확인</h3>
+<p>열이 나는 전기제품은 KC 안전 인증 표시가 있는지부터 보세요. 해외 인증이 KC를 대신하지는 않아요. 설명서의 최대 적재 무게와 주의 문구도 미리 읽어 두세요.</p>
+<h3>5. 덮개 여부와 우리 집 습기 대책</h3>
+<p class="ph">[사진 4]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 빨래 사이를 손 한 뼘씩 띄워 넌 건조대 모습]</span></p>
+<p>일부 제품은 위에 씌우는 전용 덮개가 함께 있어 열을 모아 줘요. 덮개는 제품에 맞게 나온 전용 제품만 쓰고, 이불이나 담요를 임의로 덮지 마세요. 열이 빠지지 않으면 과열될 수 있어요.</p>
+<p>온열 빨래건조대는 빨래를 데워 줄 뿐 방 안 습기는 그대로 남아요. 창문을 조금 열어 환기하거나 제습기·서큘레이터를 같이 쓰고, 빨래 사이 간격을 띄워 널면 실내 빨래 쉰내를 줄이는 데 도움이 돼요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 실내에 빨래를 널면 마르는 데 보통 얼마나 걸리나요?]</span></p>
+<h3>사기 전에 한 번 더</h3><ul><li>온열 빨래건조대 위에 이불·담요를 덮거나 빨래를 겹겹이 쌓지 마세요. 열이 갇히면 과열될 수 있어요.</li><li>커튼·종이상자처럼 타기 쉬운 물건 옆을 피하고, 외출하거나 잠들 때는 타이머를 맞추거나 전원을 끄세요.</li><li>물이 뚝뚝 떨어지는 빨래는 충분히 탈수한 뒤 널고, 젖은 손으로 전원 플러그를 만지지 마세요.</li><li>아이·반려동물이 열선을 오래 만지거나 건조대에 매달리지 않게 해 주세요.</li></ul>
+<h3>이런 조건이면 이걸로</h3><ul>
+<li><b>날개형 온열 빨래건조대</b>: 한 번에 빨래 양이 많을 때, 펼친 크기와 접은 두께 확인 <a href="https://link.coupang.com/a/iomSMD5UqG">👉 쿠팡에서 보기</a></li>
+<li><b>타워형 온열 빨래건조대</b>: 바닥 자리가 좁은 원룸, 단수와 적재 무게 확인 <a href="https://link.coupang.com/a/iomSMHrzye">👉 쿠팡에서 보기</a></li>
+<li><b>온열 빨래건조대 전용 덮개</b>: 덮개가 따로 파는 모델이라면 같은 규격의 전용 덮개만 <a href="https://link.coupang.com/a/iomSMJ02QS">👉 쿠팡에서 보기</a></li>
+<li><b>빨래용 서큘레이터</b>: 습기를 빨리 흩어 주고 싶을 때, 회전·타이머 기능 <a href="https://link.coupang.com/a/iomSMMTtsG">👉 쿠팡에서 보기</a></li>
+</ul>
+<h3>많이 묻는 질문</h3>
+<p><b>Q. 온열 빨래건조대만 있으면 쉰내가 안 나나요?</b><br>A. 빨래를 데워 마르는 시간을 줄이는 데 도움이 되지만, 방 안 습기는 따로 빼야 해요. 환기나 제습을 함께 하고 빨래 간격을 띄워 주세요.</p>
+<p><b>Q. 의류건조기와 비교하면 어떤가요?</b><br>A. 소비전력이 작고 자리를 덜 차지하는 대신 시간이 더 걸려요. 수건을 보송하게 말리는 건 의류건조기 쪽이 빠르니, 빨래 양과 자리를 보고 고르세요.</p>
+<h3>함께 보면 좋은 글</h3><ul><li><a href="https://blog.naver.com/jkchosi1911/224456386470">겨울 결로 제습기 방식, 컴프레서·제올라이트 차이와 고르는 법 Q&amp;A</a></li><li><span class="ph">[이전 글 링크: 롱패딩 집에서 세탁 세제, 중성세제·다운 전용 세제 차이와 세탁기 코스 Q&amp;A]</span></li></ul>
+<p>정리하면, 빨래가 많고 자리가 넉넉하면 날개형, 원룸처럼 바닥이 좁으면 타워형을 보고, 어떤 제품이든 소비전력·온도 조절·자동 꺼짐·KC 인증은 꼭 확인하세요. 온열 빨래건조대에 환기나 제습을 더하면 겨울 실내 빨래가 훨씬 수월해져요.</p>
+<p>여러분은 겨울 빨래를 어떻게 말리고 계신가요? 쉰내 줄이는 나만의 방법이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p>
+<p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
