@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-11-06</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-11-06 · 핵심 키워드 <b>사무실 발히터</b> · 보조 발난로, 책상 밑 히터, 미니 전기히터 · 구성 guide · 본문 약 2,401자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">사무실 발히터 고르는 법, 패널형·발판형·온풍형 차이와 소비전력 기준</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2><p class="meta">찍은 사진은 그 자리에 올리고, ✍️ 자리는 우리 집 이야기 한두 줄로 바꿔 주세요. 표시 줄은 지우고, 못 한 것은 줄만 지워도 돼요.</p><ul><li>📷 왜 책상 밑은 따로 데워야 할까요?: <b>책상 아래 공간을 줄자로 재는 모습(가로·깊이·높이)</b></li><li>📷 소비전력으로 전기 사용량 계산하기: <b>멀티탭 뒷면이나 옆면의 정격 용량 표시(W 또는 A)</b></li><li>✍️ 왜 책상 밑은 따로 데워야 할까요?: <b>겨울에 책상 앞에 앉아 있으면 어디가 제일 먼저 시린가요? (발끝/종아리/무릎)</b></li><li>✍️ 상황별로 이렇게 고르세요: <b>책상 앞에 주로 몇 시간쯤 앉아 있나요? (사무실/재택)</b></li></ul></div>
+
+<div class="step"><h2>3. 사진 (4장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-11-06\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec5.jpg" alt=""><figcaption>사진 4</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">사무실발히터,발히터,발난로,책상밑히터,미니전기히터,패널히터,사무실난방,재택근무,겨울준비,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="사무실발히터" onclick="copyTag(this)">사무실발히터</button><button class="chip" data-tag="발히터" onclick="copyTag(this)">발히터</button><button class="chip" data-tag="발난로" onclick="copyTag(this)">발난로</button><button class="chip" data-tag="책상밑히터" onclick="copyTag(this)">책상밑히터</button><button class="chip" data-tag="미니전기히터" onclick="copyTag(this)">미니전기히터</button><button class="chip" data-tag="패널히터" onclick="copyTag(this)">패널히터</button><button class="chip" data-tag="사무실난방" onclick="copyTag(this)">사무실난방</button><button class="chip" data-tag="재택근무" onclick="copyTag(this)">재택근무</button><button class="chip" data-tag="겨울준비" onclick="copyTag(this)">겨울준비</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<p class="ph">[사진 1: 썸네일]</p>
+<p>히터를 켜도 손은 따뜻한데 발끝만 계속 시린 적 있나요? 따뜻한 공기는 위로 올라가서 책상 아래는 오래 차가운 경우가 많아요. 그래서 겨울이 되면 사무실이나 재택 책상 밑에 둘 작은 난방기를 찾게 돼요.</p>
+<p>사무실 발히터는 모양이 비슷해 보여도 데우는 방식과 소비전력이 꽤 달라요. 오늘은 패널형·발판형·온풍형의 차이, 소비전력으로 전기 사용량을 계산하는 법, 사기 전에 볼 안전 기능을 순서대로 정리해 드릴게요.</p>
+<h3>왜 책상 밑은 따로 데워야 할까요?</h3>
+<p class="ph">[사진 2]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 책상 아래 공간을 줄자로 재는 모습(가로·깊이·높이)]</span></p>
+<p>따뜻한 공기는 위로 모이고 바닥 쪽은 찬 기운이 남기 쉬워요. 큰 히터로 방 전체를 데우면 전기를 많이 써요.</p>
+<p>발히터는 내 발과 종아리 주변만 데우는 용도예요. 그래서 공간 전체가 아니라 책상 아래 크기와 앉는 시간에 맞춰 고르는 게 핵심이에요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 겨울에 책상 앞에 앉아 있으면 어디가 제일 먼저 시린가요? (발끝/종아리/무릎)]</span></p>
+<h3>패널형·발판형·온풍형 한눈에 비교</h3>
+<p>사무실 발히터는 크게 세 가지로 나눠 볼 수 있어요. 아래는 일반적인 특징이라 같은 방식이라도 제품마다 소비전력과 크기가 달라요.</p>
+<table><tr><th>구분</th><th>패널형(접이식)</th><th>발판형(매트)</th><th>온풍형(미니 팬히터)</th></tr><tr><td>데우는 방식</td><td>책상 아래를 판으로 둘러 복사열</td><td>발을 올려 바닥에서 직접</td><td>바람으로 따뜻한 공기</td></tr><tr><td>따뜻해지는 범위</td><td>발·종아리</td><td>발바닥 중심</td><td>발 주변, 바람 닿는 곳</td></tr><tr><td>소리</td><td>거의 없음</td><td>거의 없음</td><td>팬 소리 있음</td></tr><tr><td>공간</td><td>책상 아래 폭이 필요</td><td>얇아서 자리 적게 차지</td><td>작지만 앞쪽 거리 필요</td></tr><tr><td>주의점</td><td>표면 온도·담요 덮지 않기</td><td>같은 자리 오래 대지 않기</td><td>옷·종이와 거리 두기</td></tr></table>
+<h3>소비전력으로 전기 사용량 계산하기</h3>
+<p class="ph">[사진 3]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 멀티탭 뒷면이나 옆면의 정격 용량 표시(W 또는 A)]</span></p>
+<p>전기 사용량은 소비전력(kW) × 켠 시간으로 구해요. 예를 들어 300W 제품을 하루 4시간, 30일 쓰면 0.3 × 4 × 30 = 36kWh예요. 실제 요금은 우리 집이나 사무실의 요금제와 누진 구간에 따라 달라져요.</p>
+<p>그래서 &#x27;절전형&#x27;이라는 이름보다 상세페이지와 제품 라벨에 적힌 W 숫자를 먼저 보세요. 발밑만 데우는 용도라면 소비전력이 낮은 제품부터 살펴보는 게 좋아요.</p>
+<h3>사무실 발히터 고를 때 체크리스트</h3>
+<p>사무실이라면 주변에 불편을 주지 않는지도 중요해요.</p>
+<ul><li>제품 라벨의 소비전력(W)과 온도 단계 조절이 있는지</li><li>자동 꺼짐 타이머와 과열 방지 기능</li><li>온풍형이라면 넘어지면 꺼지는 전도 안전 기능</li><li>KC 인증 표시가 있는지</li><li>책상 아래 폭·높이에 맞는 크기, 접어서 보관 가능한지</li><li>사무실이라면 팬 소리가 없는 패널형·발판형이 무난</li></ul>
+<h3>상황별로 이렇게 고르세요</h3>
+<p class="ph">[사진 4]</p>
+<p>조용한 사무실에서 하루 종일 앉아 있다면 소리가 없는 패널형이 잘 맞아요. 책상 아래 공간이 좁거나 자리를 자주 옮긴다면 얇은 발판형이 편해요.</p>
+<p>발끝만이 아니라 다리 전체가 시리고 빨리 따뜻해지는 게 중요하다면 온풍형도 볼 수 있어요. 다만 바람이 옆 사람에게 가지 않게 방향을 정하고, 종이·가방과 거리를 두세요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 책상 앞에 주로 몇 시간쯤 앉아 있나요? (사무실/재택)]</span></p>
+<h3>책상 아래 조건별로 이걸 보세요</h3><ul>
+<li><b>접이식 패널형 발히터</b>: 조용한 사무실에서 오래 앉을 때, 소비전력과 타이머 확인 <a href="https://link.coupang.com/a/irGHAsIMfI">👉 쿠팡에서 보기</a></li>
+<li><b>발판형 발난로 매트</b>: 책상 아래가 좁을 때, 온도 단계와 자동 꺼짐 확인 <a href="https://link.coupang.com/a/irGHAvVLgG">👉 쿠팡에서 보기</a></li>
+<li><b>전도 안전 미니 온풍기</b>: 빨리 데워야 할 때, 넘어짐 꺼짐과 과열 방지 확인 <a href="https://link.coupang.com/a/irGHAzWIVg">👉 쿠팡에서 보기</a></li>
+<li><b>보온 발토시·덧신</b>: 전기 없이 같이 쓰면 사용 시간을 줄일 수 있어요 <a href="https://link.coupang.com/a/irGHAC6rtY">👉 쿠팡에서 보기</a></li>
+</ul>
+<h3>켜기 전에 꼭 확인하세요</h3><ul><li>발히터 위에 담요나 옷을 덮어 두지 마세요. 열이 갇혀 과열될 수 있어요.</li><li>낮은 온도라도 같은 부위를 오래 대고 있으면 저온 화상을 입을 수 있어요. 맨발로 장시간 대지 말고 중간중간 자리를 바꾸세요.</li><li>다른 난방기와 함께 멀티탭 하나에 꽂지 말고, 멀티탭 정격 용량을 넘지 않는지 확인하세요.</li><li>자리를 비울 때와 퇴근할 때는 꼭 전원을 끄고 플러그를 뽑으세요.</li></ul>
+<h3>많이 묻는 질문</h3>
+<p><b>Q. 사무실 발히터는 하루 종일 켜 둬도 되나요?</b><br>A. 제품 설명서의 연속 사용 기준을 따르세요. 타이머를 맞춰 두고 자리를 비울 때는 끄는 게 안전하고 전기 사용도 줄어요.</p>
+<p><b>Q. 패널형과 발판형 중 뭐가 더 따뜻한가요?</b><br>A. 패널형은 책상 아래를 둘러 종아리까지, 발판형은 발바닥 중심으로 데워요. 시린 부위에 맞춰 고르세요.</p>
+<p><b>Q. 멀티탭에 꽂아 써도 되나요?</b><br>A. 멀티탭 정격 용량 안에서 쓰고, 가능하면 벽 콘센트에 바로 꽂는 게 좋아요.</p>
+<h3>함께 보면 좋은 글</h3><ul><li><a href="https://blog.naver.com/jkchosi1911/224446251787">전기히터 고르는 법, 세라믹·카본·오일라디에이터 차이와 체크리스트</a></li><li><a href="https://blog.naver.com/jkchosi1911/224441122402">외풍 차단 방법, 단열 뽁뽁이·방풍비닐·문풍지 차이와 고르는 법</a></li></ul>
+<p>정리하면, 조용한 사무실이면 패널형, 좁은 책상이면 발판형, 빨리 데워야 하면 전도 안전 기능이 있는 온풍형을 보세요. 어떤 방식이든 라벨의 소비전력과 타이머·과열 방지 기능이 먼저예요.</p>
+<p>여러분은 겨울에 책상 밑 추위를 어떻게 버티시나요? 좋은 방법이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p>
+<p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
