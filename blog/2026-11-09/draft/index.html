@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-11-09</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-11-09 · 핵심 키워드 <b>가벼운 무선청소기</b> · 보조 무선청소기, 스틱청소기, 무선청소기 흡입력 · 구성 qa · 본문 약 2,437자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">가벼운 무선청소기 고르는 법, 무게·흡입력 단위·배터리 시간 Q&amp;A</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2><p class="meta">찍은 사진은 그 자리에 올리고, ✍️ 자리는 우리 집 이야기 한두 줄로 바꿔 주세요. 표시 줄은 지우고, 못 한 것은 줄만 지워도 돼요.</p><ul><li>📷 몇 kg이면 가벼운 무선청소기라고 할 수 있나요?: <b>주방 저울에 1L 생수병을 올려 무게를 확인하는 모습(1kg 감 잡기)</b></li><li>📷 배터리 시간은 몇 분이면 충분할까요?: <b>청소기를 세워 둘 만한 콘센트 옆 빈자리</b></li><li>✍️ 몇 kg이면 가벼운 무선청소기라고 할 수 있나요?: <b>우리 집에서 청소기는 주로 누가, 일주일에 몇 번쯤 돌리나요?</b></li><li>✍️ 배터리 시간은 몇 분이면 충분할까요?: <b>우리 집 바닥은 대부분 마루인가요, 러그·카펫이 깔린 곳도 있나요?</b></li></ul></div>
+
+<div class="step"><h2>3. 사진 (4장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-11-09\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec5.jpg" alt=""><figcaption>사진 4</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">가벼운무선청소기,무선청소기,스틱청소기,무선청소기추천,무선청소기흡입력,원룸청소기,핸디청소기,청소기고르는법,자취템,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="가벼운무선청소기" onclick="copyTag(this)">가벼운무선청소기</button><button class="chip" data-tag="무선청소기" onclick="copyTag(this)">무선청소기</button><button class="chip" data-tag="스틱청소기" onclick="copyTag(this)">스틱청소기</button><button class="chip" data-tag="무선청소기추천" onclick="copyTag(this)">무선청소기추천</button><button class="chip" data-tag="무선청소기흡입력" onclick="copyTag(this)">무선청소기흡입력</button><button class="chip" data-tag="원룸청소기" onclick="copyTag(this)">원룸청소기</button><button class="chip" data-tag="핸디청소기" onclick="copyTag(this)">핸디청소기</button><button class="chip" data-tag="청소기고르는법" onclick="copyTag(this)">청소기고르는법</button><button class="chip" data-tag="자취템" onclick="copyTag(this)">자취템</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<p class="ph">[사진 1: 썸네일]</p>
+<p>청소기를 꺼내는 게 귀찮아서 청소를 미룬 적 있나요? 그래서 요즘은 자주, 짧게 돌릴 수 있는 가벼운 무선청소기를 찾는 분이 많아요.</p>
+<p>그런데 상세페이지를 보면 무게도 흡입력 단위도 제각각이라 비교가 어려워요. 오늘은 사기 전에 가장 많이 헷갈리는 질문을 하나씩 짚으면서 가벼운 무선청소기 고르는 기준을 정리해 드릴게요.</p>
+<h3>몇 kg이면 가벼운 무선청소기라고 할 수 있나요?</h3>
+<p class="ph">[사진 2]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 주방 저울에 1L 생수병을 올려 무게를 확인하는 모습(1kg 감 잡기)]</span></p>
+<p>먼저 표기된 무게가 &#x27;본체만&#x27;인지 &#x27;헤드와 파이프까지 합친 무게&#x27;인지 보세요. 본체 무게만 크게 적어 두는 경우가 있어서, 실제로 들고 미는 무게는 전체 무게 쪽이 더 가까워요.</p>
+<p>무게 중심도 중요해요. 모터와 배터리가 손잡이 쪽에 몰려 있으면 같은 무게라도 소파 밑을 닦을 때 손목에 더 부담이 가요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 우리 집에서 청소기는 주로 누가, 일주일에 몇 번쯤 돌리나요?]</span></p>
+<h3>흡입력 W, AW, Pa는 뭐가 다른가요?</h3>
+<p>무선청소기 흡입력은 제조사마다 쓰는 단위가 달라요. 단위가 다르면 측정 방식도 달라서 숫자끼리 바로 비교하면 안 돼요.</p>
+<ul><li>W(와트): 국제 표준(IEC) 방식의 흡입력 단위로 국내 대형 브랜드가 많이 써요. 단, 소비전력도 W로 적기 때문에 &#x27;흡입력&#x27;인지 &#x27;소비전력&#x27;인지 꼭 확인하세요.</li><li>AW(에어와트): 미국 시험 표준(ASTM)에서 쓰는 단위로, 바람의 양과 압력을 함께 반영해요.</li><li>Pa(파스칼): 내부 압력만 나타내는 값이라 숫자가 크게 보여요. 공기가 얼마나 흐르는지는 알 수 없어요.</li><li>비교할 때는 같은 단위끼리, 가능하면 같은 기준으로 측정한 값끼리만 보세요.</li></ul>
+<h3>배터리 시간은 몇 분이면 충분할까요?</h3>
+<p class="ph">[사진 3]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 청소기를 세워 둘 만한 콘센트 옆 빈자리]</span></p>
+<p>상세페이지의 사용 시간은 보통 가장 약한 모드 기준이에요. 강한 모드로 쓰면 그보다 훨씬 짧아지니, 모드별 사용 시간이 따로 적혀 있는지 확인하세요.</p>
+<p>원룸이나 작은 집에서 짧게 자주 돌린다면 약한 모드 기준 시간이 넉넉한지가 중요해요. 집이 넓다면 배터리를 빼서 바꿔 끼우는 분리형인지, 충전 시간은 얼마인지도 같이 보세요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 우리 집 바닥은 대부분 마루인가요, 러그·카펫이 깔린 곳도 있나요?]</span></p>
+<h3>가벼운 제품은 무엇을 포기하게 되나요?</h3>
+<p>가벼운 무선청소기는 대신 먼지통과 배터리가 작은 경우가 많아요. 아래는 일반적인 경향이라 제품마다 다를 수 있어요.</p>
+<table><tr><th>구분</th><th>가벼운 스틱형</th><th>일반 스틱형</th><th>핸디형</th></tr><tr><td>들기 편함</td><td>좋음</td><td>보통</td><td>아주 좋음</td></tr><tr><td>먼지통</td><td>작은 편, 자주 비움</td><td>큰 편</td><td>작음</td></tr><tr><td>배터리</td><td>짧은 편</td><td>긴 편</td><td>짧음</td></tr><tr><td>잘 맞는 곳</td><td>원룸, 매일 짧은 청소</td><td>넓은 집 메인 청소</td><td>차, 책상, 소파 틈</td></tr></table>
+<h3>우리 집에는 어떤 게 맞을까요?</h3>
+<p class="ph">[사진 4]</p>
+<p>원룸이나 작은 집에서 메인으로 쓴다면 가벼운 스틱형에 흡입력 수치가 공개된 제품을 고르세요. 유선 청소기나 로봇청소기가 이미 있다면 서브용으로 더 가벼운 제품을 골라도 충분해요.</p>
+<p>러그가 있거나 반려동물 털이 많다면 무게보다 흡입력과 헤드 브러시를 먼저 보세요. 털이 감기지 않는 구조인지도 확인하세요.</p>
+<h3>그 밖에 많이 묻는 질문</h3>
+<p><b>Q. 가벼운 무선청소기도 메인으로 쓸 수 있나요?</b><br>A. 작은 집이라면 충분해요. 다만 먼지통을 자주 비워야 하니 비우기 쉬운지 보세요.</p>
+<p><b>Q. 필터는 물로 씻어도 되나요?</b><br>A. 제품마다 달라요. 물세척 가능 표시가 있는 필터만 씻고, 완전히 말린 뒤 끼워야 냄새와 고장을 막을 수 있어요.</p>
+<p><b>Q. Pa 숫자가 크면 더 센 건가요?</b><br>A. Pa는 압력만 보여 주는 값이라 숫자가 커도 실제로 빨아들이는 힘을 다 알 수는 없어요. 같은 단위끼리 비교하세요.</p>
+<h3>이런 조건이면 이걸로 보세요</h3><ul>
+<li><b>가벼운 무선 스틱청소기</b>: 원룸 메인용, 전체 무게와 흡입력 단위 확인 <a href="https://link.coupang.com/a/iwDGovlMxE">👉 쿠팡에서 보기</a></li>
+<li><b>배터리 분리형 무선청소기</b>: 집이 넓을 때, 교체 배터리 구매 가능한지 확인 <a href="https://link.coupang.com/a/iwDGoykUIC">👉 쿠팡에서 보기</a></li>
+<li><b>물걸레 겸용 무선청소기</b>: 마루가 많은 집, 걸레 헤드 무게까지 확인 <a href="https://link.coupang.com/a/iwDGoBokdE">👉 쿠팡에서 보기</a></li>
+<li><b>무선 핸디청소기</b>: 차·소파 틈 서브용, 먼지통 용량 확인 <a href="https://link.coupang.com/a/iwDGoDHDTE">👉 쿠팡에서 보기</a></li>
+</ul>
+<h3>충전하고 보관할 때 확인하세요</h3><ul><li>충전은 제품에 맞는 정품 충전기로 하고, 충전 중에는 이불·커튼 등 덮이는 곳을 피하세요.</li><li>물기 있는 바닥이나 젖은 먼지를 흡입하지 마세요. 물걸레 겸용이 아니면 고장과 감전 위험이 있어요.</li><li>브러시에 머리카락을 뺄 때는 꼭 전원을 끄고 하세요. 아이 손이 닿지 않는 곳에 세워 두세요.</li><li>배터리가 부풀거나 뜨거워지면 바로 사용을 멈추고 서비스센터에 문의하세요.</li></ul>
+<h3>함께 보면 좋은 글</h3><ul><li><a href="https://blog.naver.com/jkchosi1911/224457916103">창틀 결로 곰팡이 제거, 물기 닦는 순서와 재발 막는 체크리스트</a></li><li><a href="https://blog.naver.com/jkchosi1911/224463247701">욕실 실리콘 곰팡이 안 지워질 때, 락스 팩 순서와 재시공 판단 Q&amp;A</a></li></ul>
+<p>정리하면, 원룸 메인용은 전체 무게와 흡입력 단위를 함께 보고, 넓은 집은 배터리 분리형, 서브용은 핸디형까지 넓혀 보세요. 가벼운 무선청소기는 &#x27;자주 꺼내게 되는지&#x27;가 가장 큰 기준이에요.</p>
+<p>여러분은 청소기를 고를 때 무게와 흡입력 중 무엇을 더 보시나요? 댓글로 기준을 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p>
+<p class="disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
