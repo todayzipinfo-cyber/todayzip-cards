@@ -40,8 +40,16 @@ def api(**params):
 
 
 def get(url):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
-        return r.read()
+    """429(요청 너무 많음)이면 잠시 쉬었다가 다시 받는다."""
+    import time
+    for wait in (5, 15, 30, 60, None):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or wait is None:
+                raise
+            time.sleep(wait)
 
 
 def used_ids():
