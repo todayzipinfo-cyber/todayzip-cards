@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>블로그 원고 · 2026-11-25</title>
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1d1d1f;--sub:#6b6b6b;--line:#e5e5e5;--acc:#03c75a}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--card:#1b1b1b;--ink:#eee;--sub:#aaa;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.step h2{font-size:15px;margin:0 0 10px;color:var(--sub)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+button.done{background:#555}
+.title{font-size:22px;font-weight:700;margin:8px 0}
+.meta{font-size:13px;color:var(--sub)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:10px}
+.photos figure{margin:0;font-size:12px;color:var(--sub);text-align:center}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+#body{line-height:1.8;font-size:16px}
+#body h3{font-size:19px;margin:28px 0 8px;border-left:4px solid var(--acc);padding-left:10px}
+#body .ph{color:#d33;font-weight:700}
+#body .disc{font-size:13px;color:var(--sub)}
+#body table{border-collapse:collapse;width:100%;font-size:14px}
+#body th,#body td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--bg);color:var(--ink);border:1px solid var(--line);font-weight:400;padding:6px 12px;border-radius:999px}
+.chip.done{background:var(--acc);color:#fff}
+</style></head><body><div class="wrap">
+<p class="meta">📝 2026-11-25 · 핵심 키워드 <b>울 코트 세탁</b> · 보조 코트 세탁, 홈드라이, 코트 먼지 제거 · 구성 mistakes · 본문 약 2,433자</p>
+
+<div class="step"><h2>1. 제목 복사</h2><div class="title" id="title">울 코트 세탁 집에서 할 때 실수 5가지, 라벨·물 온도·말리는 법 확인</div>
+<button onclick="copyText('title',this)">제목 복사</button></div>
+
+<div class="step"><h2>2. 본문 복사 → 네이버 에디터에 붙여넣기</h2>
+<p class="meta">빨간 <b>[사진 N]</b> 자리에 아래 3번의 사진을 올리고, 그 표시 줄은 지워주세요.</p>
+<button onclick="copyHtml('body',this)">본문 복사</button></div>
+<div class="step"><h2>2-2. 직접 할 것 (빨간 자리)</h2><p class="meta">찍은 사진은 그 자리에 올리고, ✍️ 자리는 우리 집 이야기 한두 줄로 바꿔 주세요. 표시 줄은 지우고, 못 한 것은 줄만 지워도 돼요.</p><ul><li>📷 케어라벨을 안 보고 바로 빤다: <b>집에 있는 코트 안쪽 케어라벨을 가까이 찍은 모습</b></li><li>📷 비틀어 짜고 옷걸이에 바로 건다: <b>빨래 건조대 위에 큰 수건을 평평하게 펼쳐 둔 모습</b></li><li>✍️ 케어라벨을 안 보고 바로 빤다: <b>우리 집 겨울 코트는 몇 벌이고, 보통 얼마나 자주 세탁소에 맡기나요?</b></li><li>✍️ 매번 통째로 빨려고 한다: <b>외출하고 돌아오면 코트는 주로 어디에 걸어 두나요? (현관/옷장/의자)</b></li><li>🔗 이전 글 링크: <b>미니건조기 추천 기준, 용량·히터식 vs 히트펌프·설치 자리 따져 고르는 법</b> (주소를 blog/published.json 에 적어 두면 다음부터 자동)</li></ul></div>
+
+<div class="step"><h2>3. 사진 (4장, 이 폴더에 있어요)</h2>
+<p class="meta">blog\2026-11-25\draft</p><div class="photos"><figure><img src="01_thumbnail.jpg" alt=""><figcaption>사진 1</figcaption></figure><figure><img src="02_sec1.jpg" alt=""><figcaption>사진 2</figcaption></figure><figure><img src="03_sec3.jpg" alt=""><figcaption>사진 3</figcaption></figure><figure><img src="04_sec4.jpg" alt=""><figcaption>사진 4</figcaption></figure></div></div>
+
+<div class="step"><h2>4. 태그 넣기</h2>
+<p class="meta">한 번에: <b>태그 전체 복사</b> 후 태그 칸에 붙여넣기 (쉼표로 나뉘어요). 잘 안 나뉘면 아래 태그를 하나씩 눌러 복사 → 붙여넣기 → Enter.</p>
+<div class="tags" id="tags" style="display:none">울코트세탁,코트세탁,울코트,홈드라이,코트관리,코트먼지제거,겨울옷관리,울세탁,살림팁,투데이집</div>
+<button onclick="copyText('tags',this)">태그 전체 복사</button>
+<div class="chips"><button class="chip" data-tag="울코트세탁" onclick="copyTag(this)">울코트세탁</button><button class="chip" data-tag="코트세탁" onclick="copyTag(this)">코트세탁</button><button class="chip" data-tag="울코트" onclick="copyTag(this)">울코트</button><button class="chip" data-tag="홈드라이" onclick="copyTag(this)">홈드라이</button><button class="chip" data-tag="코트관리" onclick="copyTag(this)">코트관리</button><button class="chip" data-tag="코트먼지제거" onclick="copyTag(this)">코트먼지제거</button><button class="chip" data-tag="겨울옷관리" onclick="copyTag(this)">겨울옷관리</button><button class="chip" data-tag="울세탁" onclick="copyTag(this)">울세탁</button><button class="chip" data-tag="살림팁" onclick="copyTag(this)">살림팁</button><button class="chip" data-tag="투데이집" onclick="copyTag(this)">투데이집</button></div></div>
+
+<div class="step"><h2>본문 미리보기</h2><div id="body"><p class="ph">[사진 1: 썸네일]</p>
+<p>세탁소에 맡기자니 한 벌에 비용이 꽤 들고, 집에서 빨자니 줄어들까 봐 망설여지는 게 울 코트예요.</p>
+<p>울 코트 세탁은 몇 가지 실수만 피하면 훨씬 안전해져요. 집에서 빨 때 많이 하는 실수 5가지와, 각각 대신 어떻게 하면 되는지 순서대로 정리해 드릴게요.</p>
+<h3>한눈에 보기</h3><ul><li>울 코트 세탁은 케어라벨에 물세탁 표시가 있을 때만 집에서 하고, 드라이클리닝 표시면 세탁소가 안전해요.</li><li>울이 줄어드는 건 뜨거운 물과 마찰 때문이라, 30도 이하 미지근한 물에 중성세제로 눌러 빨아요.</li><li>비틀어 짜거나 옷걸이에 젖은 채 걸지 말고, 수건으로 물기를 뺀 뒤 눕혀서 그늘에 말리세요.</li></ul>
+<h3>1. 케어라벨을 안 보고 바로 빤다</h3>
+<p class="ph">[사진 2]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 집에 있는 코트 안쪽 케어라벨을 가까이 찍은 모습]</span></p>
+<p>같은 울 코트라도 울 함량, 안감 소재, 심지(형태를 잡아 주는 속감)에 따라 제조사가 정한 세탁법이 달라요. 그래서 울 코트 세탁의 첫 단계는 옷 안쪽 케어라벨 확인이에요.</p>
+<p>대야에 손이 그려진 표시와 온도가 있으면 손세탁이 가능하다는 뜻이고, 대야에 X 표시가 있으면 물세탁 금지예요. 동그라미 안에 글자가 있는 드라이클리닝 표시만 있다면 세탁소에 맡기는 편이 안전해요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 우리 집 겨울 코트는 몇 벌이고, 보통 얼마나 자주 세탁소에 맡기나요?]</span></p>
+<h3>2. 뜨거운 물에 담가 둔다</h3>
+<p>울이 줄어드는 현상을 펠팅이라고 해요. 울 섬유 겉면의 비늘 같은 결이 열과 마찰을 받으면 서로 엉겨 붙으면서 옷이 작고 두꺼워져요. 한 번 엉긴 섬유는 원래대로 되돌리기 어려워요.</p>
+<p>물은 30도 이하 미지근한 물을 쓰고, 라벨에 더 낮은 온도가 적혀 있으면 그 온도를 따르세요.</p>
+<h3>3. 일반 세제로 박박 문지른다</h3>
+<p class="ph">[사진 3]</p>
+<p>울은 단백질 섬유라 알칼리성이 강한 일반 세제보다 울 전용이나 중성세제가 잘 맞아요. 섬유유연제는 섬유를 코팅해 통기성을 떨어뜨릴 수 있어 넣지 않는 게 좋아요.</p>
+<p>빨 때는 비비지 말고 손바닥으로 지그시 눌렀다 떼는 방식으로 해요. 목 둘레나 소매 끝처럼 때가 잘 타는 곳만 부드러운 솔로 결 방향을 따라 살살 정리하세요.</p>
+<ul><li>미지근한 물에 중성세제를 정량만 푼다</li><li>코트를 접어 넣고 10분 안팎으로 눌러 빤다</li><li>같은 온도의 물로 거품이 안 나올 때까지 헹군다</li></ul>
+<h3>4. 비틀어 짜고 옷걸이에 바로 건다</h3>
+<p class="ph">[사진 4]</p>
+<p><span class="ph">📷 [직접 찍은 사진 넣기: 빨래 건조대 위에 큰 수건을 평평하게 펼쳐 둔 모습]</span></p>
+<p>물을 먹은 울 코트는 생각보다 무거워요. 비틀어 짜면 섬유가 늘어나고, 젖은 채 옷걸이에 걸면 무게 때문에 어깨와 길이가 처질 수 있어요.</p>
+<p>큰 수건 위에 코트를 펼쳐 올리고 함께 돌돌 말아 눌러 물기를 빼세요. 세탁기 탈수를 쓴다면 세탁망에 넣고 아주 짧게만 돌려요. 그다음 건조대 위에 눕혀 모양을 잡고, 직사광선과 열풍을 피해 그늘에서 말려요.</p>
+<h3>5. 매번 통째로 빨려고 한다</h3>
+<p>코트는 매일 빨래하는 옷이 아니에요. 자주 빨수록 수축과 변형 위험이 커지니, 평소에는 겉 먼지를 털고 부분만 관리하는 편이 오래 입는 방법이에요.</p>
+<p>입고 들어오면 옷솔로 위에서 아래로, 결 방향을 따라 먼지를 털어 주세요. 구김은 스팀다리미를 옷에서 살짝 띄워 김만 쐬어 주면 펴지고, 냄새도 어느 정도 빠져요.</p>
+<p><span class="ph">✍️ [내 경험 한두 줄: 외출하고 돌아오면 코트는 주로 어디에 걸어 두나요? (현관/옷장/의자)]</span></p>
+<h3>빨기 전에 한 번 더</h3><ul><li>라벨에 물세탁 금지 표시가 있거나 캐시미어·알파카 함량이 높으면 집에서 빨지 말고 세탁소에 맡기세요.</li><li>스팀다리미는 뜨거운 김이 나와요. 옷을 입은 채 쐬지 말고, 아이 손이 닿지 않는 곳에서 쓰세요.</li><li>세제는 다른 세정제와 섞지 말고 한 가지만 쓰세요. 표백제는 울을 상하게 할 수 있어요.</li><li>덜 마른 채 옷장에 넣으면 냄새와 곰팡이가 생길 수 있으니 속까지 완전히 말린 뒤 보관하세요.</li></ul>
+<h3>집에서 관리할 때 있으면 좋은 것</h3><ul>
+<li><b>울 전용 중성세제</b>: 라벨에 중성 또는 울·실크 전용 표시가 있는지 확인</li>
+<li><b>옷솔(코트 브러시)</b>: 모가 너무 뻣뻣하지 않은 것, 평소 먼지 털기용</li>
+<li><b>대형 세탁망</b>: 코트를 접어 넣을 수 있는 크기, 탈수할 때 마찰을 줄여 줌</li>
+<li><b>핸디 스팀다리미</b>: 옷에 직접 대지 않고 김만 쐬어 구김을 펴는 용도</li>
+</ul>
+<h3>많이 묻는 질문</h3>
+<p><b>Q. 세탁기 울 코스로 돌려도 되나요?</b><br>A. 라벨에 세탁기 사용이 가능하다고 되어 있을 때만이에요. 그럴 때도 세탁망에 넣고 저온·저회전 울 코스로, 탈수는 짧게 해 주세요.</p>
+<p><b>Q. 이미 줄어든 코트는 되돌릴 수 있나요?</b><br>A. 니트는 린스를 푼 미지근한 물에 담갔다가 살살 늘리는 방법이 알려져 있지만, 안감과 심지가 있는 코트는 효과가 확실하지 않아요. 아끼는 코트라면 세탁소에 상담하는 편이 나아요.</p>
+<p><b>Q. 세탁소 비닐을 씌운 채 보관해도 되나요?</b><br>A. 비닐은 통풍이 안 돼 습기가 찰 수 있어요. 집에 가져오면 비닐을 벗기고, 먼지가 걱정되면 통기성 있는 부직포 커버를 씌우세요.</p>
+<h3>함께 보면 좋은 글</h3><ul><li><a href="https://blog.naver.com/jkchosi1911/224482172556">니트 보풀 제거기 vs 보풀 브러시 차이, 얇은 니트 구멍 안 나게 쓰는 법</a></li><li><span class="ph">[이전 글 링크: 미니건조기 추천 기준, 용량·히터식 vs 히트펌프·설치 자리 따져 고르는 법]</span></li></ul>
+<p>정리하면, 울 코트 세탁은 라벨 확인이 먼저예요. 물세탁 표시가 있으면 30도 이하 미지근한 물, 중성세제, 눌러 빨기, 눕혀 말리기만 지키고, 드라이클리닝 표시면 세탁소에 맡기세요. 평소엔 옷솔과 스팀으로 관리하면 통째로 빠는 횟수를 줄일 수 있어요.</p>
+<p>여러분은 코트를 집에서 빨아 본 적 있나요? 성공담이나 실패담이 있다면 댓글로 나눠 주세요.</p>
+<p>인스타그램 @todayzip.info 에서 살림 꿀팁을 30초 영상으로도 볼 수 있어요.</p></div></div>
+</div>
+<script>
+function flash(b){b.classList.add('done');if(!b.classList.contains('chip'))b.textContent='복사됨 ✓';}
+function copyPlain(s,b){const done=()=>flash(b),old=()=>{const t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();};
+ if(navigator.clipboard)navigator.clipboard.writeText(s).then(done,old);else old();}
+function copyTag(b){copyPlain(b.dataset.tag,b);}
+function copyText(id,b){copyPlain(document.getElementById(id).textContent,b);}
+function copyHtml(id,b){const r=document.createRange();r.selectNodeContents(document.getElementById(id));
+ const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();flash(b);}
+</script></body></html>
